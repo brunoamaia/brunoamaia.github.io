@@ -1,0 +1,308 @@
+/*
+:root { /* Declarar cores do Layout 
+    --bg-main-color: #859172;
+    --menu-main-color:#3AB534;
+    --menu-sub-color: #FF7B09;
+    --detail-color: #8DF0B0;
+    --txt-color-1: black;
+    --txt-color-2: red;
+} */
+
+:root { /* Modo escuro */
+    --bg-main-color: #545454;
+    --bg-color-2: #3a435e;
+    --bg-color-3: #3e252a;
+    --bg-color-4: #001241;
+    --menu-main-color:#272727;
+    --menu-sub-color: #272727;
+    --button-color: #272727;
+    --detail-color: #8DF0B0;
+    --txt-color-1: #14a76c;
+    --txt-color-2: #02CB7D;
+    --txt-color-3:  #ff652f;
+    --txt-color-4: yellow;
+}
+
+/* Soft Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');   /* Importar a fonte Roboto */
+
+/* Header 
+------------------------------------------ */
+.header {
+    background-color: var(--menu-main-color);/*#009EB2;*/
+    background-color: #272727;
+    color:#181D1F;
+    height: 50px;
+    list-style: none;
+    padding-top: 7px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.header .logo img {
+    padding-top: 5px;
+    margin: 0;
+    border: 0;
+}
+.nav-toggle {
+    padding-top: 5px;
+}
+
+.content {      /* Inicio do conteudo que aparece */
+    max-width: 960px; /* Para fixar o máximo que pode aumentar */
+    width: 98%;
+    margin: 0 auto;
+}
+
+.header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.nav ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--txt-color-1);
+    color: #14a76c;
+    padding: 6px 5px;
+    margin: 0px;
+    box-sizing: border-box;
+    animation: .5s;
+    transition-duration: 0.2s;
+}
+
+/*.header .current {
+    border-bottom: 7px solid #D6312B;
+}*/
+
+/* Fixar o menu em cima
+.menu-fixo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+.header .content .social {
+    padding-right: 10px;
+}
+
+.header .content .social ul li {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 5px;
+    border: 0;
+}
+
+.conteudo {
+    margin-top: 60px;
+    z-index: 0;
+}
+
+h1{
+    text-align: center;
+    font: 500 1.7em Roboto, sans-srif;
+    padding-bottom: 20px;
+    color: var(--txt-color-3);
+    color: #ff652f;
+}
+
+.conteudo p {   /* Rexto de aviso */
+    padding-bottom: 1em;
+}
+
+body {
+    -webkit-background-composite: var(--bg-main-color);
+    background-color:  var(--bg-main-color);  /* #d1d1c2;  #3a3a3a */
+    background-color: #545454;
+    font: 400 14px Roboto, sans-srif;
+}
+
+section {
+    color: var(--txt-color-2);     /*#181D1F;*/
+    color: #02CB7D;
+    /*border-radius: 10px;*/
+    width: auto; /* 800px, auto */
+    max-width: 960px;
+    margin: auto;
+    font: 400 20px Roboto, sans-srif;
+    text-align: justify;
+}
+
+section header {
+    text-align: center;
+}
+
+ul {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+}
+
+ul li a {
+    color: inherit;
+    text-decoration: initial;
+}
+
+button {
+    width: auto;    /* Pode usar porcentagem da pagina 100% ocupa toda a largura da pagina  */
+    height: 60px;
+    background: var(--menu-sub-color);
+    background-color: #272727;
+    border: 0;
+    border-radius: 10px;
+    color: var(--txt-color-1);
+    color: #14a76c;
+    font-weight: 700;   /* Deixar a fonte maior ou em negrito */
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 0px;
+    transition: filter 0.2s; /* Mudar a cor (parametro de baixo) de forma gradual */
+    vertical-align: top;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+button:hover { /*  Ação ao passar o moue por cima do "botão" */
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+div section { /*    Formatação das Seções de texto */
+    min-height: 100vh;
+    padding: 0;
+}
+.typea {
+    background-color: #3E252A;
+}
+.typeb {
+    background-color: #3A435E;
+}
+
+.conteudo section p {
+    text-indent: 2em;
+    padding: 2em 1em;
+}
+
+footer {
+    color:  var(--txt-color-4); /* fff white*/
+    color: yellow;
+    font: 500 20px Roboto, sans-srif;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+/* Configurações para tela de Smartphone
+----------------------------------------------------- */
+@media (max-width: 767.5px) {
+    /* MENU  */
+    .content {
+        width: 87%;
+    }
+
+    .header .content .nav {
+        background-color: var(--menu-sub-color);
+        background-color: #272727;
+        border-left: 3px solid var(--txt-color-4);
+        border-color: yellow;
+        color: inherit;
+        height: 100%;
+        padding: 5px;
+        position: fixed;
+        right: -100%;
+        text-align: left;
+        font-size: 20px;
+        top: 0;
+        width: 250px;
+        z-index: 10;
+    }
+
+    .header .nav ul li {
+        padding: 15px 5px;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .header .social {
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 20px;
+        padding-left: 3em;
+        right: -100%;
+        width: 250px;
+        z-index: 12;
+    }
+
+    .header .social ul li {
+        display: inline;
+    }    
+
+    .nav-close {
+        padding-top: 8px;
+        padding-right: 22px;
+    }
+    
+    .content .nav .list img {
+        width: 10%;
+    }
+
+}
+
+
+
+/* Configurações para tela de Computador
+----------------------------------------------------- */
+@media (min-width: 768px) {
+    /* MENU */
+    .logo, .nav-toggle, .nav-close {
+        display: none;
+    }
+
+    .header .nav {
+        float: left;
+        margin-left: 20px;
+        margin-top: 6px;
+    }
+    .header .nav ul li {
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 0;
+        content: '|';
+    }
+
+    /*.header .nav ul li a:hover {
+        border-bottom: 7px solid #D6312B;
+        /*animation-direction: unset;*/
+        /*transition: margin-botton 4s;*/
+        /*transition: height .2s ease-in-out;*/
+    /*}*/
+
+    .header .social {
+        float: right;
+        margin-top: 6px;
+    }
+    .header .social ul li {
+        display: inline-block;
+        margin-right: 20px;
+        content: '|';
+    }
+
+
+}
