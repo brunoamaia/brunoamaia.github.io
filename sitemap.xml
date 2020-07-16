@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+      <loc>URL</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://brunoamaia.github.io/</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://brunoamaia.github.io/pages/projects/index.html</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://brunoamaia.github.io/pages/reposit/index.html</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>1</priority>
+</url>
+<url>
+      <loc>https://brunoamaia.github.io/pages/projects/Ecoleta/index.html</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>.5</priority>
+</url>
+<url>
+      <loc>https://brunoamaia.github.io/pages/projects/apps/calculadora/index.html</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>.5</priority>
+</url>
+<url>
+      <loc>https://brunoamaia.github.io/pages/projects/site/index.html</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>.5</priority>
+</url>
+<url>
+      <loc>https://brunoamaia.github.io/pages/projects/games/flappybird/index.html</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>.5</priority>
+</url>
+</urlset>
