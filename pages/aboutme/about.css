@@ -27,7 +27,6 @@ section .soci {
 }
 
 section .soci img {
-    size: 20px;
-    width: 3em;
+    width: 5em;
     padding: 0 10px;
 }
