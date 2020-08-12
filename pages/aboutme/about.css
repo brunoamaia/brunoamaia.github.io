@@ -8,6 +8,11 @@
     border-radius: 50%;
 }
 
+.tecnologias {
+    text-indent: unset;
+    color: #00FF99;
+}
+
 h2 {
     padding-top: 0.5em;
 }
@@ -22,6 +27,7 @@ section .soci {
 }
 
 section .soci img {
+    size: 20px;
     width: 3em;
     padding: 0 10px;
 }
