@@ -1,13 +1,11 @@
 function openmenu() {
-    //$("#nav").css("right:", 0 + "px");
     event.preventDefault();
-    $('.nav').css({ 'right':'0px'});
-    $('.social').css({ 'right':'0px'});
+    document.getElementById("nav").style.right = "0px";
+    document.getElementById("social").style.right = "0px";
 }
 
 function closenmenu() {
-    //$("#nav").css("right:", 0 + "px");
     event.preventDefault();
-    $('.nav').css({ 'right':'-100%'});
-    $('.social').css({ 'right':'-100%'});
+    document.getElementById("nav").style.right = "-100%";
+    document.getElementById("social").style.right = "-100%";
 }

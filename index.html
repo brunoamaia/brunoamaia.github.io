@@ -4,95 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruno Alves Maia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="global.css">   <!-- Chmada do Css -->
+    <link rel = "icon" type = "image/png" href="/src/logo_titleBar.png"  sizes="16x16"/>
+    <!-- For apple devices -->
+    <link rel = "apple-touch-icon" type = "image/png" href = "/src/logo_titleBar.png"/>
 </head>
 
 <body>
     <header class="header">
         <div class="content">
             <!--                            Utilizar quando tiver Alguma logo -->
-            <div class="logo" style="float: left;">     <!-- Jogar o Home par a esquerda -->
+            <div class="logo" >     <!-- Jogar o Home par a esquerda -->
                 <a href="#"><img src="./src/icons/home.svg" alt="Voltar para a página inicial"> </a>      <!-- <i class="fas fa-book-reader"></i> -->
             </div>
-
-            <a href="" class="nav-toggle" style="float: right;" onclick="openmenu()">    <!-- Jogar o menu para a direita -->
+            
+            <a href="" class="nav-toggle" onclick="openmenu()">    <!-- Jogar o menu para a direita -->
                 <img src="./src/icons/menu.svg" alt="">                                        <!-- <i class="fas fa-bars"> </i> -->
             </a>
-
-            <nav class="nav">
+            
+            <nav class="nav" id="nav">
                 <p>
-                    <span class="nav-close" style="float: right;" onclick="closenmenu()">
+                    <span class="nav-close" onclick="closenmenu()">
                         <i class="fas fa-bars"><img src="./src/icons/x.svg" alt=""></i>
                     </span>
                 </p>
                 <ul>
-                    <li> <a href="./index.html" class="current">Home</a> </li>
-                    <li> <a href="./pages/aboutme/index.html">Autor</a> </li>
-                    <li> <a href="./pages/projects/index.html">Projetos</a> </li>
-                    <li> <a href="./pages/reposit/index.html"> Repositório </a> </li>
+                    <li> <a href="/" class="current"> Home </a> </li>
+                    <li> <a href="/pages/aboutme">Autor</a> </li>
+                    <li> <a href="/pages/projects">Projetos</a> </li>
+                    <!--  <li> <a href="./../../../../../index.html"> Origem </a> </li> -->
                 </ul>
             </nav>
-
-            <nav class="social">
+            
+            <nav class="social" id="social">
                 <ul>
-                    <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> 
-                        <img src="../../src/icons/linkedin.svg" alt="Ícone do Linkedin, com link para acessar o perfil"> 
-                    </a></li>
-                    <li> <a href="https://www.facebook.com/brunoamaia94"> 
-                        <img src="../../src/icons/facebook.svg" alt="Ícone do Facebook, com link para acessar o perfil"> 
-                    </a></li>
-                    <li> <a href="./index.html"> 
-                        <img src="../../src/icons/instagram.svg" alt="Ícone do Instagram, com link para acessar o perfil"> 
-                    </a></li>
-                    <li> <a href="./index.html"> 
-                        <img src="../../src/icons/twitter.svg" alt="Ícone do Twitter, com link para acessar o perfil"> 
-                    </a></li>
+                    <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="./src/icons/linkedin.svg" alt=""> </a></li>
+                    <li> <a href="https://www.facebook.com/brunoamaia94"> <img src="./src/icons/facebook.svg" alt=""> </a></li>
+                    <!-- <li> <a href="#"> <img src="./src/icons/instagram.svg" alt=""> </a></li>
+                    <li> <a href="#"> <img src="./src/icons/twitter.svg" alt=""> </a></li> -->
                 </ul>
             </nav>
         </div>
     </header>
-
+    
     <section>
-        <header>
-            <h1>Seja muito bem vind@! 😁 </h1>
-        </header>
-        <p>Este site serve como repositório das atividades/exemplos elaborados para a fixação do conteúdo estudado. 
-            Posteriormente serão anexados projetos pessoais.</p>
-        <p>Por enquanto, não repare muito na bagunça.</p> 
-        <p>Atualmente, estou estudando HTML5 CSS3, junto com as linguagens: JavaScript e Python.</p>
+        <div class="sect_hello">
+            <div class="inicio">
+                <img src="./src/logo_ini.png" alt="logo com o nome: Bruno Maia">
+                <br>
+                <span>Bruno Alves Maia</span>
+                <p class="blink"> &lt;Beginner web developer/&gt; </p>
+                <br> <br> <br>
+            </div>
+        </div>
         
-        <div class="logos">
-            <img src="./src/HTML5_logo.png" alt="">
-            <img src="./src/CSS3_logo.png" alt="">
-            <img src="./src/JavaScript_logo.png" alt="">
-            <img src="./src/Python-logo.png" alt="">
+        <div class="sect_about">
+            <h1>Quem sou eu?</h1>
+            <p>Olá, me chamo Bruno Alves Maia. Sou graduado em Matemática Industrial e 
+                mestre em Modelagem e Otimização pela UFG (Universidade Federal de Goiás).
+                Sou curioso desde criança, o que me motivou a estudar algumas áreas diferentes.
+            </p>
+            <p>
+                Após atuar em algumas áreas, decidi migrar para a programação. 
+                Devido principalmente ao fato de ser uma área ligada diretamente à tecnologia. 
+                Pois sempre fui fascinado pela tecnologia e suas inovações. 
+                O que torna está profissão, algo bem empolgante, já que é parte essencial do nosso cotidiano e das novas.
+            </p>
+            <p><a href="#">
+                Bem, esse é um resumo, para mais informações da minha jornada, clique aqui.</a>
+            </p>
+           
         </div>
 
-        <p>Utilizo diferentes plataformas e materiais para estudar, mas listarei as grátis que me auxiliaram,
-            pois acredito que são inciativas que ajudam no desenvolvimento de novos profissionais:</p>
+        <div class="select_portifolio">
+            <h1>Portifólfio</h1>
+
+            <p>A seguir, estão alguns projetos criados para praticar os conceitos aprendidos, 
+                ou que foram realizados em algum curso/evento.
+            </p> <br>
+
+            <div class="portifolio">
+                <div>
+                    <figure>
+                        <p> <b>Ecoleta</b> </p>
+                        <a href="">
+                            <img src="./src/portifolio/ecolet.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure>
+                        <p> <b>Flappy Bird</b> </p>
+                        <a href="">
+                            <img src="./src/portifolio/Flapy.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure>
+                        <p> <b>Calculadora Básica</b> </p>
+                        <a href="">
+                            <img src="./src/portifolio/calculadora.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+
+            </div>
+                    <p> <a href="">
+                        Clique aqui para mais projetos
+                    </a></p>
+        </div>
+
+        <div class="select_contact">
+            <h1>Contatos</h1>
+            <div class="contacts">
+                <div>
+                    <figure>
+                        <a href="mailto:brunoamaia94@gmail.com">
+                            <img src="./src/icons/mail.svg" alt="Entre em contato por email">
+                        </a>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure>
+                        <a href="https://www.linkedin.com/in/brunoamaia94/">
+                            <img src="./src/icons/linkedin.svg" alt="Entre em contato por email">
+                        </a>
+                    </figure>
+                </div>
+
+            </div>
+            <br>
+        </div>
+
         
-        <ul>
-            <li> <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ">Curso em Vídeo – canal no YouTube</a> </li>
-            <li> Rocketseat –<a href="https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg"> canal no Youtube</a>, <a href="https://rocketseat.com.br/starter"> site</a> 
-                e as semanas <b>OmniStack</b>, que agora se tornaram <b>Next Level Week</b>.  </li>
-            <li>Cursos disponibilizados pela Alura junto com a Caelum  durante a quarentena do COVID-19:</li>
-                <ul>
-                    <li> <a href="https://www.alura.com.br/quarentenadev">Quarentena Dev</a> </li>
-                    <li> <a href="https://www.alura.com.br/quarentenadados">Quarentena Dados</a> </li>
-                    <li> <a href="https://www.alura.com.br/imersao-css">Imersão CSS</a> </li>
-                </ul>
-        </ul>
-
-        <p> Obs: Atualmente, dentro dos canais que conheço, o que possui o melhor <b>conteúdo grátis</b>, 
-            ensinando o básico e mais um pouco de <b>várias linguagens de programação e outros temas</b>, 
-            é o <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ">Curso em Vídeo</a>.
-        </p>
-        <!--
-        <button onclick="location.href='./pages/aboutme/index.html'">Quem sou eu?</button> -->
     </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    <!-- Usar Jquery para adicionar funcionalidades ao JavaScript  -->
+    
+    <footer>
+        Criado em julho de 2020 <br>
+        Versão 2
+    </footer>
+    
     <script src="script.js"></script> <!-- Chamada do JavaScript -->
 </body>
 </html>
