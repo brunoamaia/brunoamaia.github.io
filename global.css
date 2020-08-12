@@ -154,7 +154,7 @@ footer {
 }
 /* Menu*/
 .header .content .nav {        /* Smartphone */
-    background-color: #2A2A2A;
+    background-color: #022a5f;
     border-left: 2px solid #00FF99;
 }
 @media (min-width: 450px) {
@@ -169,7 +169,7 @@ footer {
 
 .sect_about a,
 .select_portifolio a {
-    color: #038C3E;
+    color: #00FF99;
 }
 
 .sect_about,
@@ -185,7 +185,7 @@ body footer {
     background-color: #000000;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #a1a1a1;
+    background: #000000;
 }
 body::-webkit-scrollbar-track {
     background: #000;        /* color of the tracking area */
@@ -388,7 +388,11 @@ header {
     /*  Faixa do menu   */
     .header {
         height: 50px;
-        padding: 10px 0 5px 0 ;
+        padding: 10px 0 5px 0;
+    }
+
+    .header .nav a {
+        margin: 0 auto;
     }
 
     .header .content {
