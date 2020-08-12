@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecoleta</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../../../global.css">   <!-- Chmada do Css -->
+    <link rel = "icon" type = "image/png" href="../../../src/tillteBar.png"  sizes="16x16"/>
+    <link rel = "apple-touch-icon" type = "image/png" href = "../../../src/tillteBar.png"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../global.css">
     <link rel="stylesheet" href="video.css">
 </head>
 
@@ -21,7 +26,7 @@
                 <img src="../../../src/icons/menu.svg" alt="">                                        <!-- <i class="fas fa-bars"> </i> -->
             </a>
 
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <p>
                     <span class="nav-close" style="float: right;" onclick="closenmenu()">
                         <i class="fas fa-bars"><img src="../../../src/icons/x.svg" alt=""></i>
@@ -35,7 +40,7 @@
                 </ul>
             </nav>
 
-            <nav class="social">
+            <nav class="social" id="social">
                 <ul>
                     <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="../../../src/icons/linkedin.svg" alt=""> </a></li>
                     <li> <a href="https://www.facebook.com/brunoamaia94"> <img src="../../../src/icons/facebook.svg" alt=""> </a></li>
@@ -47,41 +52,47 @@
     </header>
 
     <section>
-        <header>
-            <h1>Ecoleta</h1>
-        </header>
+        <div class="section_a">
+            <header>
+                <h1>Ecoleta</h1>
+            </header>
+    
+            <p> Projeto desenvoldido durante a Primeira Next Level Week. Que foi promovida pela 
+                <a href="https://rocketseat.com.br/"> Rocketseat</a> entre os dias 01 e 07 de junho de 2020. 
+            </p>
+            <p>
+                O Ecoleta é uma aplicação voltada à coleta de materiais recicláveis e lixo orgânico.
+                A aplicação possui tanto versão web quanto a versão mobile (Aplicativo).
+                Para o desenvolvimento de toda a estrutura do Ecoleta, foram utilizadas as seguintes ferramentas:        
+            </p>
+            <ul>
+                <li> <span>Node.js</span>: para a criação do servidor (Backend) e suas funcionalidades utilizando JavaScript;</li>
+                <li> <span>React</span>:  para desenvolver uma plataforma web dinâmica (Frontend); </li>
+                <li> <span>React Native</span>: para fazer um aplicatico que, a partir do mesmo código, 
+                    possa ser gerada tanto a versão para Android, quanto para IOS</li>
+            </ul>
+        </div>
 
-        <p> Projeto desenvoldido durante a Primeira Next Level Week. Que foi promovida pela 
-            <a href="https://rocketseat.com.br/"> Rocketseat</a> entre os dias 01 e 07 de junho de 2020. 
-        </p>
-        <p>O Ecoleta é uma aplicação voltada à coleta de materiais recicláveis e lixo orgânico.
-            A aplicação possui tanto versão web quanto a versão mobile (Aplicativo).
-            Para o desenvolvimento de toda a estrutura do Ecoleta, foram utilizadas as seguintes ferramentas:        
-        </p>
-        <ul>
-            <li>Node.js: para a criação do servidor (Backend) e suas funcionalidades utilizando JavaScript;</li>
-            <li>React: para desenvolver uma plataforma web dinâmica (Frontend); </li>
-            <li>React Native: para fazer um aplicatico que, a partir do mesmo código, 
-                possa ser gerada tanto a versão para Android, quanto para IOS</li>
-        </ul>
-        <p> O vídeo a seguir apresenta o funcionamento do Ecoleta. 
-            É importante ressaltar que devido ao fato de ser desenvoldido em apenas uma semana,
-            algumas funcionalidades estão na versão web e outras na versão Mobile.
-            Caso tenha interesse em mais funcionalidades e/ou uma melhor integração entre as plataformas,
-            entre em contato pelos canais informados nesta página.
-        </p>
-        <div class="video">
-            <iframe id="ytplayer" type="text/html" width="640" height="360" 
-            src="http://www.youtube.com/embed/Vy96B0IjAso"
-            frameborder="0" controls=0 >
-        </iframe>
-    </div>
-    <p> Caso queira olhar o código e quem sabe contribuir, segue o Link para o <a href="https://github.com/brunoamaia/Ecoleta">Repositório no GitHub</a>. </p>
+
+        <div class="section_b">
+            <p> O vídeo a seguir apresenta o funcionamento do Ecoleta. 
+                É importante ressaltar que devido ao fato de ser desenvoldido em apenas uma semana,
+                algumas funcionalidades estão na versão web e outras na versão Mobile.
+                Caso tenha interesse em mais funcionalidades e/ou uma melhor integração entre as plataformas,
+                entre em contato pelos canais informados nesta página.
+            </p>
+            <div class="video">
+                <iframe id="ytplayer" type="text/html" width="640" height="360" 
+                src="http://www.youtube.com/embed/Vy96B0IjAso"
+                frameborder="0" controls=0 >
+            </iframe>
+        </div>
+        <p> Caso queira olhar o código e quem sabe contribuir, segue o Link para o <a href="https://github.com/brunoamaia/Ecoleta">Repositório no GitHub</a>. </p>
+        </div>
 </section>
     
     <footer> Criado em junho de 2020</footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- Usar Jquery para adicionar funcionalidades ao JavaScript  -->
     <script src="../../../script.js"></script> <!-- Chamada do JavaScript -->
 </body>
 </html>

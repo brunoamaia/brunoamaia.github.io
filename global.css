@@ -29,7 +29,7 @@ body {
 }
 
 body section {
-    background: #121212;
+    background: #023e8a;
     color: whitesmoke;
 }
 
@@ -41,8 +41,8 @@ section div p {   /*  Ajustar região do conteudo */
 
 section .section_a,
 section .section_b {
-    align-content: center;
     display: grid;
+    text-align: center;
 }
 
 
