@@ -10,9 +10,8 @@ section {
 }
 
 .projects li {
-    list-style: none;
     text-align: left;
-    text-indent: 5em;
+    text-indent: 2em;
 }
 
 .projects a {
