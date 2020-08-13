@@ -1,0 +1,16 @@
+section {
+  min-height: 93vh;
+}
+
+.lista {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0;
+  width: 95%;
+}
+
+.lista li {
+  font: 1.5em Belgrano;
+  text-align: left;
+  text-indent: 5em;
+}
