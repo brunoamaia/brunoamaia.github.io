@@ -1,15 +1,3 @@
-function openmenu() {
-    //$("#nav").css("right:", 0 + "px");
-    event.preventDefault();
-    $('.nav').css({ 'right':'0px'});
-}
-
-function closenmenu() {
-    //$("#nav").css("right:", 0 + "px");
-    event.preventDefault();
-    $('.nav').css({ 'right':'-100%'});
-}
-
 function alerta() {
     var aviso = window.confirm('O site a seguir está em desenvolvimento,'
                         +' portanto pode apresentar instabilidades/erros.'
