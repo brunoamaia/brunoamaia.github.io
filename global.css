@@ -71,18 +71,19 @@ section div {
 }
 
 button {
-    width: auto;    /* Pode usar porcentagem da pagina 100% ocupa toda a largura da pagina  */
-    height: 60px;
     border: 0;
     border-radius: 10px;
-    font-weight: 700;   /* Deixar a fonte maior ou em negrito */
-    margin-top: 20px;
+    color: whitesmoke;
     display: inline-block;
-    text-align: center;
     font-size: 18px;
+    font-weight: 700;   /* Deixar a fonte maior ou em negrito */
+    height: 60px;
     line-height: 0px;
+    margin-top: 20px;
+    text-align: center;
     transition: filter 0.2s; /* Mudar a cor (parametro de baixo) de forma gradual */
     vertical-align: top;
+    width: auto;    /* Pode usar porcentagem da pagina 100% ocupa toda a largura da pagina  */
 }
 
 button:hover { /*  Ação ao passar o moue por cima do "botão" */
