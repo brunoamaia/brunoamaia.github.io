@@ -2,6 +2,10 @@ section .section_a:first-child{
   height: 95vh;
 }
 
+.inicio{
+  padding-top: 30vh;
+}
+
 .inicio span,
 .inicio p {
   text-indent: unset;

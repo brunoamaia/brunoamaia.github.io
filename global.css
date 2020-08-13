@@ -138,9 +138,9 @@ footer {
     background-color: #022a5f;
     border-left: 2px solid #00FF99;
 }
-@media (min-width: 450px) {
+@media (min-width: 530) {
     .header .content .nav {        /* Tablet / PC */
-        background-color: transparent;
+        background-color: #022a5f;
     }
     /*  Cor da página selecionada   */
     .header .current {
@@ -242,7 +242,7 @@ header {
 }
 
 .header .social {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     padding-bottom: 20px;
     right: -100%;
