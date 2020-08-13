@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Básica</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../../../../global.css">
+
+    <link rel = "icon" type = "image/png" href="../../../../src/tillteBar.png"  sizes="16x16"/>
+    <link rel = "apple-touch-icon" type = "image/png" href = "../../../../src/tillteBar.png"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../../global.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +26,7 @@
                 <img src="../../../../src/icons/menu.svg" alt="">                                        <!-- <i class="fas fa-bars"> </i> -->
             </a>
 
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <p>
                     <span class="nav-close" style="float: right;" onclick="closenmenu()">
                         <i class="fas fa-bars"><img src="../../../../src/icons/x.svg" alt=""></i>
@@ -34,7 +40,7 @@
                 </ul>
             </nav>
 
-            <nav class="social">
+            <nav class="social" id="social">
                 <ul>
                     <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="../../../../src/icons/linkedin.svg" alt=""> </a></li>
                     <li> <a href="https://www.facebook.com/brunoamaia94"> <img src="../../../../src/icons/facebook.svg" alt=""> </a></li>
@@ -46,91 +52,104 @@
     </header>
 
     <section class="projeto">
-        <header>
-            <h1>Calculadora Básica</h1>
-        </header>
-        
-        <p>Calculadora básica utilizando apenas HTML5, CSS3 e JavaScript. 
-            Primeiro está sendo ajustado o layout da calculadora (para treino do CSS). 
-            Posteriomente serão adicionadas as funções (via JavaScript)</p>
-        
-        <div class="corpo">
-            <div id="arrowup"></div>
+        <div class="section_a">
+            <header>
+                <h1>Calculadora Básica</h1>
+            </header>
             
-            <div id="exit">
-                <div id="display"></div>
-                <div id="history"></div>
+            <p>Calculadora básica utilizando apenas HTML5, CSS3 e JavaScript. 
+                Primeiro está sendo ajustado o layout da calculadora (para treino do CSS). 
+                Posteriomente serão adicionadas as funções (via JavaScript)</p>
+            
+            <div class="corpo">
+                <div id="arrowup"></div>
+                
+                <div id="exit">
+                    <div id="display"></div>
+                    <div id="history"></div>
+                </div>
+    
+                <div id="arrowdown"></div>
+    
+                <div class="line">
+                    <!-- <div> <button class="clearElement" onclick="clearelement()" alt="Botão com a função de limpar o elemento digitado">CE</button> </div> -->
+                    <div> <button class="clearElement" alt="Botão com a função de limpar o elemento digitado">CE</button> </div>
+                    <div> <button class="clearAll" alt="Botão com a função de limpar todos os dados">C</button> </div>
+                    <div> <button class="percent" alt="Botão com a função de porcentagem">%</button> </div>
+                    <div> <button class="sum"  alt="Botão com a função de soma">+</button> </div>
+                </div>
+                <div class="line"> 
+                    <div> <button class="seven" alt="Botão com a função de digitar o valor sete">7</button> </div>
+                    <div> <button class="eigth" alt="Botão com a função de digitar o valor oito">8</button> </div>
+                    <div> <button class="nine" alt="Botão com a função de digitar o valor nove">9</button> </div>
+                    <div> <button class="subtraction" alt="Botão com a função de subtração">-</button> </div>
+                </div>
+                <div class="line">
+                    <div> <button class="four" alt="Botão com a função de digitar o valor quatro">4</button> </div>
+                    <div> <button class="five" alt="Botão com a função de digitar o valor cinco">5</button> </div>
+                    <div> <button class="six" alt="Botão com a função de digitar o valor seis">6</button> </div>
+                    <div> <button class="multiplication" alt="Botão com a função de miltiplicação">x</button> </div>
+                </div>
+                <div class="line">
+                    <div> <button class="one" alt="Botão com a função de digitar o valor um">1</button> </div>
+                    <div> <button class="two" alt="Botão com a função de digitar o valor dois">2</button> </div>
+                    <div> <button class="three" alt="Botão com a função de digitar o valor três">3</button> </div>
+                    <div> <button class="division" alt="Botão com a função de divisão">/</button> </div>
+                </div>
+                <div class="line">
+                    <div> <button class="zero" alt="Botão com a função de digitar o valor zero">0</button> </div>
+                    <div> <button class="signal" alt="Botão com a função de altenar o valor entre positivo e negativo">+/-</button> </div>
+                    <div> <button class="point" alt="Botão com a função de adicionar um ponto, com a função de ter valores decimais">,</button> </div>
+                    <div> <button class="resulte" alt="Botão com a função de apreesentar o resultado das operações informadas">=</button> </div>
+                </div>
             </div>
-
-            <div id="arrowdown"></div>
-
-            <div class="line">
-                <!-- <div> <button class="clearElement" onclick="clearelement()" alt="Botão com a função de limpar o elemento digitado">CE</button> </div> -->
-                <div> <button class="clearElement" alt="Botão com a função de limpar o elemento digitado">CE</button> </div>
-                <div> <button class="clearAll" alt="Botão com a função de limpar todos os dados">C</button> </div>
-                <div> <button class="percent" alt="Botão com a função de porcentagem">%</button> </div>
-                <div> <button class="sum"  alt="Botão com a função de soma">+</button> </div>
-            </div>
-            <div class="line"> 
-                <div> <button class="seven" alt="Botão com a função de digitar o valor sete">7</button> </div>
-                <div> <button class="eigth" alt="Botão com a função de digitar o valor oito">8</button> </div>
-                <div> <button class="nine" alt="Botão com a função de digitar o valor nove">9</button> </div>
-                <div> <button class="subtraction" alt="Botão com a função de subtração">-</button> </div>
-            </div>
-            <div class="line">
-                <div> <button class="four" alt="Botão com a função de digitar o valor quatro">4</button> </div>
-                <div> <button class="five" alt="Botão com a função de digitar o valor cinco">5</button> </div>
-                <div> <button class="six" alt="Botão com a função de digitar o valor seis">6</button> </div>
-                <div> <button class="multiplication" alt="Botão com a função de miltiplicação">x</button> </div>
-            </div>
-            <div class="line">
-                <div> <button class="one" alt="Botão com a função de digitar o valor um">1</button> </div>
-                <div> <button class="two" alt="Botão com a função de digitar o valor dois">2</button> </div>
-                <div> <button class="three" alt="Botão com a função de digitar o valor três">3</button> </div>
-                <div> <button class="division" alt="Botão com a função de divisão">/</button> </div>
-            </div>
-            <div class="line">
-                <div> <button class="zero" alt="Botão com a função de digitar o valor zero">0</button> </div>
-                <div> <button class="signal" alt="Botão com a função de altenar o valor entre positivo e negativo">+/-</button> </div>
-                <div> <button class="point" alt="Botão com a função de adicionar um ponto, com a função de ter valores decimais">,</button> </div>
-                <div> <button class="resulte" alt="Botão com a função de apreesentar o resultado das operações informadas">=</button> </div>
-            </div>
-
         </div>
 
-        <h3>Funcionamento da Calculadora</h3>
-        <p>Todo o funcionamento e layout da Calculadora foram criados do zero.
-            Portanto, nenhuma biblioteca/ framework foi importada/utilizada.
-        </p>
-        <p> Para reduzir a chance de ocorrer erros. 
-            Os dados só podem ser inseridos pelo teclado da calculadora.
-            Os valores são "validados" (ou não), para então serem inseridos no historico.
-            Antes de utilizar/inserir algum operador, é verificado se antes dele existe um valor ou outro operador.
-        </p>
 
-        <p> A partir dos dados informados, são criados dois vetores, sendo eles: </p>
-        <ul>
-            <li>Um vetor com os valores válidos;</li>
-            <li>Um vetor com as operações/operadores;</li>
-        </ul>
-        <p> As operações são realizadas apenas quando a tecla de "=" (igual) é precionada.</p>
-        <p> O operador de porcentagem (%) não foi configurado totalmente para expressões estensas.
-            Portanto, elas podem apresentar valores errados.
-            É recomendado utilizar porcentagem em contas mais simples.
-        </p>
-        <p> No final da página tem uma região para depuração (debug) do código.
-            Ele está configurado apenas para a resolução da expressão (pressionar "=" ). 
-        </p> 
-        <br>
+        <div class="section_b">
+            <h1>Funcionamento da Calculadora</h1>
+            <p>Todo o funcionamento e layout da Calculadora foram criados do zero.
+                Portanto, nenhuma biblioteca/ framework foi importada/utilizada.
+            </p>
+            <p> Para reduzir a chance de ocorrer erros. 
+                Os dados só podem ser inseridos pelo teclado da calculadora.
+                Os valores são "validados" (ou não), para então serem inseridos no historico.
+                Antes de utilizar/inserir algum operador, é verificado se antes dele existe um valor ou outro operador.
+            </p>
+    
+            <p> A partir dos dados informados, são criados dois vetores, sendo eles: </p>
         
-        <h3> Etapas a serem implementadas: </h3>
-        <ul>
-            <li>Ajuste do texto para não extrapolar a área do display</li>
-        </ul>
-        <details id="controlDebug">
-            <summary>Área para depuração</summary>
-            <div id="debug">Debug</div>
-        </details>
+            <div class="lista">
+                <ul>
+                    <li>Um vetor com os valores válidos;</li>
+                    <li>Um vetor com as operações/operadores;</li>
+                </ul>
+            </div>
+            <p> As operações são realizadas apenas quando a tecla de "=" (igual) é precionada.</p>
+            <p> O operador de porcentagem (%) não foi configurado totalmente para expressões estensas.
+                Portanto, elas podem apresentar valores errados.
+                É recomendado utilizar porcentagem em contas mais simples.
+            </p>
+            <p> No final da página tem uma região para depuração (debug) do código.
+                Ele está configurado apenas para a resolução da expressão (pressionar "=" ). 
+            </p> 
+            <br>
+            
+        </div>
+        
+        <div class="section_a">
+            <h1> Etapas a serem implementadas: </h1>
+            <div class="lista">
+                <ul>
+                    <li>Ajuste do texto para não extrapolar a área do display</li>
+                </ul>
+            </div>
+            <details id="controlDebug">
+                <summary>Área para depuração</summary>
+                <p id="debug"> Debug </p>
+            </details>
+        </div>
+
     </section>
     
 
