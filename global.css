@@ -109,8 +109,8 @@ Preto     #181D1F
 Cinza     #D1D1C2
 Vermelho  #D6312B
 
-Cinza Fundo:    #2A2A2A
-Preto Fundo:    #121212
+Azul C Fundo:    #023e8a
+Azul E Fundo:    #022a5f
 Fonte texto1:   #FFFFFF
 Fonte texto2:   #8c8c8c
 Verde "neon":   #00FF99
@@ -387,6 +387,10 @@ header {
     .header .content {
         max-width: 960px;
         width: 95%;
+    }
+    
+    .header .current {
+        border-bottom: 7px solid #14A76C;
     }
     
     section div p{
