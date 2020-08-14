@@ -22,7 +22,7 @@
                 <img src="../../../src/icons/menu.svg" alt="">                                        <!-- <i class="fas fa-bars"> </i> -->
             </a>
 
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <p>
                     <span class="nav-close" style="float: right;" onclick="closenmenu()">
                         <i class="fas fa-bars"><img src="../../../src/icons/x.svg" alt=""></i>
@@ -36,7 +36,7 @@
                 </ul>
             </nav>
 
-            <nav class="social">
+            <nav class="social" id="social">
                 <ul>
                     <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="../../../src/icons/linkedin.svg" alt=""> </a></li>
                     <li> <a href="https://www.facebook.com/brunoamaia94"> <img src="../../../src/icons/facebook.svg" alt=""> </a></li>
@@ -48,38 +48,45 @@
     </header>
 
     <section>
-        <header>
-            <h1>Brunoflix</h1>
-        </header>
-
-        <p> Projeto desenvoldido durante a <a href="https://www.alura.com.br/imersao-react">Imersao React</a> . Que foi promovida pela 
-            <a href="https://www.alura.com.br/"> Alura</a> entre os dias 27 e 31 de julho de 2020. 
-        </p>
-        <p>O Brunoflix é uma aplicação com o intuito de copiar (recriar) a interface da famosa <a href="https://www.netflix.com/">Netflix</a>.
-            O principal intuito foi aprender mais sobre a utilização do React na criação de páginas web. 
-            Foram também apresentadas algumas maneiras de aprimorar o layout. 
-            Tornando a experiência do usuário mais agradável.        
-        </p>
-        
-        <p>O banner a seguir, mostra um pouco da interface que foi criada. 
-            É importante ressaltar, que o conteúdo ainda será modificado. 
-            O foco foi a interface, portanto, primeiramente serão terminadas as funcionalidades. 
-            Posteriormente, o conteúdo será editado e algumas funcionalidades extras implementadas.  
-        </p>
-        
-        <img class="banner" src="./src/brunoflix_banner.png" alt="">
-        
-        <p>
-            O projeto foi postado nas plataformas da Vercel e Heroku. 
-            Para acessá-lo e ver essas funcionalidades, <a href="https://brunomaiaflix.vercel.app/">clique aqui.</a> 
+        <div class="section_a">
+            <h1>Variadoflix</h1>
+    
+            <p> Projeto desenvoldido durante a <a href="https://www.alura.com.br/imersao-react">Imersao React</a> . Que foi promovida pela 
+                <a href="https://www.alura.com.br/"> Alura</a> entre os dias 27 e 31 de julho de 2020. 
+            </p>
+            <p>O Variadoflix é uma aplicação com o intuito de copiar (recriar) a interface da famosa <a href="https://www.netflix.com/">Netflix</a>.
+                O principal intuito foi aprender mais sobre a utilização do React na criação de páginas web. 
+                Foram também apresentadas algumas maneiras de aprimorar o layout. 
+                Tornando a experiência do usuário mais agradável.        
+            </p>
             
-        </p>
-        <p> Caso queira olhar o código e quem sabe contribuir, segue o Link para o <a href="https://github.com/brunoamaia/Brunoflix">Repositório no GitHub</a>. </p>
+            <p> A imagem a seguir, mostra um pouco da interface que foi criada. 
+                É importante ressaltar, que o conteúdo ainda será modificado. 
+                O foco foi a interface, portanto, primeiramente serão terminadas as funcionalidades. 
+                Posteriormente, o conteúdo será editado e algumas funcionalidades extras implementadas.  
+            </p>
+        </div>
+
+
+        <div class="section_b">
+            <div class="quadrofig">
+                <img class="banner" src="./src/variadoflix_banner.png" alt="">
+            </div>
+        </div>
+        
+
+        <div class="section_a">
+            <p>
+                O projeto foi postado nas plataformas da Vercel e Heroku. 
+                Para acessá-lo e ver essas funcionalidades, <a href="https://variadoflix.vercel.app/">clique aqui.</a> 
+                
+            </p>
+            <p> Caso queira olhar o código e quem sabe contribuir, segue o Link para o <a href="https://github.com/brunoamaia/Brunoflix">Repositório no GitHub</a>. </p>
+        </div>
     </section>
     
     <footer> Criado em julho de 2020</footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- Usar Jquery para adicionar funcionalidades ao JavaScript  -->
-    <script src="../../../script.js"></script> <!-- Chamada do JavaScript -->
+    <script src="../../../script.js"></script>
 </body>
 </html>
