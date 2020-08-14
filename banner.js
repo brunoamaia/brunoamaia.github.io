@@ -33,7 +33,7 @@ const textArray = [
   </p>`,
   `<p>
     <b>Ecoleta</b> <br>
-    Plataforma para auxilar no descarte de materiais recicláveis.
+    Plataforma para auxiliar no descarte de materiais recicláveis.
   </p>`,
   `<p>
     <b>Flappy bird</b> <br>

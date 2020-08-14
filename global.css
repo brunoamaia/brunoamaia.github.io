@@ -187,7 +187,7 @@ section span {
 
 section div h1 {
     font: 700 'Cardo';
-    font-size: 2em;
+    font-size: 2.5em;
     padding: 0 0 0.7em 0;
     color: #00FF99;
 }
@@ -388,7 +388,7 @@ header {
         max-width: 960px;
         width: 95%;
     }
-    
+
     .header .current {
         border-bottom: 7px solid #14A76C;
     }
