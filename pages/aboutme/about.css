@@ -1,5 +1,3 @@
-*, *:before, *:after{margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}    /* Eliminar uma "borda" invisível que fica no cando da página */ 
-
 .imgPerfil {
     display: block;
     margin-left: auto;
@@ -29,4 +27,31 @@ section .soci {
 section .soci img {
     width: 5em;
     padding: 0 10px;
+}
+
+.containerDetail {
+    max-width: 960px;
+    width: 95%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+details {
+    cursor: pointer;
+}
+
+details summary {
+    font: 1.7em Belgrano;
+    color: #00FF99;
+    text-align: justify;
+}
+
+details p {
+    font: 1.5em Belgrano;
+    cursor: default;
+    width: 100vw;
+}
+
+details p:last-child {
+    padding-bottom: 1em;
 }
