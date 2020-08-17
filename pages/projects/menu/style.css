@@ -1,0 +1,57 @@
+*, *:before, *:after{margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}    /* Soft Reset */ 
+
+body {
+    background-color: #D1D1C2;
+}
+
+section {
+    color: #009EB2;
+    margin: 0 auto;
+    max-width: 950px;
+    text-align: center;
+    width: 95%;
+}
+h1 {
+    font-family: 'Fira Sans';
+    font-size: xx-large;
+}
+p {
+    font-family: 'Cookie';
+    font-size: x-large;
+}
+span {
+    font-family: 'Fira Sans';
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+
+.qrcode img {
+    width: 30%;
+    height: auto;
+}
+
+/* Ajuste Para Tablet
+*/
+@media (min-width: 490px) {
+    /*.container {
+        color: lawngreen;
+        max-width: 440px;
+    }*/
+}
+
+/* Ajuste Para PC
+*/
+@media (min-width: 700px) {
+    /*.container {
+        color: deepskyblue;
+        max-width: 650px;
+    }*/
+    
+}
