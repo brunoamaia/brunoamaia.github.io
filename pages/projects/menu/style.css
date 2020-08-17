@@ -7,6 +7,10 @@ h1 {
     font-size: xx-large;
 }
 
+li {
+    list-style: none;
+}
+
 .modelos p {
     font-family: 'Cookie';
     font-size: xx-large;
@@ -22,6 +26,7 @@ span {
 .qrcode img {
     width: 40%;
     height: auto;
+    border: 2px solid #00FF99;
 }
 
 .logoNome img {
