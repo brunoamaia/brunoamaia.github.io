@@ -16,6 +16,13 @@ span {
     font-family: 'Fira Sans';
     font-size: small;
 }
+
+section {
+    text-align: center;
+    margin: 0 auto;
+    color: orange;
+}
+
 .container {
     border: solid 3px snow;
     color: yellow;
@@ -49,7 +56,46 @@ span {
 .item {
     color: #fff;
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.backMenu {
+    text-decoration: none;
+}
+.backMenu p {
+    color: orange;
+    font-family: 'Fira Sans';
+    padding: 1em 0;
+}
+
+.powered {
+    text-align: right;
+    max-width: 960px;
+    margin: 0em auto 1em;
+}
+.init {
+    padding: 0 1em;
+    min-width: 350px;
+    width: 60%;
+}
+
+.end {
+    padding: 0 1em;
+    width: 250px;
+}
+
+.important {
+    color: whitesmoke;
+    font-family: 'Fira Sans';
+    font-size: large;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 90%;
+}
+
+.important span {
+    font: 700 'Fira Sans';
+    font-size: larger;
 }
 
 /* Ajuste Para Tablet
