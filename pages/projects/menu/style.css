@@ -1,39 +1,32 @@
-*, *:before, *:after{margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}    /* Soft Reset */ 
-
-body {
-    background-color: #D1D1C2;
-}
-
 section {
-    color: #009EB2;
-    margin: 0 auto;
-    max-width: 950px;
-    text-align: center;
-    width: 95%;
+    min-height: 90vh;
 }
+
 h1 {
     font-family: 'Fira Sans';
     font-size: xx-large;
 }
-p {
+
+.modelos p {
     font-family: 'Cookie';
-    font-size: x-large;
+    font-size: xx-large;
 }
 span {
-    font-family: 'Fira Sans';
+    font: 700 'Fira Sans';
     font-size: small;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.containersImage img {
+    border-radius: 0em;
 }
-ul {
-    list-style: none;
+.qrcode img {
+    width: 40%;
+    height: auto;
 }
 
-.qrcode img {
-    width: 30%;
+.logoNome img {
+    width: 50%;
+    min-width: 250px;
     height: auto;
 }
 

@@ -71,9 +71,43 @@ section {
     height: auto;
 }
 
-a {
+.backMenu {
     text-decoration: none;
-    color: inherit;
+}
+.backMenu p {
+    color: orange;
+    font-family: 'Fira Sans';
+    padding: 1em 0;
+}
+
+.powered {
+    text-align: right;
+    max-width: 960px;
+    margin: 0em auto 1em;
+}
+.init {
+    padding: 0 1em;
+    min-width: 350px;
+    width: 60%;
+}
+
+.end {
+    padding: 0 1em;
+    width: 250px;
+}
+
+.important {
+    color: whitesmoke;
+    font-family: 'Fira Sans';
+    font-size: large;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 90%;
+}
+
+.important span {
+    font: 700 'Fira Sans';
+    font-size: larger;
 }
 
 /* Ajuste Para Tablet
