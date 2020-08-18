@@ -23,6 +23,11 @@ section {
     color: orange;
 }
 
+.containerGeral {
+    display: grid;
+    grid-template-columns: 50px auto; 
+}
+
 .container {
     border: solid 3px snow;
     color: yellow;
@@ -57,6 +62,7 @@ section {
     color: #fff;
     display: grid;
     grid-template-columns: 30% 40% 30%;
+    padding: 10px;
 }
 
 .backMenu {
@@ -96,6 +102,19 @@ section {
 .important span {
     font: 700 'Fira Sans';
     font-size: larger;
+}
+
+/*  #*#*#*#*#   Navegação interativa  #*#*#*#*#  */
+.navigator {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    left: 10px;
+    position: fixed;
+    top: 50px;
+}
+.navigator img {
+    width: 50px;
 }
 
 /* Ajuste Para Tablet
