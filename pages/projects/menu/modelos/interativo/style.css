@@ -119,16 +119,24 @@ section {
 
 /* Ajuste Para Tablet
 */
-@media (min-width: 490px) {
+@media (min-width: 530px) {
     .container {
         color: lawngreen;
         max-width: 440px;
     }
 }
 
+
+@media (min-width: 630px) {
+    .container {
+        color: lawngreen;
+        max-width: 540px;
+    }
+}
+
 /* Ajuste Para PC
 */
-@media (min-width: 700px) {
+@media (min-width: 740px) {
     .container {
         color: deepskyblue;
         max-width: 650px;
@@ -146,5 +154,9 @@ section {
 
     span {
         font-size: medium;
+    }
+
+    .navigator {
+        left: calc((100vw - 750px)/2);
     }
 }
