@@ -53,7 +53,7 @@ section p {
 .blink::after {
     content: '|';
     opacity: 1;
-    animation: blinker 1.7s infinite;
+    animation: blinker 2s infinite;
 }
 @keyframes blinker {
     50% {
