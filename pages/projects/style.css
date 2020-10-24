@@ -6,12 +6,12 @@ section {
 .projects {
     margin: 0 auto;
     max-width: 960px;
+    padding-left: 30px;
     width: 95%;
 }
 
 .projects li {
     text-align: left;
-    text-indent: 2em;
 }
 
 .projects a {

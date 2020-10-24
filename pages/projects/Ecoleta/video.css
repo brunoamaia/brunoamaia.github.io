@@ -10,6 +10,7 @@ section {
 .section_a li {
     font: 1.5em Belgrano;
     text-align: left;
+    list-style: none;
     text-indent: 5em;
 }
 
