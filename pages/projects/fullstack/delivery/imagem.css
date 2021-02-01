@@ -1,0 +1,12 @@
+.quadrofig {
+    max-width: 960px;
+    margin: 1em auto;
+
+}
+.banner {
+    border-radius: 20px;
+    display: grid;
+    margin: 0 auto;
+    height: auto;
+    width: 80%;
+}
