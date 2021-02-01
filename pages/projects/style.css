@@ -4,16 +4,19 @@ section {
     min-height: 100vh;
 }
 .projects {
-    margin: 0 auto;
+    margin: 0 auto 20px;
     max-width: 960px;
     padding-left: 30px;
     width: 95%;
+    color:#00FF99;
+    font: 1.3em Belgrano;
 }
 
 .projects li {
     text-align: left;
 }
 
-.projects a {
-    font: 1.5em Belgrano;
+.content a {
+    color: #FFF;
+    font: 0.8em Belgrano;
 }
