@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamequiz</title>
+    <link rel = "icon" type = "image/png" href="../../../../src/tillteBar.png"  sizes="16x16"/>
+    <link rel = "apple-touch-icon" type = "image/png" href = "../../../../src/tillteBar.png"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../../global.css">
+    <link rel="stylesheet" href="imagem.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="content">
+            <!--                            Utilizar quando tiver Alguma logo -->
+            <div class="logo" style="float: left;">     <!-- Jogar o Home par a esquerda -->
+                <a href="../../../../"><img src="../../../../src/icons/home.svg" alt="Voltar para a página inicial"> </a>      <!-- <i class="fas fa-book-reader"></i> -->
+            </div>
+
+            <a href="" class="nav-toggle" style="float: right;" onclick="openmenu()">    <!-- Jogar o menu para a direita -->
+                <img src="../../../../src/icons/menu.svg" alt="">                                        <!-- <i class="fas fa-bars"> </i> -->
+            </a>
+
+            <nav class="nav" id="nav">
+                <p>
+                    <span class="nav-close" style="float: right;" onclick="closenmenu()">
+                        <i class="fas fa-bars"><img src="../../../../src/icons/x.svg" alt=""></i>
+                    </span>
+                </p>
+                <ul>
+                    <li> <a href="../../../../">Home</a> </li>
+                    <li> <a href="../../../aboutme/" >Autor</a> </li>
+                    <li> <a href="../../" class="current">Projetos</a> </li>
+                    <li> <a href="../../../reposit/"> Repositório </a> </li>
+                </ul>
+            </nav>
+
+            <nav class="social" id="social">
+                <ul>
+                    <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="../../../../src/icons/linkedin.svg" alt=""> </a></li>
+                    <li> <a href="https://www.facebook.com/brunoamaia94"> <img src="../../../../src/icons/facebook.svg" alt=""> </a></li>
+                    <!-- <li> <a href="./"> <img src="../../../src/icons/instagram.svg" alt=""> </a></li>
+                    <li> <a href="./"> <img src="../../../src/icons/twitter.svg" alt=""> </a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="section_a">
+            <header>
+                <h1>Gamequiz</h1>
+            </header>
+    
+            <p> Projeto desenvolvido durante a Imersão React Next.JS. Que foi promovida pela 
+                <a href="https://www.alura.com.br/">Alura</a> entre os dias 25 e 29 de janeiro de 2021. 
+            </p>
+            <p>
+				A proposta da semana de imersão era criar um quiz utilizando React e Next.
+				O layout foi estruturado de forma que os parametros (cores, imagens e alguns textos) fossem todos adquiridos a partir de um
+				arquivo JSON.
+			</p>
+			<p>
+				Esta estruturação se deu, devido o fato da aplicação utilizar "lambda server".
+				Essa funcionalidade permite criar uma API que diponibiliza os dados a partir de um arquivo JSON.
+				Desse modo, podemos acessar os dados de outros projetos e se utilizarem o mesmo padrão de formatação,
+				conseguimos executar esses quizes dentro da nossa estrutura.
+			</p>
+        </div>
+
+
+        <div class="section_b">
+			<p> 
+				O quiz pode ser acessado <a href="https://gamequiz.brunoamaia.vercel.app/">clicando aqui</a>.
+				Foi desenvolvido um quiz baseado em jogos clássicos de arcade, como pode ser observado na imagem a seguir.
+            </p>
+            <div class="quadrofig">
+				<a href="https://gamequiz.brunoamaia.vercel.app/">
+					<img class="banner" src="https://raw.githubusercontent.com/brunoamaia/gamequiz/main/src/assests/img/banner.png" alt="">
+				</a>
+            </div>
+
+            <p> Caso queira olhar o código e quem sabe contribuir, segue o Link para o <a href="https://github.com/brunoamaia/gamequiz">Repositório no GitHub</a>. </p>
+        </div>
+</section>
+    
+    <footer> Criado em janeiro de 2021</footer>
+
+    <script src="../../../../script.js"></script>
+</body>
+</html>
