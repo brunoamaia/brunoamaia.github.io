@@ -321,7 +321,7 @@ header {
     }
     
     .nav ul li a {
-        padding: 6px 2px 0px 2px;
+        padding: 6px 6px 0px;
         animation: .5s;
         transition-duration: 0.2s;
     }
@@ -383,6 +383,11 @@ header {
 
     .header .nav a {
         margin: 0 auto;
+    }
+
+    .header .nav ul  li {
+        margin-right: -5px;
+        margin-left: -1px;
     }
 
     .header .content {

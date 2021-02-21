@@ -5,31 +5,49 @@ const link = window.document.querySelector(".lin")
 
 const figureArray = [
   `<figure>
+  <a href="./pages/projects/frontend/gamequiz">
+  <img src="./src/portifolio/gamequiz.png" alt="Imagem da página do gamquiz">
+  </a>
+  </figure>`,
+  `<figure>
+  <a href="./pages/projects/fullstack/delivery">
+  <img src="./src/portifolio/delivery.png" alt="Imagem da página do delivery">
+  </a>
+  </figure>`,
+  `<figure>
   <a href="./pages/projects/apps/calculadora">
-  <img src="./src/portifolio/calculadora.png" alt="">
+  <img src="./src/portifolio/calculadora.png" alt="Imagem do aplicativo de calculadora">
   </a>
   </figure>`,
   `<figure>
     <a href="./pages/projects/Ecoleta">
-      <img src="./src/portifolio/ecolet.png" alt="">
+      <img src="./src/portifolio/ecolet.png" alt="Imagem da landing Pagina da Ecoleta">
     </a>
   </figure>`,
   `<figure>
     <a href="./pages/projects/games/flappybird">
-      <img src="./src/portifolio/Flapy.png" alt="">
+      <img src="./src/portifolio/Flapy.png" alt="Imagem do jogo Flappy bird">
     </a>
   </figure>`,
   `<figure>
     <a href="./pages/projects/Variadoflix">
-      <img src="./src/portifolio/variadoflix.png" alt="">
+      <img src="./src/portifolio/variadoflix.png" alt="Imagem do Variado flix">
     </a>
   </figure>`
 ]
 
 const textArray = [
   `<p>
+  <b>Gamequiz</b> <br>
+    Quiz sobre jogos clássicos.
+  </p>`,
+  `<p>
+  <b>Delivery</b> <br>
+    Plataforma de fazer e entregar pedidos.
+  </p>`,
+  `<p>
   <b>Calculadora</b> <br>
-  Calculadora básica feita com JavaScript.
+    Calculadora básica feita com JavaScript.
   </p>`,
   `<p>
     <b>Ecoleta</b> <br>
@@ -46,6 +64,8 @@ const textArray = [
 ]
 
 const linkArray = [
+  `<p><a href="./pages/projects/frontend/gamequiz"> Ver mais ... </a></p>`,
+  `<p><a href="./pages/projects/fullstack/delivery"> Ver mais ... </a></p>`,
   `<p><a href="./pages/projects/apps/calculadora"> Ver mais ... </a></p>`,
   `<p><a href="./pages/projects/Ecoleta"> Ver mais ... </a></p>`,
   `<p><a href="./pages/projects/games/flappybird"> Ver mais ... </a></p>`,
