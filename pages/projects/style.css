@@ -1,5 +1,3 @@
-*, *:before, *:after{margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}
-
 section {
     min-height: 100vh;
 }
@@ -8,7 +6,7 @@ section {
     max-width: 960px;
     padding-left: 30px;
     width: 95%;
-    color:#00FF99;
+    color: var(--bg-contrast);
     font: 1.3em Belgrano;
 }
 
@@ -16,7 +14,7 @@ section {
     text-align: left;
 }
 
-.content a {
-    color: #FFF;
+.list a {
+    color: var(--text-main);
     font: 0.8em Belgrano;
 }

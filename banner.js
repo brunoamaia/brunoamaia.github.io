@@ -64,12 +64,12 @@ const textArray = [
 ]
 
 const linkArray = [
-  `<p><a href="./pages/projects/frontend/gamequiz"> Ver mais ... </a></p>`,
-  `<p><a href="./pages/projects/fullstack/delivery"> Ver mais ... </a></p>`,
-  `<p><a href="./pages/projects/apps/calculadora"> Ver mais ... </a></p>`,
-  `<p><a href="./pages/projects/Ecoleta"> Ver mais ... </a></p>`,
-  `<p><a href="./pages/projects/games/flappybird"> Ver mais ... </a></p>`,
-  `<p><a href="./pages/projects/Variadoflix"> Ver mais ... </a></p>`
+  `<button><a href="./pages/projects/frontend/gamequiz"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/fullstack/delivery"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/apps/calculadora"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/Ecoleta"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/games/flappybird"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/Variadoflix"> Ver projeto </a></button>`
 ]
 
 

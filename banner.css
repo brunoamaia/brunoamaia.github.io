@@ -1,5 +1,5 @@
 .banner {
-	background: #022a5f;
+	background: var(--bg-main1);
 	display: grid;
 	grid-template-areas: "ilust"
 						 "resum";
@@ -60,6 +60,16 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
+}
+
+.lin button {
+	padding: 0;
+}
+
+.lin a {
+	text-decoration: none;
+	font-size: 1.2rem;
+	padding: 20px;
 }
 
 .resumo .lin p {
