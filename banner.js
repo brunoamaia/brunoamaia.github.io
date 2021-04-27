@@ -20,7 +20,7 @@ const figureArray = [
   </a>
   </figure>`,
   `<figure>
-    <a href="./pages/projects/Ecoleta">
+    <a href="./pages/projects/fullstack/Ecoleta/">
       <img src="./src/portifolio/ecolet.png" alt="Imagem da landing Pagina da Ecoleta">
     </a>
   </figure>`,
@@ -30,8 +30,13 @@ const figureArray = [
     </a>
   </figure>`,
   `<figure>
-    <a href="./pages/projects/Variadoflix">
+    <a href="./pages/projects/fullstack/Variadoflix/">
       <img src="./src/portifolio/variadoflix.png" alt="Imagem do Variado flix">
+    </a>
+  </figure>`,
+  `<figure>
+    <a href="./pages/projects/frontend/podcastr/">
+      <img src="./src/portifolio/podcastr.png" alt="Imagem do Podcastr">
     </a>
   </figure>`
 ]
@@ -60,16 +65,21 @@ const textArray = [
   `<p>
     <b>Variadoflix</b> <br>
     Plataforma que "copia" a interface da Netflix. A plataforma está disponível.
+  </p>`,
+  `<p>
+    <b>Podcastr</b> <br>
+    Plataforma para listar e ouvir podcast.
   </p>`
 ]
 
 const linkArray = [
-  `<button><a href="./pages/projects/frontend/gamequiz"> Ver projeto </a></button>`,
-  `<button><a href="./pages/projects/fullstack/delivery"> Ver projeto </a></button>`,
-  `<button><a href="./pages/projects/apps/calculadora"> Ver projeto </a></button>`,
-  `<button><a href="./pages/projects/Ecoleta"> Ver projeto </a></button>`,
-  `<button><a href="./pages/projects/games/flappybird"> Ver projeto </a></button>`,
-  `<button><a href="./pages/projects/Variadoflix"> Ver projeto </a></button>`
+  `<button><a href="./pages/projects/frontend/gamequiz/"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/fullstack/delivery/"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/apps/calculadora/"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/fullstack/Ecoleta/"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/games/flappybird/"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/fullstack/Variadoflix/"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/frontend/podcastr/"> Ver projeto </a></button>`
 ]
 
 

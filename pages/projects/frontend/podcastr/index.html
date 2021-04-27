@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Podcastr</title>
+	<link rel="icon" type="image/png" href="../../../../src/tillteBar.png" sizes="16x16" />
+	<link rel="apple-touch-icon" type="image/png" href="../../../../src/tillteBar.png" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../../../../global.css">
+	<link rel="stylesheet" href="imagem.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="content">
+			<!--                            Utilizar quando tiver Alguma logo -->
+			<div class="logo" style="float: left;">
+				<!-- Jogar o Home par a esquerda -->
+				<a href="../../../../"><img src="../../../../src/icons/home.svg" alt="Voltar para a página inicial">
+				</a> <!-- <i class="fas fa-book-reader"></i> -->
+			</div>
+
+			<a href="" class="nav-toggle" style="float: right;" onclick="openmenu()">
+				<!-- Jogar o menu para a direita -->
+				<img src="../../../../src/icons/menu.svg" alt=""> <!-- <i class="fas fa-bars"> </i> -->
+			</a>
+
+			<nav class="nav" id="nav">
+				<p>
+					<span class="nav-close" style="float: right;" onclick="closenmenu()">
+						<i class="fas fa-bars"><img src="../../../../src/icons/x.svg" alt=""></i>
+					</span>
+				</p>
+				<ul>
+					<li> <a href="../../../../">Home</a> </li>
+					<li> <a href="../../../aboutme/">Autor</a> </li>
+					<li> <a href="../../" class="current">Projetos</a> </li>
+					<li> <a href="../../../reposit/"> Repositório </a> </li>
+				</ul>
+			</nav>
+
+			<nav class="social" id="social">
+				<ul>
+					<li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img
+								src="../../../../src/icons/linkedin.svg" alt=""> </a></li>
+					<li> <a href="https://www.facebook.com/brunoamaia94"> <img src="../../../../src/icons/facebook.svg"
+								alt=""> </a></li>
+					<!-- <li> <a href="./"> <img src="../../../src/icons/instagram.svg" alt=""> </a></li>
+                    <li> <a href="./"> <img src="../../../src/icons/twitter.svg" alt=""> </a></li> -->
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section>
+		<div class="section_a">
+			<header>
+				<h1>Podcastr</h1>
+			</header>
+
+			<p> Projeto desenvolvido durante a Next Level Week 5 (nlw5). Que foi promovida pela
+				<a href="https://rocketseat.com.br/">Rocketseat</a> entre os dias 19 e 23 de abril de 2021.
+			</p>
+			<p>
+				A proposta era criar uma página para mostrar e ouvir podcast utilizando React e Next. 
+				O Next porporciona trabalhar com Static Site Generation (SSG). O que de modo resumido, 
+				é a criação de uma página estática com todo o conteúdo da página. Esta tecnologia 
+				proporciona o carregamento da página de modo mais rápido. Pois já envia a página "final" 
+				ao invés de "montar" o conteúdo após a página ter sido acessada. Além de auxiliar 
+				nos mecanismos de buscas.
+			</p>
+			<p>
+				Cada página do site pode ter sua própria regra para a atualização dessas páginas estáticas. 
+				Podendo ser mais frequente para páginas que são contantemente atualizadas e mais lenta para
+				páginas que quase não passam por atualizações.
+			</p>
+		</div>
+
+
+		<div class="section_b">
+			<p>
+				O site pode ser acessado <a href="https://programcast.vercel.app/">clicando aqui</a>.
+			</p>
+			<div class="quadrofig">
+				<a href="https://programcast.vercel.app/">
+					<img class="banner"
+						src="h../../../../../../src/img/podcastr.png"
+						alt="">
+				</a>
+			</div>
+
+			<p> Caso queira olhar o código e quem sabe contribuir, segue o Link para o <a
+					href="https://github.com/brunoamaia/podcastr">Repositório no GitHub</a>. </p>
+		</div>
+	</section>
+
+	<footer> Criado em abril de 2021</footer>
+
+	<script src="../../../../script.js"></script>
+</body>
+
+</html>
