@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,10 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="links.css">
   <title>Document</title>
 </head>
+
 <body>
 
   <header>
@@ -21,27 +24,32 @@
           <li class="nav-item"> <a href="/pages/projects">Projetos</a> </li>
           <li class="nav-item"> <a href="/pages/reposit"> Repositório </a> </li>
         </ul>
+
+        <div class="social">
+          <ul>
+            <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="../../src/icons/linkedin-eee.svg"
+                  alt=""> </a></li>
+            <li> <a href="https://github.com/brunoamaia"> <img src="../../src/icons/github-eee.svg" alt=""> </a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="social" id="social">
-        <ul>
-          <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="./src/icons/linkedin.svg" alt=""> </a></li>
-          <li> <a href="https://www.facebook.com/brunoamaia94"> <img src="./src/icons/facebook.svg" alt=""> </a></li>
-        </ul>
+      <div class="home">
+        <a href="#"><img src="../../src/icons/home-eee.svg" alt="Voltar para a página inicial"> </a>
       </div>
-
       <div class="checkbox-wrapper">
-        <input type="checkbox" id="toggle">
-        <label class="checkbox" for="toggle">
+        <input type="checkbox" id="toggleNavbar" onclick="changeStateMenu()">
+        <label class="checkbox" for="toggleNavbar">
           <div class="trace"></div>
           <div class="trace"></div>
           <div class="trace"></div>
         </label>
       </div>
-      
+
     </nav>
   </header>
 
   <script type="text/javascript" src="./index.js"></script>
 </body>
+
 </html>

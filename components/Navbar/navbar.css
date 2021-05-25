@@ -1,19 +1,10 @@
-header nav a {
+/* ####################### Simbolo de abrir e fechar menu ####################### */
+header .navbar a {
   color: inherit;
   text-decoration: none;
 }
 
-header nav .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 100vh;
-  width: 100%;
-  background-color: #022a5f;
-}
-
-header nav .checkbox {
+header .navbar .checkbox {
   position: absolute;
   top: -10px;
   right: 0;
@@ -21,60 +12,158 @@ header nav .checkbox {
   display: flex;
   justify-content: center;
 
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 70px;
   cursor: pointer;
+  z-index: 3;
 }
 
-header nav .checkbox .trace {
+header .navbar .checkbox .trace {
   position: absolute;
 
   height: 4px;
   width: 40px;
-  background-color: #FFF;
+  background-color: #EEE;
   border-radius: 4px;
 
   transition: 0.5s ease-in-out;
 }
 
-header nav .trace:first-child {
+header .navbar .trace:first-child {
   top: 20px;
   transform: rotate(0);
 }
 
-header nav .trace:nth-child(2) {
+header .navbar .trace:nth-child(2) {
   top: 30px;
   transform: rotate(0);
 }
 
-header nav .trace:last-child {
+header .navbar .trace:last-child {
   top: 40px;
   transform: rotate(0);
 }
 
-header nav #toggle {
+header .navbar #toggleNavbar {
   display: none;
 }
 
-header nav #toggle:checked + .checkbox .trace:first-child {
+header .navbar #toggleNavbar:checked + .checkbox .trace:first-child {
   transform: rotate(45deg);
   top: 35px;
 }
 
-header nav #toggle:checked + .checkbox .trace:nth-child(2) {
+header .navbar #toggleNavbar:checked + .checkbox .trace:nth-child(2) {
   transform: translateX(-100px);
   width: 30px;
   opacity: 0;
   visibility: hidden;
 }
 
-header nav #toggle:checked + .checkbox .trace:last-child {
+header .navbar #toggleNavbar:checked + .checkbox .trace:last-child {
   transform: rotate(-45deg);
   top: 35px;
 }
 
 @media (min-width: 700px) {
-  header nav .checkbox-wrapper {
+  header .navbar .checkbox-wrapper {
     display: none;
   }
+}
+
+
+/* ####################### Cofigurações Básicas Navbar #######################  */
+   
+header {
+  min-height: fit-content;
+  width: 100%;
+  color: #EEE;;
+  z-index: 1;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul a {
+  text-decoration: none;
+}
+
+header .navbar .current {
+  color: #0bf396;
+}
+
+header .navbar {
+  background-color: #181D1F;
+  height: 50px;
+}
+
+/* ************ Mobile first ************ */
+header {
+  position: fixed;
+  top: 0;
+}
+
+header .navbar .home {
+  position: fixed;
+  top: 7px;
+  left: 10px;
+}
+
+header .navbar .home img {
+  height: 35px;
+}
+
+
+/* Menu Lateral */
+header .navbar .links-pages {     
+  position: fixed;
+  top: -100%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+  height: 100%;
+  width: 100%;
+  color: #14A76C;
+  background-color: #181D1F;
+  padding: 5px 0;
+  text-decoration: none;
+  text-align: left;
+
+  z-index: 1;
+  transition: 0.8s ease-in-out;
+}
+
+header .navbar .links-pages .navbar-nav {
+  width: 100%;
+}
+
+header .navbar li a {
+  color: #EEE;
+}
+
+header .links-pages .navbar-nav li {
+  border-bottom: 1px solid #14A76C;
+  font-size: 20px;
+  padding: 0.7em 0 0.7em 30px;
+}
+
+header .links-pages .social {
+  display: flex;
+  margin: 30px auto;
+}
+
+/*  Menu das Redes Sociais  */
+header .social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .social ul img {
+  padding: 0 5px;
+  width: 2.3em;
 }
