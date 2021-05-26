@@ -1,0 +1,54 @@
+.footer-content {
+  font-size: 1.3rem;
+  background-color: #181D1F;
+  color: #EEE;
+}
+
+.footer-content a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: inherit;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* ####################### Mobile first #######################  */
+.footer-content .footer-container {
+  padding: 30px 0 20px;
+  margin: 0 auto;
+}
+
+.footer-container .footer-columns {
+  display: flex;
+  align-items: initial;
+  justify-content: space-around;
+}
+
+.footer-columns .ft-column div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-infos {
+  padding-top: 5px;
+  margin: 15px auto 0;
+  border-top: 1px solid #EEE;
+  width: 80%;
+
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* ####################### Tablet/PC #######################  */
+@media (min-width: 560px) {
+  .footer-container .footer-columns {
+    justify-content: space-evenly;
+  }
+
+  .footer-infos {
+    padding-top: 10px;
+    width: 60%;
+  }
+}
