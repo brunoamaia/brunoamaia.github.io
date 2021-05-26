@@ -65,15 +65,7 @@ header .navbar #toggleNavbar:checked + .checkbox .trace:last-child {
   top: 35px;
 }
 
-@media (min-width: 700px) {
-  header .navbar .checkbox-wrapper {
-    display: none;
-  }
-}
-
-
 /* ####################### Cofigurações Básicas Navbar #######################  */
-   
 header {
   min-height: fit-content;
   width: 100%;
@@ -98,7 +90,7 @@ header .navbar {
   height: 50px;
 }
 
-/* ************ Mobile first ************ */
+/* ####################### Mobile first #######################  */
 header {
   position: fixed;
   top: 0;
@@ -113,7 +105,6 @@ header .navbar .home {
 header .navbar .home img {
   height: 35px;
 }
-
 
 /* Menu Lateral */
 header .navbar .links-pages {     
@@ -166,4 +157,84 @@ header .social ul {
 header .social ul img {
   padding: 0 5px;
   width: 2.3em;
+}
+
+/* ####################### Tablet #######################  */
+@media (min-width: 560px) {
+  /*  Ocultar incones de navegação no Smartphone  */
+  header .navbar .checkbox-wrapper,
+  .home {
+    display: none;
+  }
+  
+  /* Resetar principais parametros do Menu */
+  header .navbar {
+    position: relative;
+    height: 50px;
+    padding: 0;
+    z-index: 0;
+  }
+
+  /* Conveter Menu Lateral em Superior */
+  header {
+    display: contents;
+  }
+  
+  header .navbar .links-pages {     
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  header .links-pages .navbar-nav,
+  header .links-pages .social {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header .links-pages .navbar-nav .nav-item {
+    border-bottom: 6px solid #181D1F;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: border 0.5s;
+  }
+
+  header .links-pages .navbar-nav li {
+    border-bottom: none;
+    padding: 5px 8px;
+  }
+
+  header .links-pages .navbar-nav .current {
+    border-bottom: 6px solid #00FF99;
+  }
+
+  header .links-pages .navbar-nav .nav-item:hover {
+    border-bottom: 6px solid #EEE;
+  }
+
+  header .navbar ul li a {
+    padding: 0;
+    margin: 0;
+  }
+
+  header .social ul img {
+    height: 35px;
+    padding: 5px 2px 0;
+  }
+}
+
+/* ####################### PC #######################  */
+@media (min-width: 1000px) {
+  header .links-pages {
+    max-width: 960px;
+    width: 95%;
+  }
 }

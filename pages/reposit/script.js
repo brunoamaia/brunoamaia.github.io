@@ -1,11 +1,4 @@
-function openmenu() {
-    //$("#nav").css("right:", 0 + "px");
-    event.preventDefault();
-    $('.nav').css({ 'right':'0px'});
-}
+import {changeStateMenu, insertNavBar} from '../../utils/components/Navbar.js'
 
-function closenmenu() {
-    //$("#nav").css("right:", 0 + "px");
-    event.preventDefault();
-    $('.nav').css({ 'right':'-100%'});
-}
+insertNavBar('projects', '../../')
+document.querySelector('#toggleNavbar').addEventListener('click', changeStateMenu)
