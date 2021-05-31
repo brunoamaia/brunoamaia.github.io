@@ -1,0 +1,50 @@
+/* ################### Cofigurações Básicas ################### */
+body {
+  background-color: var(--bg-main);
+  margin: 0 auto;
+  text-align: center;
+  color: var(--txt-main-primary);
+}
+
+body main {
+  min-height: calc(100vh - 50px - 205px);
+  width: 100%;
+}
+
+body main a {
+  color: inherit;
+}
+
+body main section p {   /*  Ajustar região do conteudo */
+  margin: 0 auto;
+  width: 95%;
+}
+
+
+
+body main .section_a,
+body main .section_b {
+  margin: 0 auto;
+}
+body main .section_a:first-child {
+  margin-top: 50px;
+}
+body main .section_a {
+  background-color: var(--bg-section-a);
+}
+
+body main .section_b {
+  background-color: var(--bg-section-b);
+}
+
+
+/* ####################### Mobile first #######################  */
+body main .section_a,
+body main .section_b {
+  width: 100%;
+}
+
+
+/* #######################    Tablet    #######################  */
+
+/* #######################      PC      #######################  */
