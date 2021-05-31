@@ -2,49 +2,125 @@
 body {
   background-color: var(--bg-main);
   margin: 0 auto;
-  text-align: center;
+  text-align: justify;
   color: var(--txt-main-primary);
 }
 
 body main {
-  min-height: calc(100vh - 50px - 205px);
+  min-height: calc(100vh - 175px);
   width: 100%;
 }
 
-body main a {
-  color: inherit;
-}
-
-body main section p {   /*  Ajustar região do conteudo */
+/* *#*#*#*# Fonts #*#*#*#* */
+body main section p {
+  font-family:'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-indent: 2em;
   margin: 0 auto;
   width: 95%;
 }
 
+body main h1 {
+  font-family:'Arvo', serif;
+  font-size: 2em;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+body main h2 {
+  font-family:'Arvo', serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+body main h3 {
+  font-family:'Arvo', serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+body main section h1,
+body main section h2,
+body main section h3 {
+  text-align: center;
+  color: var(--txt-title-section-a);
+}
 
+body main a {
+  color: inherit;
+  font-size: inherit;
+}
 
-body main .section_a,
-body main .section_b {
+body main section {
+  padding: 50px 0; 
   margin: 0 auto;
+  width: 100%;
 }
-body main .section_a:first-child {
-  margin-top: 50px;
+body main .section-a:first-child {
+  padding-top: 90px;
 }
-body main .section_a {
+body main .section-a {
   background-color: var(--bg-section-a);
 }
-
-body main .section_b {
+body main .section-b {
   background-color: var(--bg-section-b);
 }
 
-
-/* ####################### Mobile first #######################  */
-body main .section_a,
-body main .section_b {
-  width: 100%;
+/* *#*#*#*# List #*#*#*#* */
+body main .list {
+  font-size: 1.1em;
+  padding-left: 3.5em;
+  text-align: left;
+}
+body main .list li {
+  padding-bottom: 0.2em;
+}
+body main .list li:first-child {
+  margin-top: 1em;
 }
 
+body main .list.topic {
+  color: var(--txt-title-section-a);
+  font-weight: 700;
+}
 
-/* #######################    Tablet    #######################  */
+body main .list .list {
+  padding-left: 2em;
+}
+body main .list .list li a {
+  color: var(--txt-main-primary);
+  font-weight: 400;
+}
+
+body main .list .list li:first-child {
+  margin-top: 0.2em;
+}
+body main .list .list li:last-child {
+  margin-bottom: 1em;
+}
+
+/* ####################### Mobile first #######################  */
+body main section {
+  width: 100%;
+  padding: 50px 15px; 
+}
 
 /* #######################      PC      #######################  */
+@media (min-width: 1000px) {
+  body main .section-a:first-child {
+    padding-top: 50px;
+  }
+
+  body main section .section-container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  body main section p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+
+}
+

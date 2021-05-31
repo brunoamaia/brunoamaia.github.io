@@ -14,7 +14,7 @@ export function insertNavBar(currentPage, homeAddress) {
       <div class="links-pages">
         <ul class="navbar-nav ">
           <li class="nav-item ${currentPage == 'home' ? 'current' : ''}"> <a href="${homeAddress}"> Home </a> </li>
-          <li class="nav-item ${currentPage == 'autor' ? 'current' : ''}"> <a href="${homeAddress}pages/aboutme">Autor</a> </li>
+          <li class="nav-item ${currentPage == 'autor' ? 'current' : ''}"> <a href="${homeAddress}pages/aboutme">Sobre</a> </li>
           <li class="nav-item ${currentPage == 'projects' ? 'current' : ''}"> <a href="${homeAddress}pages/projects">Projetos</a> </li>
         </ul>
 
