@@ -1,7 +1,6 @@
 .footer-content {
   font-size: 1.3rem;
-  background-color: #181D1F;
-  color: #EEE;
+  background-color: var(--bg-footer-primary);
 }
 
 .footer-content a {
@@ -12,6 +11,14 @@
 
 .footer-content a:hover {
   text-decoration: underline;
+}
+
+.footer-container .footer-columns h3 {
+  color: var(--txt-footer-primary);
+}
+
+.footer-container .footer-columns a {
+  color: var(--txt-footer-secondary);
 }
 
 /* ####################### Mobile first #######################  */
@@ -34,7 +41,7 @@
 .footer-infos {
   padding-top: 5px;
   margin: 15px auto 0;
-  border-top: 1px solid #EEE;
+  border-top: 1px solid var(--bg-footer-secondary);
   width: 80%;
 
   text-align: center;

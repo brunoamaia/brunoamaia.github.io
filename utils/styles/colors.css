@@ -1,0 +1,32 @@
+:root {
+  --bg-main: #000407;
+  --bg-section-a: #023e8a;
+  --bg-section-b: #022a5f;
+  --bg-error:  #D6312B;
+  --bg-warning: #CC5602;
+
+  --bg-menu-primary: #000407;
+  --bg-menu-secondary: #BBB;
+  --bg-navbar-primary: #000407;
+  --bg-navbar-secondary: #BBB;
+  --bg-navbar-current: #14A76C;
+  --bg-navbar-activation: #EEEEEE;
+  --bg-navbar-border-primary: #14A76C;
+  --bg-navbar-border-secondary: #EEEEEE;
+  --bg-footer-primary: #000407;
+  --bg-footer-secondary: #EEEEEE;
+  --bg-botton-primary-primary: #027815;
+  --bg-botton-primary-secondary: #027815;
+
+  --txt-main-primary: #EEEEEE;
+  --txt-main-secondary: #CCCCCC;
+  --txt-title-primary: #14A76C;
+  --txt-title-secondary: #027815;
+  --txt-navbar-primary: #EEEEEE;
+  --txt-navbar-secondary: #CCCCCC;
+  --txt-footer-primary: #EEEEEE;
+  --txt-footer-secondary: #CCCCCC;
+  --txt-link-primary: #EEEEEE;
+  --txt-link-secondary: #CCCCCC;
+}
+
