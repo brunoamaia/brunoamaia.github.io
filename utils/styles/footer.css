@@ -1,11 +1,11 @@
 .footer-content {
-  font-size: 1.3rem;
+  font-family:'Montserrat', sans-serif;
+  font-size: 0.8em;
   background-color: var(--bg-footer-primary);
 }
 
 .footer-content a {
   text-decoration: none;
-  font-size: 1.1rem;
   color: inherit;
 }
 
@@ -14,6 +14,9 @@
 }
 
 .footer-container .footer-columns h3 {
+  font-family:'Arvo', serif;
+  font-size: 1.2em;
+  font-weight: 700;
   color: var(--txt-footer-primary);
 }
 
@@ -45,7 +48,7 @@
   width: 80%;
 
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 /* ####################### Tablet/PC #######################  */

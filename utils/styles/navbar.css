@@ -77,7 +77,9 @@ header ul {
   list-style: none;
 }
 
-header ul a {
+header .navbar ul li a {
+  font-family:'Arvo', serif;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -208,7 +210,7 @@ header .social ul img {
 
   header .links-pages .navbar-nav li {
     border-bottom: none;
-    padding: 8px;
+    padding: 7px 8px;
   }
 
   header .links-pages .navbar-nav .current {
