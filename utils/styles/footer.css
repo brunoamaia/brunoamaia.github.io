@@ -2,6 +2,7 @@
   font-family:'Montserrat', sans-serif;
   font-size: 0.8em;
   background-color: var(--bg-footer-primary);
+  color: var(--txt-footer-secondary);
 }
 
 .footer-content a {

@@ -11,7 +11,7 @@ body main {
   width: 100%;
 }
 
-/* *#*#*#*# Fonts #*#*#*#* */
+/* *#*#*#*# Fonts/text #*#*#*#* */
 body main section p {
   font-family:'Montserrat', sans-serif;
   font-size: 1em;
@@ -26,25 +26,40 @@ body main h1 {
   font-family:'Arvo', serif;
   font-size: 2em;
   font-weight: 400;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 body main h2 {
   font-family:'Arvo', serif;
   font-size: 1.8em;
   font-weight: 400;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 body main h3 {
   font-family:'Arvo', serif;
   font-size: 1.5em;
   font-weight: 400;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 body main section h1,
 body main section h2,
 body main section h3 {
+  position: relative;
   text-align: center;
   color: var(--txt-title-section-a);
+}
+
+body main section h1::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 10%;
+
+  height: 1px;
+  width: 80%;
+  background: radial-gradient(circle, var(--txt-main-primary), var(--bg-section-a));
+}
+body .section-a .greetings h1::after {
+  display: none;
 }
 
 body main a {
@@ -56,8 +71,11 @@ body main section {
   padding: 50px 0; 
   margin: 0 auto;
   width: 100%;
+  border-bottom: 1px solid var(--bg-section-intersection);
 }
 body main .section-a:first-child {
+  /* background-color: var(--bg-section-first); */
+  background: radial-gradient(var(--bg-section-first), var(--bg-section-b));
   padding-top: 90px;
 }
 body main .section-a {
@@ -66,6 +84,73 @@ body main .section-a {
 body main .section-b {
   background-color: var(--bg-section-b);
 }
+
+/* *#*#*#*# Greetings #*#*#*#* */
+body .section-a .greetings {
+  height: calc(100vh - 140px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+body main .section-a:first-child {
+  background: radial-gradient(var(--bg-section-first-a), var(--bg-section-first-b) 130%);
+  padding-top: 90px;
+}
+
+body .section-a .greetings img {
+  width: 90%;
+  margin-top: -50px;
+}
+body .section-a .greetings h1 {
+  font-weight: 700;
+  color: var(--txt-first-primary);
+  padding: 30px 0 15px;
+}
+body .section-a .greetings p {
+  position: relative;
+  color: var(--txt-first-secondary);
+  text-indent: 0;
+  padding-bottom: 5px 0;
+  font-weight: 700;
+}
+body .section-a .greetings p::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 50px;
+
+  height: 10px;
+  width: 1px;
+}
+
+
+body .section-a .greetings .typewriter {
+  overflow: hidden;
+  border-right: .15em solid var(--txt-first-secondary);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  width: 312px;
+  animation: 
+    typing 3.5s steps(20, end),
+    blink-caret .9s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 312px }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--txt-first-secondary); }
+}
+
 
 /* *#*#*#*# List #*#*#*#* */
 body main .list {
@@ -100,10 +185,22 @@ body main .list .list li:last-child {
   margin-bottom: 1em;
 }
 
+body main section .meta-data {
+  display: none;
+}
+
 /* ####################### Mobile first #######################  */
 body main section {
   width: 100%;
   padding: 50px 15px; 
+}
+
+/* ####################### Tablet #######################  */
+@media (min-width: 560px) {
+  body main section .greetings img {
+    width: 80%;
+    max-width: 650px;
+  }
 }
 
 /* #######################      PC      #######################  */
@@ -112,9 +209,17 @@ body main section {
     padding-top: 50px;
   }
 
+  body main section p {
+    width: 100%;
+  }
+
   body main section .section-container {
     max-width: 960px;
     margin: 0 auto;
+  }
+
+  body main section .greetings img {
+    max-width: 650px;
   }
 
   body main section p {
@@ -122,5 +227,21 @@ body main section {
     line-height: 1.5em;
   }
 
+  body .section-a .greetings .typewriter {
+    width: 345px;
+    animation: 
+      typing 3.5s steps(20, end),
+      blink-caret .75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 345px }
+  }
+}
+
+@media (min-width: 1700px) {
+  body main section .section-container {
+    max-width: 1500px;
+  }
 }
 
