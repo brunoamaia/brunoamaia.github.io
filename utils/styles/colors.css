@@ -1,32 +1,37 @@
 :root {
   --bg-main: #000407;
-  --bg-section-a: #023e8a;
-  --bg-section-b: #022a5f;
+  --bg-section-a: #E0E3E0;
+  --bg-section-b: #EBEFEB;
+  --bg-section-first-a: #081E12;
+  --bg-section-first-b: #0B0B0B;
+  --bg-section-intersection: #2E2E2E;
   --bg-error:  #D6312B;
   --bg-warning: #CC5602;
 
-  --bg-menu-primary: #000407;
-  --bg-menu-secondary: #BBB;
-  --bg-navbar-primary: #000407;
-  --bg-navbar-secondary: #BBB;
-  --bg-navbar-current: #14A76C;
-  --bg-navbar-activation: #EEEEEE;
-  --bg-navbar-border-primary: #14A76C;
-  --bg-navbar-border-secondary: #EEEEEE;
+  --bg-botton-primary-primary: #BBB;
+  --bg-botton-primary-secondary: #14A76C;
   --bg-footer-primary: #000407;
   --bg-footer-secondary: #EEEEEE;
-  --bg-botton-primary-primary: #027815;
-  --bg-botton-primary-secondary: #027815;
+  --bg-menu-primary: #000407;
+  --bg-menu-secondary: #BBB;
+  --bg-navbar-activation: #EEEEEE;
+  --bg-navbar-current: #14A76C;
+  --bg-navbar-border-primary: #14A76C;
+  --bg-navbar-border-secondary: #EEEEEE;
+  --bg-navbar-primary: #000407;
+  --bg-navbar-secondary: #BBB;
 
-  --txt-main-primary: #D5D5D5;
-  --txt-main-secondary: #14A76C;
-  --txt-title-section-a: #FFFFFF;
-  --txt-title-section-b: #FFFFFF;
-  --txt-navbar-primary: #EEEEEE;
-  --txt-navbar-secondary: #CCCCCC;
+  --txt-first-primary: #FFFFFF;
+  --txt-first-secondary: #EEEEEE;
   --txt-footer-primary: #EEEEEE;
   --txt-footer-secondary: #CCCCCC;
   --txt-link-primary: #EEEEEE;
   --txt-link-secondary: #CCCCCC;
+  --txt-main-primary: #151515;
+  --txt-main-secondary: #14A76C;
+  --txt-navbar-primary: #EEEEEE;
+  --txt-navbar-secondary: #CCCCCC;
+  --txt-title-section-a: #0D0D0D;
+  --txt-title-section-b: #FFFFFF;
 }
 
