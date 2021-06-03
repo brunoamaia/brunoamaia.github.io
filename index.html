@@ -1,212 +1,307 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Primary Meta Tags -->
-    <title>Bruno Alves Maia</title>
-    <meta name="title" content="Bruno Alves Maia">
-    <meta name="description" content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
+	<!-- Primary Meta Tags -->
+	<title>Bruno Alves Maia</title>
+	<meta name="title" content="Bruno Alves Maia">
+	<meta name="description"
+		content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://brunoamaia.github.io/">
-    <meta property="og:title" content="Bruno Alves Maia">
-    <meta property="og:description" content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.jpg">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://brunoamaia.github.io/">
+	<meta property="og:title" content="Bruno Alves Maia">
+	<meta property="og:description"
+		content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
+	<meta property="og:image"
+		content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.jpg">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://brunoamaia.github.io/">
-    <meta property="twitter:title" content="Bruno Alves Maia">
-    <meta property="twitter:description" content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
-    <meta property="twitter:image" content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.jpg">
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://brunoamaia.github.io/">
+	<meta property="twitter:title" content="Bruno Alves Maia">
+	<meta property="twitter:description"
+		content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
+	<meta property="twitter:image"
+		content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.jpg">
 
 
-    <title>Bruno Alves Maia</title>
-    <link rel = "icon" type = "image/png" href="/src/tillteBar.png"  sizes="16x16"/>
-    <link rel = "apple-touch-icon" type = "image/png" href = "/src/tillteBar.png"/>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+	<title>Bruno Alves Maia</title>
+	<link rel="icon" type="image/png" href="/src/tillteBar.png" sizes="16x16" />
+	<link rel="apple-touch-icon" type="image/png" href="/src/tillteBar.png" />
 
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="banner.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@300;400;700&display=swap"
+		rel="stylesheet">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script 
-        async src="https://www.googletagmanager.com/gtag/js?id=UA-181309436-1">
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        
-        gtag('config', 'UA-181309436-1');
-    </script>
+	<!-- <link rel="stylesheet" href="global.css">  -->
+	<link rel="stylesheet" href="banner.css">
+
+	<link rel="stylesheet" href="./utils/styles/resetStyle.css">
+	<link rel="stylesheet" href="./utils/styles/colors.css">
+	<link rel="stylesheet" href="./utils/styles/navbar.css">
+	<link rel="stylesheet" href="./utils/styles/body.css">
+	<link rel="stylesheet" href="./utils/styles/footer.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-181309436-1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-181309436-1');
+	</script>
 
 </head>
 
 <body>
-    <header class="header">
-        <div class="content">
-            <!--                            Utilizar quando tiver Alguma logo -->
-            <div class="logo" >     <!-- Jogar o Home par a esquerda -->
-                <a href="#"><img src="./src/icons/home.svg" alt="Voltar para a página inicial"> </a>      <!-- <i class="fas fa-book-reader"></i> -->
-            </div>
-            
-            <a href="" class="nav-toggle" onclick="openmenu()">    <!-- Jogar o menu para a direita -->
-                <img src="./src/icons/menu.svg" alt="">                                        <!-- <i class="fas fa-bars"> </i> -->
-            </a>
-            
-            <nav class="nav" id="nav">
-                <p>
-                    <span class="nav-close" onclick="closenmenu()">
-                        <i class="fas fa-bars"><img src="./src/icons/x.svg" alt=""></i>
-                    </span>
-                </p>
-                <ul>
-                    <li> <a href="/" class="current"> Home </a> </li>
-                    <li> <a href="/pages/aboutme">Autor</a> </li>
-                    <li> <a href="/pages/projects">Projetos</a> </li>
-                    <li> <a href="/pages/reposit"> Repositório </a> </li>
-                    <!--  <li> <a href="./../../../../../index.html"> Origem </a> </li> -->
-                </ul>
-            </nav>
-            
-            <nav class="social" id="social">
-                <ul>
-                    <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="./src/icons/linkedin.svg" alt=""> </a></li>
-                    <li> <a href="https://www.facebook.com/brunoamaia94"> <img src="./src/icons/facebook.svg" alt=""> </a></li>
-                    <!-- <li> <a href="#"> <img src="./src/icons/instagram.svg" alt=""> </a></li>
-                    <li> <a href="#"> <img src="./src/icons/twitter.svg" alt=""> </a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <section>
-        <div class="section_a">
-            <div class="inicio">
-                <img src="./src/logo_ini.png" alt="logo com o nome: Bruno Maia">
-                <br>
-                <span>Bruno Alves Maia</span>
-                <p class="blink"> &lt;Desenvolvedor Web/&gt; </p>
-                <br> <br> <br>
-            </div>
-        </div>
-        
-        <div class="section_b">
-            <h1>Quem sou eu?</h1>
-            <p>Olá, me chamo Bruno Alves Maia. Sou graduado em Matemática Industrial e 
-                mestre em Modelagem e Otimização pela UFG (Universidade Federal de Goiás).
-                Sou curioso desde criança, o que me motivou a estudar algumas áreas diferentes.
-            </p>
-            <p>
-                Após atuar em algumas áreas, decidi migrar para a programação. 
-                Devido principalmente ao fato de ser uma área ligada diretamente à tecnologia. 
-                Pois sempre fui fascinado pela tecnologia e suas inovações. 
-                O que torna está profissão, algo bem empolgante, já que é parte essencial do nosso cotidiano.
-            </p>
-            <p>Para mais detalhes, 
-                <a href="/pages/aboutme/">
-                    clique aqui.
-                </a>
-            </p>
-           
-        </div>
+	<header>
+		<nav class="navbar">
+			<div class="links-pages">
+				<ul class="navbar-nav ">
+					<li class="nav-item current"> <a href="./"> Home </a> </li>
+					<li class="nav-item"> <a href="./pages/aboutme">Sobre</a> </li>
+					<li class="nav-item"> <a href="./pages/projects">Projetos</a> </li>
+				</ul>
 
-        <div class="section_a">
-            <h1>Portifólfio</h1>
+				<div class="social">
+					<ul>
+						<li>
+							<a href="https://www.linkedin.com/in/brunoamaia94/">
+								<img src="./src/icons/linkedin-eee.svg" alt="logo do linkedin">
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/brunoamaia">
+								<img src="./src/icons/github-eee.svg" alt="logo do github">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-            <p>A seguir, estão alguns projetos criados para praticar os conceitos aprendidos, 
-                ou que foram realizados em algum curso/evento.
-            </p> <br>
+			<div class="mobile-control">
+				<div class="home">
+					<a href="./"><img src="./src/icons/home-eee.svg" alt="Voltar para a página inicial"> </a>
+				</div>
+				<div class="checkbox-wrapper" onclick="changeStateMenu()">
+					<input type="checkbox" id="toggleNavbar">
+					<label class="checkbox" for="toggleNavbar">
+						<div class="trace"></div>
+						<div class="trace"></div>
+						<div class="trace"></div>
+					</label>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-            <div class="banner">
-                <div class="ilustracao">
-                    <figure>
-                        <a href="./pages/projects/frontend/gamequiz/">
-                            <img src="./src/portifolio/gamequiz.png" alt="">
-                        </a>
-                    </figure>
-                </div>
+	<main>
+		<section class="section-a">
+			<article class="section-container greetings">
+				<h1 class="meta-data">Bruno Alves Maia</h1>
+				<h2 class="meta-data">Olá, me chamo Bruno. Estudo desenvolvimento web e mobile.
+					Nesta página, apresentarei um pouco do que aprendi em alguns cursos, ou criando
+					projetos e/ou atualizando projetos.
+				</h2>
+				<img src="../../src/img/undraw_developer_activity.svg" alt="logo com o nome: Bruno Maia">
+				<br>
+				<h1>Bruno Maia</h1>
+				<p class="typewriter">Desenvolvedor web e mobile.</p>
+			</article>
+		</section>
 
-                <div class="resumo">
-                    <div class="conteudo">
-                        <div class="navbanner">
-                            <div class="arrowbanner">
-                                <button onclick="clickPrevious()">
-                                    <img src="./src/icons/arrow-left-circle.svg" alt="ver o projeto anterior">
-                                </button>
-                                <button onclick="clickNext()" >
-                                    <img src="./src/icons/arrow-right-circle.svg" alt="ver o próximo projeto">
-                                </button>
-                            </div>
-                        </div>
+		<section class="section-b">
+			<article class="section-container">
+				<h1>Sobre mim</h1>
+				<p>Olá, meu nome é Bruno, sou graduado em Matemática Industrial e
+					mestre em Modelagem e Otimização pela UFG (Universidade Federal de Goiás).
+					Ao longo do tempo, tive diversos contatos com a área da programação,
+					indo de Controladores Lógicos Programáveis (CLP) à kits de robótica da LEGO.
+				</p>
+				<p>
+					Por ser apaixonado por tecnologia e possuir experiência com programação,
+					passei a ter curiosidade com a área de desenvolvimento web e mobile.
+					Depois de um tempo, passei comecei a estudar as linguagens de modo autodidata.
+					Atualmente, têm aproximadamente um ano que venho estudando algumas linguagens
+					e ferramentas, para ter um melhor entendimento de suas funcionalidades e
+					principais aplicações. Entre as tecnologias aprendidas, posso citar: JavaScript
+					(com React, Angular, React Native e Node), Java (com Spring, Gradle e Maven),
+					Kotlin, Python e PHP. Além de bancos de dados e gerenciadores de pacotes.
+				</p>
+				<p>
+					Atualmente estou buscando uma oportunidade de atuar como programador Jr.
+					para poder iniciar minha carreira profissional nessa área. Posteriormente,
+					pretendo criar um projeto para auxiliar quem deseja entrar na área, mas
+					ainda é necessário estudar qual forma pode ser mais viável/eficiente.
+					Caso tenha se interessado em algo, tenha qualquer sugestão, ou queira me
+					conhecer melhor, entre em contato pelo
+					<a href="https://www.linkedin.com/in/brunoamaia94/">LinkedIn</a> ou
+					<a href="mailto:brunoamaia94@gmail.com">e-mail</a>.
+				</p>
 
-                        <div class="bannerdescription">
-                            <div class="text">
-                                <p>
-                                    <b>Gamequiz</b> <br>
-                                    Quiz sobre jogos clássicos.
-                                    <a href=""></a>
-                                </p>
-                            </div>
-    
-                        </div>
+				<p>
+					<a href="/pages/aboutme/">
+						Clique aqui, para ver mais detalhes.
+					</a>
+				</p>
+			</article>
+		</section>
 
-                        <div class="lin">
-                            <button>
-                                <a href="./pages/projects/frontend/gamequiz"> Ver projeto</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-            <p>  
-                Para ver mais projetos, 
-                <a href="/pages/projects">
-                   clique aqui.
-                </a>
-            </p>
-        </div>
+		<section class="section-a">
+			<article class="section-container">
+				<h1>Portifólfio</h1>
 
-        <div class="section_b">
-            <h1>Contatos</h1>
-            <div class="contacts">
-                <div>
-                    <figure>
-                        <a href="mailto:brunoamaia94@gmail.com">
-                            <img src="./src/icons/mail.svg" alt="Entre em contato por email">
-                        </a>
-                    </figure>
-                </div>
+				<p>A seguir, estão alguns projetos criados para praticar os conceitos aprendidos,
+					ou que foram realizados em algum curso/evento.
+				</p> <br>
 
-                <div>
-                    <figure>
-                        <a href="https://www.linkedin.com/in/brunoamaia94/">
-                            <img src="./src/icons/linkedin.svg" alt="Entre em contato por email">
-                        </a>
-                    </figure>
-                </div>
+				<div class="portfolio-container">
+					<div class="portfolio-img">
+						<figure>
+							<img src="./src/portifolio/Flapy.png" alt="imagem do jogo flappybird.">
+							<figcaption>
+								<p>
+									<a href="">
+										Clique aqui para acessar a aplicação
+									</a>
+								</p>
+							</figcaption>
+						</figure> 
+					</div>
+					<div class="portfolio-text">
+						<h1><a href="./pages/projects/games/flappybird/">Flappy Bird</a></h1>
+						<p>
+							Réplica desse jogo que foi uma "febre coletiva" utilizando Canvas e JavaScript. 
+							O jogo está totalmente funcoional e pode ter algumas configurações modificadas.
+						</p>
+					</div>
+				</div>
 
-            </div>
-            <br>
-        </div>
+				<div class="portfolio-container inverted">
+					<div class="portfolio-img">
+						<figure>
+							<img 
+								src="./src/portifolio/ecolet.png" 
+								alt="Imagem da tela inicial da aplicação Ecoleta. A imagem mostra 
+								pessoas descartando materiais recicláveis nos lixos corretos."
+							>
+							<figcaption>
+								<p>
+									<a href="">
+										Clique aqui para acessar a aplicação
+									</a>
+								</p>
+							</figcaption>
+						</figure> 
+					</div>
+					<div class="portfolio-text">
+						<h1><a href="./pages/projects/fullstack/Ecoleta/">Ecoleta</a></h1>
+						<p>
+							O Ecoleta é uma aplicação voltada à coleta de materiais recicláveis 
+							e lixo orgânico. Foi construido com React.js e Node.js. 
+							A aplicação possui as versões web e mobile.
+						</p>
+					</div>
+				</div>
 
-        
-    </section>
-    
-    <footer>
-        <p>Criado em julho de 2020 </p>
-        <p>Versão 2</p>
-    </footer>
-    
-    <script src="script.js"></script> <!-- Interatividade da Navbar -->
-    <script src="banner.js"></script> <!-- Interatividade do Banner -->
+				<div class="portfolio-container">
+					<div class="portfolio-img">
+						<figure>
+							<img 
+								src="./src/portifolio/delivery.png" 
+								alt="Imagem da tela inicial da aplicação Delivery. A imagem mostra 
+								um entregador chegando com um pacote com comida na casa da cliente."
+							>
+							<figcaption>
+								<p>
+									<a href="">
+										Clique aqui para acessar a aplicação
+									</a>
+								</p>
+							</figcaption>
+						</figure> 
+					</div>
+					<div class="portfolio-text">
+						<h1><a href="./pages/projects/fullstack/delivery/">Delivery</a></h1>
+						<p>
+							O Delivery é uma aplicação no sistema delivery. Como um ponto diferencial
+							ela possui um mapa para que o cliente possa selecionar para onde enviar o pedido. 
+							A plataforma foi desenvolvida com Java e React. 
+						</p>
+					</div>
+				</div>
+
+				<div class="portfolio-container inverted">
+					<div class="portfolio-img">
+						<figure>
+							<img 
+								src="./src/portifolio/podcastr.png" 
+								alt="imagem do player de podcast do Podcastr."
+							>
+							<figcaption>
+								<p>
+									<a href="">
+										Clique aqui para acessar a aplicação
+									</a>
+								</p>
+							</figcaption>
+						</figure> 
+					</div>
+					<div class="portfolio-text">
+						<h1><a href="./pages/projects/frontend/podcastr/">Podcastr</a></h1>
+						<p>
+							O Podcastr é uma aplicação com o foco de ececutar Podcast. 
+							Ele está tulizando um banco de dados locais, mas posteriormente poderá
+							acessar os dados de uma api. A api não foi desenvolvida ainda.
+						</p>
+					</div>
+				</div>
+
+				<p>
+					<a href="./pages/projects">
+						Clique aqui, para ver mais projetos.
+					</a>
+				</p>
+			</article>
+		</section>
+	</main>
+
+	<footer class="footer-content">
+		<div class="footer-container">
+			<div class="footer-columns">
+				<div class="ft-column">
+					<h3>Navegação</h3>
+
+					<div>
+						<a href="./">Home</a>
+						<a href="./pages/aboutme">Sobre</a>
+						<a href="./pages/projects">Portifólfio</a>
+					</div>
+				</div>
+
+				<div class="ft-column">
+					<h3>Social</h3>
+
+					<div>
+						<a href="https://www.linkedin.com/in/brunoamaia94/">Linkedin</a>
+						<a href="https://github.com/brunoamaia">Github</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-infos">
+				<p>Entre em contato para conhecer melhor e/ou informar problemas. </p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./utils/scripts/navbar.js"></script>
 </body>
+
 </html>
