@@ -20,6 +20,7 @@ body main section p {
   text-indent: 2em;
   margin: 0 auto;
   width: 95%;
+  padding-bottom: 10px;
 }
 
 body main section span {
@@ -255,6 +256,31 @@ body main section {
   display: none;
 }
 
+/* *#*#*#*# Contact #*#*#*#* */
+main section .contact-me {
+  display: flex;
+  flex-direction: column;
+}
+
+main section .contact-me .text-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main section .contact-me h2 {
+  padding: 30px 0 10px;
+}
+
+main section .contact-me .text-link p {
+  text-indent: 0;
+  font-weight: 700;
+  width: min-content;
+  margin: 0;
+  padding: 0 0 3px 5px;
+  color: var(--txt-main-secondary);
+}
+
 
 /* ####################### Tablet #######################  */
 @media (min-width: 560px) {
@@ -387,6 +413,13 @@ body main section {
   @keyframes typing {
     from { width: 0 }
     to { width: 345px }
+  }
+
+  /* *#*#*#*# Contact #*#*#*#* */
+  main section .contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
