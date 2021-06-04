@@ -227,8 +227,18 @@ header .social ul img {
 
   header .social ul img {
     height: 35px;
-    padding: 5px 2px 0;
+    padding: 5px 0 0;
+    margin-left: 20px;
   }
+
+  header .social ul img:hover {
+    animation: navbar-social 0.8s ease-in-out infinite;
+  }
+  @keyframes navbar-social {
+    25% {transform: rotate(20deg);}
+    75% {transform: rotate(-20deg);}
+  }
+  
 }
 
 /* ####################### PC #######################  */

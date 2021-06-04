@@ -97,7 +97,7 @@ body main .section-b {
 
 /* *#*#*#*# Greetings #*#*#*#* */
 body .section-a .greetings {
-  height: calc(100vh - 140px);
+  min-height: calc(100vh - 140px);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -138,8 +138,8 @@ body main section .greetings .typewriter {
   border-right: .15em solid var(--txt-first-secondary);
   white-space: nowrap;
   margin: 0 auto;
-  /*letter-spacing: .15em; */
-  width: 225px;
+  letter-spacing: .05em;
+  width: 270px;
   animation: 
     typing 3.5s steps(20, end),
     blink-caret .9s step-end infinite;
@@ -147,7 +147,7 @@ body main section .greetings .typewriter {
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 225px }
+  to { width: 270px }
 }
 @keyframes blink-caret {
   from, to { border-color: transparent }
@@ -233,11 +233,16 @@ body main section {
 .portfolio-img figure figcaption {
   display: none;
 }
-.portfolio-container .portfolio-img img {
+.portfolio-container .portfolio-img figure {
   border: 1px solid var(--bg-portfolio-border);
   border-radius: 20px;
   height: 89vw;
   width: 80vw;
+  overflow: hidden;
+}
+.portfolio-container .portfolio-img figure img {
+  height: 100%;
+  width: 100%;
 }
 
 .portfolio-container .portfolio-text {
@@ -258,6 +263,19 @@ body main section {
     max-width: 650px;
   }
 
+  /* *#*#*#*# Greetings #*#*#*#* */
+  body main section .greetings .typewriter {
+    letter-spacing: .15em;
+    width: 345px;
+    animation: 
+      typing 3.5s steps(20, end),
+      blink-caret .9s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 345px }
+  }
+
   /* *#*#*#*# Portfolio #*#*#*#* */
   .portfolio-container {
     flex-direction: row;
@@ -271,10 +289,57 @@ body main section {
     padding-top: 0;
   }
 
-  .portfolio-container .portfolio-img img {
+  .portfolio-container .portfolio-img figure {
+    position: relative;
     height: auto;
     min-width: 50%;
     max-width: 180px;
+    transition: 0.5s;
+  }
+
+  /* *#*#*#*# Portfolio - animation *#*#*#*#* */
+  .portfolio-container .portfolio-img figure figcaption {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -150%;
+    padding: 60px 0;
+    margin-left: -20px;
+    height: 240px;
+    width: 215px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .portfolio-container .portfolio-img figure:hover > figcaption {
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  .portfolio-container .portfolio-img figure figcaption p {
+    text-indent: 0;
+    text-align: left;
+    width: 55%;
+    color: transparent;
+    transition: 0.5s;
+  }
+  .portfolio-container .portfolio-img figcaption:hover > p {
+    color: var(--txt-first-primary);
+    animation: text-portfolio 1s ease-in;
+  }
+  @keyframes text-portfolio {
+    0% {color: transparent;}
+    60% {color: transparent;}
+    85% {color: var(--txt-first-primary);}
+    100% {color: var(--txt-first-primary);}
+  }
+
+  .portfolio-container .portfolio-img figure img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+  }
+  .portfolio-container .portfolio-img figure:hover > img {
+    transform: scale(1.2);
   }
   
   .portfolio-container .portfolio-text {
