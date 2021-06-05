@@ -22,6 +22,8 @@
   --bg-navbar-secondary: #BBB;
   --bg-portfolio: #FFF;
   --bg-portfolio-border: #696969;
+  --bg-year-border: #14A76C;
+  --bg-year-border-transparent: rgba(20, 167, 108, 0.5);
 
   --txt-first-primary: #FFFFFF;
   --txt-first-secondary: #EEEEEE;
