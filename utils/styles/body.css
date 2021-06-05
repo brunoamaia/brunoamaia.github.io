@@ -124,12 +124,20 @@ body section .greetings h1 {
   color: var(--txt-first-primary);
   padding: 20px 0 10px;
 }
+body section .greetings h2 {
+  font-weight: 500;
+  color: var(--txt-first-primary);
+}
 body section .greetings p {
   position: relative;
   color: var(--txt-first-secondary);
   text-indent: 0;
   padding-bottom: 5px 0;
   font-weight: 700;
+}
+
+body section .greetings figure .imgPerfil {
+  border-radius: 50%;
 }
 
 body main section .greetings .typewriter {
@@ -147,8 +155,8 @@ body main section .greetings .typewriter {
 }
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 270px }
+  from { width: 0; }
+  to { width: 270px; }
 }
 @keyframes blink-caret {
   from, to { border-color: transparent }
@@ -280,7 +288,6 @@ main section .contact-me .text-link p {
   padding: 0 0 3px 5px;
   color: var(--txt-main-secondary);
 }
-
 
 /* ####################### Tablet #######################  */
 @media (min-width: 560px) {

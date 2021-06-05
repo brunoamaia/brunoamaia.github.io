@@ -15,7 +15,7 @@ header .navbar .checkbox {
   height: 60px;
   width: 70px;
   cursor: pointer;
-  z-index: 3;
+  z-index: 23;
 }
 
 header .navbar .checkbox .trace {
@@ -69,7 +69,7 @@ header {
   min-height: fit-content;
   width: 100%;
   color: var(--txt-navbar-primary);
-  z-index: 1;
+  z-index: 20;
 }
 
 header ul {
@@ -124,7 +124,7 @@ header .navbar .links-pages {
   text-decoration: none;
   text-align: left;
 
-  z-index: 1;
+  z-index: 20;
   transition: 0.8s ease-in-out;
 }
 
