@@ -195,6 +195,7 @@ body main .list.topic {
 
 body main .list .list {
   padding-left: 2em;
+  font-weight: 400;
 }
 body main .list .list li a {
   color: var(--txt-main-primary);

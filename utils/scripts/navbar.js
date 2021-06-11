@@ -1,5 +1,5 @@
 function changeStateMenu() {
-  let state = document.getElementById("toggleNavbar").checked;
+  let state = document.getElementById("toggleNavbar").checked
 
   if (state) {
     document.querySelector(".links-pages").style.top = "0px"
@@ -9,3 +9,5 @@ function changeStateMenu() {
     document.querySelector("body").style.overflow = "visible"
   }
 }
+
+let state = document.getElementById("toggleNavbar").checked = false

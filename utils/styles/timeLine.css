@@ -84,6 +84,15 @@ main section .historic .historic-data h3 {
   text-align: left;
 }
 
+main section .historic .year .historic-data p span {
+  color: var(--txt-main-third);
+  font-weight: 600;
+}
+
+main section .historic .year .historic-data details summary {
+  cursor: pointer;
+}
+
 main section .historic .year .historic-data details span {
   color: var(--txt-main-third);
   font-family:'Arvo', serif;
