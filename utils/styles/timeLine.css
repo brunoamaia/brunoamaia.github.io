@@ -76,11 +76,19 @@ main section .historic .year .value h2::before {
 
 main section .historic .historic-data {
   padding: 0 0 0 20px;
+  width: calc(100vw - 30px);
 }
 
 main section .historic .historic-data h3 {
   padding: 25px 0 10px 10px;
   text-align: left;
+}
+
+main section .historic .year .historic-data details span {
+  color: var(--txt-main-third);
+  font-family:'Arvo', serif;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 /* ####################### Tablet #######################  */
@@ -105,6 +113,10 @@ main section .historic .historic-data h3 {
   main section .historic .year.inverted .historic-data {
     position: relative;
     padding: 10px 25px 0 100px;
+  }
+
+  main section .historic .year .historic-data details {
+    position: relative;
   }
 
   /* *#*#*#*# lines of time to tablet *#*#*#*#* */
@@ -159,6 +171,7 @@ main section .historic .historic-data h3 {
   main section .historic .year {
     flex-direction: row;
     justify-content: space-between;
+    width: 960px;
   }
   main section .historic .year.inverted {
     flex-direction: row-reverse;
