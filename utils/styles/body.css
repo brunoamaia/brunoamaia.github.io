@@ -149,6 +149,19 @@ body main .section-a.normal:first-child  {
 
 body main .section-a.normal .section-container h1{
   color: var(--txt-main-primary);
+  padding-bottom: 30px;
+}
+
+body main .section-a.normal .section-container h1::after{
+  display: contents;
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+
+  height: 1px;
+  width: 80%;
+  background: radial-gradient(circle, var(--txt-main-primary), var(--bg-section-a));
 }
 
 body main .section-a.normal .section-container p{
@@ -265,10 +278,33 @@ body main section .meta-data {
   display: none;
 }
 
-body main .section-container .video-container {
+/* *#*#*#*# Generic Models #*#*#*#* */
+body main .section-container .container-centred {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+body main .section-container .control button { 
+  margin: 15px 20px 30px;
+}
+
+body main .section-container .btn {
+  border: 0;
+  border-radius: 10px;
+  height: 60px;
+  padding: 0 auto;
+  
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+  text-align: center;
+  
+  color: var(--txt-botton-primary);
+  background: var(--bg-botton-primary);
+  transition: filter 0.2s;
+}
+body main .section-container .btn.md {
+  width: 80px;
 }
 
 /* ####################### Mobile first #######################  */
