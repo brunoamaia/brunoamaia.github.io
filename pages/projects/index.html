@@ -1,171 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Primary Meta Tags -->
-    <title>Projetos | Bruno Alves Maia</title>
-    <meta name="title" content="Bruno Alves Maia">
-    <meta name="description" content="Um pouco dos projetos que desenvolvi.">
+	<!-- Primary Meta Tags -->
+	<title>Bruno Alves Maia | Projetos </title>
+	<meta name="title" content="Bruno Alves Maia | Projetos">
+	<meta name="description" content="Um pouco dos projetos que desenvolvi.">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://brunoamaia.github.io/">
-    <meta property="og:title" content="Bruno Alves Maia">
-    <meta property="og:description" content="Um pouco dos projetos que desenvolvi.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.jpg">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://brunoamaia.github.io/">
+	<meta property="og:title" content="Bruno Alves Maia | Projetos">
+	<meta property="og:description" content="Um pouco dos projetos que desenvolvi.">
+	<meta property="og:image"
+		content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.jpg">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://brunoamaia.github.io/">
-    <meta property="twitter:title" content="Bruno Alves Maia">
-    <meta property="twitter:description" content="Um pouco dos projetos que desenvolvi.">
-    <meta property="twitter:image" content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.jpg">
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://brunoamaia.github.io/">
+	<meta property="twitter:title" content="Bruno Alves Maia | Projetos">
+	<meta property="twitter:description" content="Um pouco dos projetos que desenvolvi.">
+	<meta property="twitter:image"
+		content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.jpg">
 
-    <link rel = "icon" type = "image/png" href="../../src/tillteBar.png"  sizes="16x16"/>
-    <link rel = "apple-touch-icon" type = "image/png" href = "../../src/tillteBar.png"/>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="../../src/tillteBar.png" sizes="16x16" />
+	<link rel="apple-touch-icon" type="image/png" href="../../src/tillteBar.png" />
 
-    <link rel="stylesheet" href="../../global.css"/>
-    <link rel="stylesheet" href="style.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@300;400;700&display=swap"
+		rel="stylesheet">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-181309436-1">
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-181309436-1');
-    </script>
-    
+	<!-- <link rel="stylesheet" href="../../global.css"/>
+    <link rel="stylesheet" href="style.css"> -->
+
+	<link rel="stylesheet" href="../../utils/styles/resetStyle.css">
+	<link rel="stylesheet" href="../../utils/styles/colors.css">
+	<link rel="stylesheet" href="../../utils/styles/navbar.css">
+	<link rel="stylesheet" href="../../utils/styles/body.css">
+	<link rel="stylesheet" href="../../utils/styles/footer.css">
+	<link rel="stylesheet" href="../../utils/styles/timeLine.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-181309436-1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-181309436-1');
+	</script>
+
 </head>
 
 <body>
-    <header class="header">
-        <div class="content">
-            <!--                            Utilizar quando tiver Alguma logo -->
-            <div class="logo" style="float: left;">     <!-- Jogar o Home par a esquerda -->
-                <a href="../../"><img src="../../src/icons/home.svg" alt="Voltar para a página inicial"> </a>      <!-- <i class="fas fa-book-reader"></i> -->
-            </div>
+	<header>
+		<nav class="navbar">
+			<div class="links-pages">
+				<ul class="navbar-nav ">
+					<li class="nav-item"> <a href="../../"> Home </a> </li>
+					<li class="nav-item"> <a href="../../pages/aboutme">Sobre</a> </li>
+					<li class="nav-item current"> <a href="../../pages/projects">Projetos</a> </li>
+				</ul>
 
-            <a href="" class="nav-toggle" style="float: right;" onclick="openmenu()">    <!-- Jogar o menu para a direita -->
-                <img src="../../src/icons/menu.svg" alt="">                                        <!-- <i class="fas fa-bars"> </i> -->
-            </a>
+				<div class="social">
+					<ul>
+						<li>
+							<a href="https://www.linkedin.com/in/brunoamaia94/">
+								<img src="../../src/icons/linkedin-eee.svg" alt="logo do linkedin">
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/brunoamaia">
+								<img src="../../src/icons/github-eee.svg" alt="logo do github">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-            <nav class="nav" id="nav">
-                <p>
-                    <span class="nav-close" style="float: right;" onclick="closenmenu()">
-                        <i class="fas fa-bars"><img src="../../src/icons/x.svg" alt=""></i>
-                    </span>
-                </p>
-                <ul>
-                    <li> <a href="../../">Home</a> </li>
-                    <li> <a href="../aboutme/">Autor</a> </li>
-                    <li> <a href="#" class="current">Projetos</a> </li>
-                    <li> <a href="../reposit/"> Repositório </a> </li>
-                </ul>
-            </nav>
+			<div class="mobile-control">
+				<div class="home">
+					<a href="../../"><img src="../../src/icons/home-eee.svg" alt="Voltar para a página inicial"> </a>
+				</div>
+				<div class="checkbox-wrapper" onclick="changeStateMenu()">
+					<input type="checkbox" id="toggleNavbar">
+					<label class="checkbox" for="toggleNavbar">
+						<div class="trace"></div>
+						<div class="trace"></div>
+						<div class="trace"></div>
+					</label>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-            <nav class="social" id="social">
-                <ul>
-                    <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> 
-                        <img src="../../src/icons/linkedin.svg" alt="Ícone do Linkedin, com link para acessar o perfil"> 
-                    </a></li>
-                    <li> <a href="https://www.facebook.com/brunoamaia94"> 
-                        <img src="../../src/icons/facebook.svg" alt="Ícone do Facebook, com link para acessar o perfil"> 
-                    </a></li>
-                    <!-- <li> <a href="./"> 
-                        <img src="../../src/icons/instagram.svg" alt="Ícone do Instagram, com link para acessar o perfil"> 
-                    </a></li>
-                    <li> <a href="./"> 
-                        <img src="../../src/icons/twitter.svg" alt="Ícone do Twitter, com link para acessar o perfil"> 
-                    </a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
+	<main>
+		<section class="section-a init">
+			<article class="section-container">
+				<h1>Meus projetos</h1>
 
-    <section>
-        <div class="section_a">
-            <header>
-                <h1>Meus projetos</h1>
-            </header>
-            
-            <p>Aqui serão colocados os projetos que realizei e que estou fazendo. 
-                Como vou estudando de acordo com os problemas que acho mais importante. 
-                Alguns projetos podem ficar parados por tempo indeterminado. Mas o objetivo é terminar os projetos.
-            </p>
-        </div>
+				<p>
+					Aqui estão alguns projetos que realizei e que estou fazendo, sendo alguns, 
+					desenvolvidos em cursos e outros, desenvolvidos para praticar conceitos.
+					Alguns projetos podem ficar parados por tempo indeterminado, devido a 
+					iniciar cursos novos ou projetos privados.
+				</p>
+			</article>
+		</section>
 
-        <div class="section_b">
-            <p>Estão listados alguns dos projetos elaborados. Estão agrupados pela "tecnologia" utilizada:</p> 
-            <ul class="projects">
-                <li> JavaScript Vanilla </li>
-                <ul class="projects list">
-                    <li> <a href="./apps/calculadora/">Calculadora básica</a> </li>
-                    <li> <a href="./frontend/criptomoeda/">Consulta de Criptomoeda [Bootstrap]</a> </li> 
-                    <li> <a href="../../teste-frontend/">Landing page - Coursify.me</a> </li> 
-                    <li> <a href="./vanilla/site/">Desenvolvimento deste site</a> </li>
-                    <li> <a href="./vanilla/Manager/">Gerenciador de Produção (Projeto pessoal)</a> </li>
-                </ul>
-                
-                <li>Jogos: JavaScript Vanilla + Canvas</li>
-                <ul class="projects list">
-                    <li> <a href="./games/flappybird/">Flappy Bird</a> </li>
-                    <li> <a href="../../jogo-cobrinha/">Jogo da cobrinha</a> </li>
-                </ul>
+		<section class="section-b">
+			<article class="section-container">
+				<h2>Pincipais projetos</h2>
+				<p>
+					Por estar aprendendo "tecnologias" diferentes, separei os projetos de 
+					acordo com as principais ferramentas utilizadas. Cada link leva a uma 
+					página que explica de forma mais detalhada como o projeto funciona.
+				</p>
 
-                <li> React.js </li>
-                <ul class="projects list">
-                    <li> <a href="./fullstack/delivery/">Delivery</a> </li>
-                    <li> <a href="./fullstack/Ecoleta/">Ecoleta</a> </li>
-                    <li> <a href="./frontend/gamequiz/">Gamequiz</a> </li>
-                    <li> <a href="./frontend/podcastr/">Podcastr</a> </li>
-                    <li> <a href="./fullstack/Variadoflix/">Variadoflix</a> </li>
-                </ul>
-                <li> Angular.js </li>
-                <ul class="projects list">
-                    <li> <a href="./frontend/tempo/">Previsão do tempo</a> </li>
-                </ul>
-                
-                <li>Node.js</li>
-                <ul class="projects list">
-                    <li> <a href="./fullstack/Ecoleta/">Ecoleta</a> </li>
-                </ul>
-                
-                <li> Java </li>
-                <ul class="projects list">
-                    <li> <a href="./fullstack/delivery/">Delivery</a> </li>
-                </ul>
+				<ul class="list topic">
+					<li> JavaScript Vanilla </li>
+					<ul class="list">
+						<li> <a href="./apps/calculadora/">Calculadora básica</a> </li>
+						<li> <a href="./frontend/criptomoeda/">Consulta de Criptomoeda [Bootstrap]</a> </li>
+						<li> <a href="../../teste-frontend/">Landing page - Coursify.me</a> </li>
+						<li> <a href="./vanilla/site/">Desenvolvimento deste site</a> </li>
+						<li> <a href="./vanilla/Manager/">Gerenciador de Produção (Projeto pessoal)</a> </li>
+					</ul>
 
-                <li>Mobile (React Native)</li>
-                <ul class="projects list">
-                    <li> <a href="./fullstack/delivery/">Delivery</a> </li>
-                    <li> <a href="./fullstack/Ecoleta/">Ecoleta</a> </li>
-                </ul>
+					<li>Jogos: JavaScript Vanilla + Canvas</li>
+					<ul class="list">
+						<li> <a href="./games/flappybird/">Flappy Bird</a> </li>
+						<li> <a href="../../jogo-cobrinha/">Jogo da cobrinha</a> </li>
+					</ul>
 
-                <li>Projetos de teste</li>
-                <ul class="projects list">
-                    <li> 
-                        <a href="https://brunoamaia.github.io/frontend-projects/">
-                            Projetos que testam algumas funcionalidades
-                        </a>
-                    </li>
-                </ul>
-            </ul>
-        </div>
+					<li> React.js </li>
+					<ul class="list">
+						<li> <a href="./fullstack/delivery/">Delivery</a> </li>
+						<li> <a href="./fullstack/Ecoleta/">Ecoleta</a> </li>
+						<li> <a href="./frontend/gamequiz/">Gamequiz</a> </li>
+						<li> <a href="./frontend/podcastr/">Podcastr</a> </li>
+						<li> <a href="./fullstack/Variadoflix/">Variadoflix</a> </li>
+					</ul>
+					<li> Angular.js </li>
+					<ul class="list">
+						<li> <a href="./frontend/tempo/">Previsão do tempo</a> </li>
+					</ul>
 
+					<li>Node.js</li>
+					<ul class="list">
+						<li> <a href="./fullstack/Ecoleta/">Ecoleta</a> </li>
+					</ul>
 
-    </section>
-    
-    <footer>
-        Criado em maio/2020
-    </footer>
+					<li> Java </li>
+					<ul class="list">
+						<li> <a href="./fullstack/delivery/">Delivery</a> </li>
+					</ul>
 
-    <script src="../../script.js"></script> <!-- Chamada do JavaScript -->
+					<li>Mobile (React Native)</li>
+					<ul class="list">
+						<li> <a href="./fullstack/delivery/">Delivery</a> </li>
+						<li> <a href="./fullstack/Ecoleta/">Ecoleta</a> </li>
+					</ul>
+
+					<li>Projetos de teste</li>
+					<ul class="list">
+						<li>
+							<a href="https://brunoamaia.github.io/frontend-projects/">
+								Projetos que testam algumas funcionalidades
+							</a>
+						</li>
+					</ul>
+				</ul>
+			</article>
+		</section>
+
+	</main>
+
+	<footer class="footer-content">
+		<div class="footer-container">
+			<div class="footer-columns">
+				<div class="ft-column">
+					<h3>Navegação</h3>
+
+					<div>
+						<a href="../../">Home</a>
+						<a href="../../pages/aboutme">Sobre</a>
+						<a href="../../pages/projects">Portifólfio</a>
+					</div>
+				</div>
+
+				<div class="ft-column">
+					<h3>Social</h3>
+
+					<div>
+						<a href="https://www.linkedin.com/in/brunoamaia94/">Linkedin</a>
+						<a href="https://github.com/brunoamaia">Github</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-infos">
+				<p>Entre em contato para conhecer melhor e/ou informar problemas.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../../utils/scripts/navbar.js"></script>
 </body>
+
 </html>

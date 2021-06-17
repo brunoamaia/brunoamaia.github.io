@@ -69,6 +69,7 @@ body main section h1::after {
   width: 80%;
   background: radial-gradient(circle, var(--txt-main-primary), var(--bg-section-a));
 }
+body main .section-a:first-child h1::after,
 body .section-a .greetings h1::after {
   display: none;
 }
@@ -111,6 +112,9 @@ body main .section-a:first-child {
   background: radial-gradient(var(--bg-section-first-a), var(--bg-section-first-b) 130%);
   padding-top: 90px;
 }
+body main .section-a.init {
+  background: var(--bg-section-first-a);
+}
 
 body section .greetings {
   color: var(--txt-first-secondary);
@@ -119,14 +123,20 @@ body section .greetings img {
   width: 90%;
   margin-top: -50px;
 }
+body main .section-a:first-child h1,
 body section .greetings h1 {
   font-weight: 700;
   color: var(--txt-first-primary);
   padding: 20px 0 10px;
 }
+body main .section-a:first-child p,
 body section .greetings h2 {
   font-weight: 500;
   color: var(--txt-first-primary);
+  font-size: 1.5em;
+  text-align: justify;
+  text-indent: 1em;
+  margin-top: 40px;
 }
 body section .greetings p {
   position: relative;
@@ -219,6 +229,10 @@ body main section {
   padding: 50px 15px; 
 }
 
+body main .section-a:first-child {
+  min-height: 100vh;
+}
+
 
 /* *#*#*#*# Portfolio #*#*#*#* */
 .portfolio-container {
@@ -295,6 +309,10 @@ main section .contact-me .text-link p {
   body main section .greetings img {
     width: 80%;
     max-width: 650px;
+  }
+
+  body main .section-a:first-child {
+    min-height: auto;
   }
 
   /* *#*#*#*# Greetings #*#*#*#* */
