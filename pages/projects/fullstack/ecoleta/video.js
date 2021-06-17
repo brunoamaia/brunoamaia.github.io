@@ -1,6 +1,5 @@
-const video = document.querySelector(".video")
+const video = document.querySelector(".video-container")
 let windowsInit = window.innerWidth;
-
 
 function resize() {
   let route = 'https://www.youtube.com/embed/Vy96B0IjAso'
@@ -19,8 +18,6 @@ function resize() {
   }
 }
 
-resize()
-
 function modification() {
   let windowsNow = window.innerWidth;
   if (windowsInit != windowsNow) {
@@ -30,11 +27,9 @@ function modification() {
 
   timer()
 }
-
-
-
 function timer() {
   setTimeout(modification, 200)
 }
 
+resize()
 window.onload = modification();
