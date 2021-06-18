@@ -1,0 +1,140 @@
+.banner {
+	background: var(--bg-main1);
+	display: grid;
+	grid-template-areas: "ilust"
+						 "resum";
+	grid-gap: 10px;
+	padding: 0;
+	margin: 1em auto;
+	align-self: flex-start;
+	justify-self: start;
+	width: 90%;
+}
+
+.banner div {
+	padding: 0;
+	margin: 0;
+}
+
+.ilustracao {
+	height: 100vw;
+}
+
+.ilustracao img {
+	border-radius: 0;
+	grid-area: ilust;
+	width: 100%;
+	height: auto;
+}
+
+
+.resumo {
+	grid-area: resum;
+	margin: 1em !important;
+	height: 420px;
+}
+
+.navbanner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: fit-content;
+}
+
+.arrowbanner img {
+	width: 50px;
+}
+
+.navbanner button {
+	padding: 0;
+	margin: 0;
+	height: fit-content;
+	background: transparent;
+}
+
+.conteudo {
+	position: relative;
+	height: 100%;
+}
+.resumo .lin {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.lin button {
+	padding: 0;
+}
+
+.lin a {
+	text-decoration: none;
+	font-size: 1.2rem;
+	padding: 20px;
+}
+
+.resumo .lin p {
+	text-indent: 0;
+	width: 300px;
+}
+
+/* Configurações para tela de Tablet/PC
+----------------------------------------------------- */
+@media (min-width: 600px){
+	.banner {
+		grid-template-areas: "ilust resum";
+		grid-template-columns: 1fr 1fr;
+		max-width: 960px;
+	}
+
+	.ilustracao {
+		height: calc(100vw /2) ;
+		max-height: 530px;
+	}
+	
+	.resumo {
+		height: auto;
+	}
+	
+}
+
+/* Animação da Contagem regressiva
+----------------------------------------------------- */
+/*
+#countdown {
+	position: absolute;
+	right: 5px;
+	top: 0;
+}
+
+#countdown-number {
+	color: white;
+	display: inline-block;
+	line-height: 40px;
+}
+
+svg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+	stroke-dasharray: 113px;
+	stroke-dashoffset: 0px;
+	stroke-width: 4px;
+	stroke: #00FF99;
+	fill: none;
+	animation: countdown 3s linear infinite forwards;
+}
+
+@keyframes countdown {
+	from {
+		stroke-dashoffset: 0px;
+	}
+	to {
+		stroke-dashoffset: 113px;
+	}
+}*/
