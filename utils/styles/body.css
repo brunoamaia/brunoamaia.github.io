@@ -184,7 +184,7 @@ body section .greetings h1 {
   color: var(--txt-first-primary);
   padding: 20px 0 10px;
 }
-body main .section-a:first-child p,
+body main .section-a.normal p,
 body section .greetings h2 {
   font-weight: 500;
   color: var(--txt-first-primary);

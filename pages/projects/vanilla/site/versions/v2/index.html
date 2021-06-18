@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Bruno Alves Maia</title>
+    <meta name="title" content="Bruno Alves Maia">
+    <meta name="description" content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brunoamaia.github.io/">
+    <meta property="og:title" content="Bruno Alves Maia">
+    <meta property="og:description" content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://brunoamaia.github.io/">
+    <meta property="twitter:title" content="Bruno Alves Maia">
+    <meta property="twitter:description" content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.jpg">
+
+
+    <title>Bruno Alves Maia</title>
+    <link rel = "icon" type = "image/png" href="/src/tillteBar.png"  sizes="16x16"/>
+    <link rel = "apple-touch-icon" type = "image/png" href = "/src/tillteBar.png"/>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/banner.css">
+
+    <!-- Google Analytics 
+    <script 
+        async src="https://www.googletagmanager.com/gtag/js?id=UA-181309436-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-181309436-1');
+    </script>
+	-->
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="content">
+            <div class="logo" >
+                <a href="#"><img src="./src/icons/home.svg" alt="Voltar para a página inicial"> </a>
+            </div>
+            
+            <a href="" class="nav-toggle" onclick="openmenu()">
+                <img src="./src/icons/menu.svg" alt="">
+            </a>
+            
+            <nav class="nav" id="nav">
+                <p>
+                    <span class="nav-close" onclick="closenmenu()">
+                        <i class="fas fa-bars"><img src="./src/icons/x.svg" alt=""></i>
+                    </span>
+                </p>
+                <ul>
+                    <li> <a href="/" class="current"> Home </a> </li>
+                    <li> <a href="../../">Versões do Site</a> </li>
+                </ul>
+            </nav>
+            
+            <nav class="social" id="social">
+                <ul>
+                    <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="./src/icons/linkedin.svg" alt=""> </a></li>
+                    <li> <a href="./"> <img src="./src/icons/facebook.svg" alt=""> </a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section>
+        <div class="section_a">
+            <div class="inicio">
+                <img src="./src/logo_ini.png" alt="logo com o nome: Bruno Maia">
+                <br>
+                <span>Bruno Alves Maia</span>
+                <p class="blink"> &lt;Desenvolvedor Web/&gt; </p>
+                <br> <br> <br>
+            </div>
+        </div>
+        
+        <div class="section_b">
+            <h1>Quem sou eu?</h1>
+            <p>Olá, me chamo Bruno Alves Maia. Sou graduado em Matemática Industrial e 
+                mestre em Modelagem e Otimização pela UFG (Universidade Federal de Goiás).
+                Sou curioso desde criança, o que me motivou a estudar algumas áreas diferentes.
+            </p>
+            <p>
+                Após atuar em algumas áreas, decidi migrar para a programação. 
+                Devido principalmente ao fato de ser uma área ligada diretamente à tecnologia. 
+                Pois sempre fui fascinado pela tecnologia e suas inovações. 
+                O que torna está profissão, algo bem empolgante, já que é parte essencial do nosso cotidiano.
+            </p>
+            <p>Para mais detalhes, 
+                <a href="/pages/aboutme/">
+                    clique aqui.
+                </a>
+            </p>
+           
+        </div>
+
+        <div class="section_a">
+            <h1>Portifólfio</h1>
+
+            <p>A seguir, estão alguns projetos criados para praticar os conceitos aprendidos, 
+                ou que foram realizados em algum curso/evento.
+            </p> <br>
+
+            <div class="banner">
+                <div class="ilustracao">
+                    <figure>
+                        <a href="../../../../frontend/gamequiz">
+                            <img src="./src/portifolio/gamequiz.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="resumo">
+                    <div class="conteudo">
+                        <div class="navbanner">
+                            <div class="arrowbanner">
+                                <button onclick="clickPrevious()">
+                                    <img src="./src/icons/arrow-left-circle.svg" alt="ver o projeto anterior">
+                                </button>
+                                <button onclick="clickNext()" >
+                                    <img src="./src/icons/arrow-right-circle.svg" alt="ver o próximo projeto">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bannerdescription">
+                            <div class="text">
+                                <p>
+                                    <b>Gamequiz</b> <br>
+                                    Quiz sobre jogos clássicos.
+                                    <a href=""></a>
+                                </p>
+                            </div>
+    
+                        </div>
+
+                        <div class="lin">
+                            <button>
+                                <a href="../../../../frontend/gamequiz"> Ver projeto</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <p>  
+                Para ver mais projetos, 
+                <a href="/pages/projects">
+                   clique aqui.
+                </a>
+            </p>
+        </div>
+
+        <div class="section_b">
+            <h1>Contatos</h1>
+            <div class="contacts">
+                <div>
+                    <figure>
+                        <a href="mailto:brunoamaia94@gmail.com">
+                            <img src="./src/icons/mail.svg" alt="Entre em contato por email">
+                        </a>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure>
+                        <a href="https://www.linkedin.com/in/brunoamaia94/">
+                            <img src="./src/icons/linkedin.svg" alt="Entre em contato por email">
+                        </a>
+                    </figure>
+                </div>
+
+            </div>
+            <br>
+        </div>
+
+        
+    </section>
+    
+    <footer>
+        <p>Criado em julho de 2020 </p>
+        <p>Versão 2</p>
+    </footer>
+    
+    <script src="./js/banner.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
