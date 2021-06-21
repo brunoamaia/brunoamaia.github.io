@@ -2,7 +2,7 @@
 // saida - control of the Principal display
 // lista - control of the Second display (historic)
 
-var display = document.querySelector('div#display')
+var display = document.querySelector('div#actual')
 var histor = document.querySelector('div#history')
 
 class exit {

@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Calculator";
+  src: url("./font/Calculator.ttf");
+}
+
+:root {
+  --bg-calc-body: #000407;
+	--bg-calc-display: #FFFFFF;
+	--bg-calc-btn-primary: #202B30;
+	--bg-calc-btn-secondary: #044b25;
+
+	--txt-calc-btn-primary: #EEEEEE; 
+	--txt-calc-btn-secondary: #06a52e; 
+	--txt-calc-display: #071115; 	
+}
+
+.calculator-body {
+	position: relative;
+	background-color:  var(--bg-calc-body);
+	padding: 1em 15px;
+	border-radius: 20px;
+	margin: 0 auto;
+	width: 300px;
+}
+
+.calculator-body #display {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+
+	font-family: 'Calculator', 'Arvo', serif;
+  font-size: 2em;
+  font-weight: 400;
+	color: var(--txt-calc-btn-primary);
+	background-color: var(--bg-calc-btn-primary);
+
+	width: 270px;
+	height: fit-content;
+	margin: 10px 0 20px;
+	object-fit: cover;
+}
+
+.calculator-body #actual {
+	height: 1em;
+	font-size: 1.8em;
+	padding-right: 5px;
+	margin: 0;
+}
+
+.calculator-body #history {
+	padding-right: 5px;
+	height: 1.2em;
+}
+.calculator-body #history .error {
+	color: #FF0000;
+}
+
+.calculator-body .line button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-family:'Arvo', serif;
+  font-size: 1.5em;
+  font-weight: 400;
+
+	padding: 0;
+	margin: 5px;
+	height: 60px;
+	width: 60px;
+	border: none;
+	border-radius: 50%;
+	background-color: var(--bg-calc-btn-secondary);
+	color: var(--txt-calc-btn-secondary);
+}
+
+.calculator-body .line .number {
+	background-color: var(--bg-calc-btn-primary);
+	color: var(--txt-calc-btn-primary);
+}
+
+.calculator-body .line {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
