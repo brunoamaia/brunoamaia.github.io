@@ -60,7 +60,6 @@ export default function calculateResult(actualValue, historicInput) {
 		console.log(`actual: ${actualValue} | history ${historicInput}`)
 	}
 
-
 	// actualValue = '0'
 	// display('fullValues', actualValue, historicInput)
 

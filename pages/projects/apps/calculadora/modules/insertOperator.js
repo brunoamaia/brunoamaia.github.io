@@ -12,7 +12,7 @@ function hasValidValues(actualValue, historicInput) {
 		} else {
 			position = historicInput.length
 		}
-	
+
 	} else if (historicInput.length <= 2) {
 		// validate first value of historic
 		if (historicInput[0] != '0000') {
