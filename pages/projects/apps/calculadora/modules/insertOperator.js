@@ -1,21 +1,39 @@
 import display from './displayControl.js';
 
 function hasValidValues(actualValue, historicInput) {
-  // validate actual value
-  let isValid = false
-  if (actualValue != 0) {
-    isValid = true
-  }
-
-  // find position
   let position = -1
-  if (historicInput.length == 1) {
-    position = 0
+  let operation = 'error'
+
+  if (actualValue != 0) {
+    // validate actual value
+    operation = 'insert'
+    if (historicInput.length == 1) {
+      position = 0
+    } else {
+      position = historicInput.length
+    }
+	
+  } else if (historicInput.length <= 2) {
+    // validate first value of historic
+    if (historicInput[0] != '0000') {
+      operation = 'update'
+      position = 1
+    }
   } else {
-    position = historicInput.length
+    if (historicInput.length % 2 == 0) {
+      operation = 'update'
+      position = historicInput.length - 1
+    }
   }
 
-  return [isValid, position]
+  return [operation, position]
+}
+
+function changeLasOperator(historicInput, operator, position) {
+  historicInput[position] = operator
+  display('fullValues', '0', historicInput)
+
+  return historicInput
 }
 
 function insertNewOperator(actualValue, historicInput, operator, position) {
@@ -32,19 +50,15 @@ export default function insertOperator(actualValue, historicInput, operator) {
     operator: / (division), x (multiplication), % (percentage), - (subtraction), + (sum)
   */
   let [canInsertOperator, position] = hasValidValues(actualValue, historicInput)
-  if (canInsertOperator) {
+
+  if (canInsertOperator == 'insert') {
     [actualValue, historicInput] = insertNewOperator(actualValue, historicInput, operator, position)
 
-  } /* else if (historicInput.length == 1 && (historicInput[0] != '0000' | historicInput[0] != '0' )) {
-    [actualValue, historicInput] = insertNewOperator(actualValue, historicInput, operator, position)
-  } */ else {
-    let canChangeOperator = (historicInput.length % 2 == 0) ? true : false
-    if (canChangeOperator && historicInput.length > 1) {
-      historicInput[historicInput.length - 1] = operator
-      display('fullValues', actualValue, historicInput)
-    } else if (historicInput.length == 1) {
-      display('error3')
-    }
+  } else if (canInsertOperator == 'update') {
+    historicInput = changeLasOperator(historicInput, operator, position)
+
+  } else {
+    display('error3')
   }
 
   return [actualValue, historicInput]
