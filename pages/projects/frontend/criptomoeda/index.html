@@ -1,99 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criptomoeda</title>
-    <link rel = "icon" type = "image/png" href="../../../../src/tillteBar.png"  sizes="16x16"/>
-    <link rel = "apple-touch-icon" type = "image/png" href = "../../../../src/tillteBar.png"/>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../../../global.css">
-    <link rel="stylesheet" href="imagem.css">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Primary Meta Tags -->
+	<title>Projetos | Criptomoeda</title>
+	<meta name="title" content="Projetos | Criptomoeda">
+	<meta name="description" content="Projeto que exibe vários dados atuais das principais criptomoedas utilizando a api da Coin Market Cap.">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://brunoamaia.github.io/">
+	<meta property="og:title" content="Projetos | Criptomoeda">
+	<meta property="og:description" content="Projeto que exibe vários dados atuais das principais criptomoedas utilizando a api da Coin Market Cap.">
+	<meta property="og:image"
+		content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/img/criptomoeda.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://brunoamaia.github.io/">
+	<meta property="twitter:title" content="Projetos | Criptomoeda">
+	<meta property="twitter:description" content="Projeto que exibe vários dados atuais das principais criptomoedas utilizando a api da Coin Market Cap.">
+	<meta property="twitter:image"
+		content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/img/criptomoeda.png">
+
+	<link rel="icon" type="image/png" href="../../../../src/tillteBar.png" sizes="16x16" />
+	<link rel="apple-touch-icon" type="image/png" href="../../../../src/tillteBar.png" />
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@300;400;700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="../../../../utils/styles/resetStyle.css">
+	<link rel="stylesheet" href="../../../../utils/styles/colors.css">
+	<link rel="stylesheet" href="../../../../utils/styles/navbar.css">
+	<link rel="stylesheet" href="../../../../utils/styles/body.css">
+	<link rel="stylesheet" href="../../../../utils/styles/footer.css">
+	<link rel="stylesheet" href="../../../../utils/styles/timeLine.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <div class="content">
-            <!--                            Utilizar quando tiver Alguma logo -->
-            <div class="logo" style="float: left;">     <!-- Jogar o Home par a esquerda -->
-                <a href="../../../../"><img src="../../../../src/icons/home.svg" alt="Voltar para a página inicial"> </a>      <!-- <i class="fas fa-book-reader"></i> -->
-            </div>
+	<header>
+		<nav class="navbar">
+			<div class="links-pages">
+				<ul class="navbar-nav ">
+					<li class="nav-item"> <a href="../../../../"> Home </a> </li>
+					<li class="nav-item"> <a href="../../../../pages/aboutme">Sobre</a> </li>
+					<li class="nav-item current"> <a href="../../../../pages/projects">Projetos</a> </li>
+				</ul>
 
-            <a href="" class="nav-toggle" style="float: right;" onclick="openmenu()">    <!-- Jogar o menu para a direita -->
-                <img src="../../../../src/icons/menu.svg" alt="">                                        <!-- <i class="fas fa-bars"> </i> -->
-            </a>
+				<div class="social">
+					<ul>
+						<li>
+							<a href="https://www.linkedin.com/in/brunoamaia94/">
+								<img src="../../../../src/icons/linkedin-eee.svg" alt="logo do linkedin">
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/brunoamaia">
+								<img src="../../../../src/icons/github-eee.svg" alt="logo do github">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-            <nav class="nav" id="nav">
-                <p>
-                    <span class="nav-close" style="float: right;" onclick="closenmenu()">
-                        <i class="fas fa-bars"><img src="../../../../src/icons/x.svg" alt=""></i>
-                    </span>
-                </p>
-                <ul>
-                    <li> <a href="../../../../">Home</a> </li>
-                    <li> <a href="../../../aboutme/" >Autor</a> </li>
-                    <li> <a href="../../" class="current">Projetos</a> </li>
-                    <li> <a href="../../../reposit/"> Repositório </a> </li>
-                </ul>
-            </nav>
+			<div class="mobile-control">
+				<div class="home">
+					<a href="../../../../"><img src="../../../../src/icons/home-eee.svg" alt="Voltar para a página inicial"> </a>
+				</div>
+				<div class="checkbox-wrapper" onclick="changeStateMenu()">
+					<input type="checkbox" id="toggleNavbar">
+					<label class="checkbox" for="toggleNavbar">
+						<div class="trace"></div>
+						<div class="trace"></div>
+						<div class="trace"></div>
+					</label>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-            <nav class="social" id="social">
-                <ul>
-                    <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="../../../../src/icons/linkedin.svg" alt=""> </a></li>
-                    <li> <a href="https://www.facebook.com/brunoamaia94"> <img src="../../../../src/icons/facebook.svg" alt=""> </a></li>
-                    <!-- <li> <a href="./"> <img src="../../../src/icons/instagram.svg" alt=""> </a></li>
-                    <li> <a href="./"> <img src="../../../src/icons/twitter.svg" alt=""> </a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
+	<main>
+		<section class="section-a normal">
+			<article  class="section-container">
+				<h1>Criptomoeda</h1>
+				<p> Projeto desenvolvido em um curso da
+					<a href="https://web.digitalinnovation.one/">Digital Inovation One (DIO)</a>.
+				</p>
+				<p>
+					O projeto consiste em criar uma interface para uma aplicação que busca os dados sobre Criptomoedas na API da
+					Coin Market Cap.
+					Que é uma API que fornece inúmeras informações relativas a várias Criptomoedas.
+					Como é utilizada a versão gratuita da API, apenas alguns dados são recebidos.
+				</p>
+				<p>
+					No primeiro acesso, os dados são requisitados da API. Após receber os dados, 
+					estes são salvos na seção do navegador. Deste modo, os próximos carregamentos 
+					da página não consultam a API. Esta funcionalidade foi implementada para 
+					diminuir o tráfego de dados na rede e não "estourar" o limite de acesso a API
+					(por utilizar a versão grátis). 
+				</p>
+				<p>
+					A aplicação permite ordenar os dados de acordo com as informações fornecidas pela API.
+					Para poder focar nas funcionalidades, foi utilizado Bootstrap, o que torna a criação do layout
+					mais rápida.
+					Foi implementada a opção de adiconar ou remover algumas colunas para melhorar a visualização dos dados.
+					Para praticar alguns conhecimentos com JavaScript, foram adicionadas opções que alteram o layout e também a
+					necessidade de acessar a API.
+				</p>
+			</article>
+		</section>
+		
+		<section class="section-b">
+			<article class="section-container">
+				<p>
+					A aplicação pode ser acessada <a href="https://brunoamaia.github.io/utilizando_api_de_criptomoedas/">clicando
+						aqui</a>.
+					Mas para seu funcionamento, é necessário seguir algumas regras que estão informadas na página.
+					Estas regras são essenciais para que a API possa funcionar.
+				</p>
 
-    <section>
-        <div class="section_a">
-            <header>
-                <h1>Criptomoeda</h1>
-            </header>
-    
-            <p> Projeto desenvolvido em um curso da  
-                <a href="https://web.digitalinnovation.one/">Digital Inovation One (DIO)</a>. 
-            </p>
-            <p>
-				O projeto consiste em criar uma interface para uma aplicação que busca os dados sobre Criptomoedas na API da Coin Market Cap.
-				Que é uma API que fornece inúmeras informações relativas a várias Criptomoedas.
-				Como é utilizada a versão gratuita da API, apenas alguns dados são recebidos.
-			</p>
-			<p>
-				A aplicação permite ordenar os dados de acordo com as informações fornecidas pela API.
-				Para poder focar em criar e alterar funcionalidades, foi utilizado um Bootstrap, o que torna a criação do layout mais rápida.
-				Foi implementada a opção de adiconar ou remover algumas colunas para melhorar a visualização dos dados.
-				Para praticar alguns conhecimentos JavaScript, foram adicionadas opções que alteram o layout e também a necessidade de acessar a API. 
-			</p>
-        </div>
+				<figure>
+					<a href="https://brunoamaia.github.io/utilizando_api_de_criptomoedas/">
+						<img 
+							src="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/img/criptomoeda.png" 
+							alt="Imagem da página da aplicação que busca dados sobre criptomoedas"
+							moz-reader-center="true"
+						>
+					</a>
+					<figcaption>Imagem da página da aplicação que busca dados sobre criptomoedas</figcaption>
+				</figure>
+		
+				<p> Caso queira olhar o código e quem sabe contribuir, segue o Link para o
+					<a href="https://github.com/brunoamaia/utilizando_api_de_criptomoedas">Repositório no GitHub</a>.
+				</p>
+			</article>
+		</section>
+	</main>
 
+	<footer class="footer-content">
+		<div class="footer-container">
+			<div class="footer-columns">
+				<div class="ft-column">
+					<h3>Navegação</h3>
 
-        <div class="section_b">
-			<p> 
-				A aplicação pode ser acessada <a href="https://brunoamaia.github.io/utilizando_api_de_criptomoedas/">clicando aqui</a>.
-				Mas para seu funcionamento, é necessário seguir algumas regras que estão informadas na página.
-				Estas regras são essenciais para que a API possa funcionar.
-      		</p>
-            <div class="quadrofig">
-				<a href="https://brunoamaia.github.io/utilizando_api_de_criptomoedas/">
-					<img class="banner" src="../../../../src/img/criptomoeda.png" alt="">
-				</a>
-            </div>
+					<div>
+						<a href="../../../../">Home</a>
+						<a href="../../../../pages/aboutme">Sobre</a>
+						<a href="../../../../pages/projects">Portifólfio</a>
+					</div>
+				</div>
 
-            <p> Caso queira olhar o código e quem sabe contribuir, segue o Link para o
-				<a href="https://github.com/brunoamaia/utilizando_api_de_criptomoedas">Repositório no GitHub</a>.
-			</p>
-        </div>
-</section>
-    
-    <footer> Criado em dezembro de 2020</footer>
+				<div class="ft-column">
+					<h3>Social</h3>
 
-    <script src="../../../../script.js"></script>
+					<div>
+						<a href="https://www.linkedin.com/in/brunoamaia94/">Linkedin</a>
+						<a href="https://github.com/brunoamaia">Github</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-infos">
+				<p>Entre em contato para conhecer melhor e/ou informar problemas.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../../../../utils/scripts/navbar.js"></script>
 </body>
+
 </html>

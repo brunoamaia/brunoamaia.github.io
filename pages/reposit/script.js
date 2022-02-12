@@ -1,11 +1,12 @@
-function openmenu() {
-    //$("#nav").css("right:", 0 + "px");
-    event.preventDefault();
-    $('.nav').css({ 'right':'0px'});
-}
+import {changeStateMenu, insertNavBar} from '../../utils/components/Navbar.js'
+import insertFooter from '../../utils/components/Footer.js'
 
-function closenmenu() {
-    //$("#nav").css("right:", 0 + "px");
-    event.preventDefault();
-    $('.nav').css({ 'right':'-100%'});
-}
+const directory = 'projects'
+const route = '../../'
+
+// Insert NavBar
+insertNavBar(directory, route)
+document.querySelector('#toggleNavbar').addEventListener('click', changeStateMenu)
+
+// Insert Footer
+insertFooter(route)

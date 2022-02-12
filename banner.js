@@ -30,7 +30,7 @@ const figureArray = [
     </a>
   </figure>`,
   `<figure>
-    <a href="./pages/projects/fullstack/Variadoflix/">
+    <a href="./pages/projects/fullstack/variadoflix/">
       <img src="./src/portifolio/variadoflix.png" alt="Imagem do Variado flix">
     </a>
   </figure>`,
@@ -78,7 +78,7 @@ const linkArray = [
   `<button><a href="./pages/projects/apps/calculadora/"> Ver projeto </a></button>`,
   `<button><a href="./pages/projects/fullstack/Ecoleta/"> Ver projeto </a></button>`,
   `<button><a href="./pages/projects/games/flappybird/"> Ver projeto </a></button>`,
-  `<button><a href="./pages/projects/fullstack/Variadoflix/"> Ver projeto </a></button>`,
+  `<button><a href="./pages/projects/fullstack/variadoflix/"> Ver projeto </a></button>`,
   `<button><a href="./pages/projects/frontend/podcastr/"> Ver projeto </a></button>`
 ]
 
@@ -133,3 +133,16 @@ function clickNext() {
 }
 
 window.onload = timer();
+
+
+function changeStateMenu() {
+  let state = document.getElementById("toggleNavbar").checked;
+
+  if (state) {
+    document.querySelector(".links-pages").style.top = "0px"
+    document.querySelector("body").style.overflow = "hidden"
+  } else {
+    document.querySelector(".links-pages").style.top = "-100%"
+    document.querySelector("body").style.overflow = "visible"
+  }
+}

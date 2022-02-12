@@ -1,76 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repositório</title>
-    <link rel = "icon" type = "image/png" href="../../src/tillteBar.png"  sizes="16x16"/>
-    <link rel = "apple-touch-icon" type = "image/png" href = "../../src/tillteBar.png"/>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../global.css"/>
-    <link rel="stylesheet" href="style.css">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Repositório</title>
+	<link rel="icon" type="image/png" href="../../src/tillteBar.png" sizes="16x16" />
+	<link rel="apple-touch-icon" type="image/png" href="../../src/tillteBar.png" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@300;400;700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="../../utils/styles/colors.css" />
+	<link rel="stylesheet" href="../../utils/styles/resetStyle.css" />
+	<link rel="stylesheet" href="../../utils/styles/navbar.css" />
+	<link rel="stylesheet" href="../../utils/styles/body.css" />
+	<link rel="stylesheet" href="../../utils/styles/footer.css" />
+	<!-- <link rel="stylesheet" href="../../global.css" /> -->
+	<!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
-    <header class="header">
-        <div class="content">
-            <!--                            Utilizar quando tiver Alguma logo   -->
-            <div class="logo" style="float: left;">     <!-- Jogar o Home par a esquerda -->
-                <a href="../../"><img src="../../src/icons/home.svg" alt="Voltar para a página inicial"> </a>      <!-- <i class="fas fa-book-reader"></i> -->
-            </div>
+	<header class="insert-navbar"></header>
 
-            <a href="" class="nav-toggle" style="float: right;" onclick="openmenu()">    <!-- Jogar o menu para a direita -->
-                <img src="../../src/icons/menu.svg" alt="">                                        <!-- <i class="fas fa-bars"> </i> -->
-            </a>
+	<main>
+		<section class="section-a">
+			<article class="section-container greetings">
+				<h1 class="meta-data">Bruno Alves Maia</h1>
+				<p class="meta-data">Olá, me chamo Bruno. Estudo desenvolvimento web e mobile.
+					Nesta página, apresentarei um pouco do que aprendi em alguns cursos, ou criando
+					projetos e/ou atualizando projetos.
+				</p>
+				<img src="../../src/img/undraw_developer_activity.svg" alt="logo com o nome: Bruno Maia">
+				<br>
+				<h1>Bruno Maia</h1>
+				<p class="typewriter">Desenvolvedor <span class="change-text">web e mobile</span>.</p>
+			</article>
+		</section>
 
-            <nav class="nav" id="nav">
-                <p>
-                    <span class="nav-close" style="float: right;" onclick="closenmenu()">
-                        <i class="fas fa-bars"><img src="../../src/icons/x.svg" alt=""></i>
-                    </span>
-                </p>
-                <ul>
-                    <li> <a href="../../">Home</a> </li>
-                    <li> <a href="../aboutme/" >Autor</a> </li>
-                    <li> <a href="../projects/">Projetos</a> </li>
-                    <li> <a href="" class="current"> Repositório </a> </li>
-                </ul>
-            </nav>
+		<section class="section-b">
+			<article class="section-container">
+				<h1>Sobre mim</h1>
+				<p>Olá, meu nome é Bruno, sou graduado em Matemática Industrial e
+					mestre em Modelagem e Otimização pela UFG (Universidade Federal de Goiás).
+					Ao longo do tempo, tive diversos contatos com a área da programação, 
+					indo de Controladores Lógicos Programáveis (CLP) à kits de robótica da LEGO.
+				</p>
+				<p>
+					Por ser apaixonado por tecnologia e possuir experiência com programação, 
+					passei a ter curiosidade com a área de desenvolvimento web e mobile. 
+					Depois de um tempo, passei comecei a estudar as linguagens de modo autodidata. 
+					Atualmente, têm aproximadamente um ano que venho estudando algumas linguagens 
+					e ferramentas, para ter um melhor entendimento de suas funcionalidades e 
+					principais aplicações. Entre as tecnologias aprendidas, posso citar: JavaScript 
+					(com React, Angular, React Native e Node), Java (com Spring, Gradle e Maven), 
+					Kotlin, Python e PHP. Além de bancos de dados e gerenciadores de pacotes.
+				</p>
+				<p>
+					Atualmente estou buscando uma oportunidade de atuar como programador Jr. 
+					para poder iniciar minha carreira profissional nessa área. Posteriormente, 
+					pretendo criar um projeto para auxiliar quem deseja entrar na área, mas 
+					ainda é necessário estudar qual forma pode ser mais viável/eficiente. 
+					Caso tenha se interessado em algo, tenha qualquer sugestão, ou queira me 
+					conhecer melhor, entre em contato pelo 
+					<a href="https://www.linkedin.com/in/brunoamaia94/">LinkedIn</a>  ou 
+					<a href="mailto:brunoamaia94@gmail.com">e-mail</a>.
+				</p>
 
-            <nav class="social" id="social">
-                <ul>
-                    <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="../../src/icons/linkedin.svg" alt=""> </a></li>
-                    <li> <a href="https://www.facebook.com/brunoamaia94"> <img src="../../src/icons/facebook.svg" alt=""> </a></li>
-                    <!-- <li> <a href="./"> <img src="../../src/icons/instagram.svg" alt=""> </a></li>
-                    <li> <a href="./"> <img src="../../src/icons/twitter.svg" alt=""> </a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
+				<p>Para mais detalhes,
+					<a href="/pages/aboutme/">
+						clique aqui.
+					</a>
+				</p>
+			</article>
+		</section>
 
-    <section>
-        <div class="section_a">
-            <h1>Material confeccionado</h1>
-            <p> Repositórios: </p>
-            <div class="lista">
-                <ul>
-                    <li>
-                        <a href="https://github.com/brunoamaia">Github</a> 
-                    </li>
-                </ul>
-            </div>
+		<section class="section-a">
+			<article class="section-container">
+				<h1>Portifólfio</h1>
 
-        </div>
+				<p>A seguir, estão alguns projetos criados para praticar os conceitos aprendidos,
+					ou que foram realizados em algum curso/evento.
+				</p> <br>
 
-    </section>
+				<div class="banner">
+					<div class="ilustracao">
+						<figure>
+							<a href="./pages/projects/frontend/gamequiz/">
+								<img src="./src/portifolio/gamequiz.png" alt="">
+							</a>
+						</figure>
+					</div>
 
-    <footer> Criado em maio de 2020</footer>
+					<div class="resumo">
+						<div class="conteudo">
+							<div class="navbanner">
+								<div class="arrowbanner">
+									<button onclick="clickPrevious()">
+										<img src="./src/icons/arrow-left-circle.svg" alt="ver o projeto anterior">
+									</button>
+									<button onclick="clickNext()">
+										<img src="./src/icons/arrow-right-circle.svg" alt="ver o próximo projeto">
+									</button>
+								</div>
+							</div>
 
-    <script src="../../script.js"></script>
+							<div class="bannerdescription">
+								<div class="text">
+									<p>
+										<b>Gamequiz</b> <br>
+										Quiz sobre jogos clássicos.
+										<a href=""></a>
+									</p>
+								</div>
+
+							</div>
+
+							<div class="lin">
+								<button>
+									<a href="./pages/projects/frontend/gamequiz"> Ver projeto</a>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<p>
+					Para ver mais projetos,
+					<a href="/pages/projects">
+						clique aqui.
+					</a>
+				</p>
+			</article>
+		</section>
+
+	<!--
+		<section class="section-b">
+			<article class="section-container">
+				<p>Estão listados alguns dos projetos elaborados. Estão agrupados pela " tecnologia" utilizada:</p>
+
+				<ul class="list topic">
+					<li> JavaScript Vanilla </li>
+					<ul class="list">
+						<li> <a href="./apps/calculadora/">Calculadora básica</a> </li>
+						<li> <a href="./frontend/criptomoeda/">Consulta de Criptomoeda [Bootstrap]</a> </li>
+						<li> <a href="../../teste-frontend/">Landing page - Coursify.me</a> </li>
+						<li> <a href="./vanilla/site/">Desenvolvimento deste site</a> </li>
+						<li> <a href="./vanilla/manager/">Gerenciador de Produção (Projeto pessoal)</a> </li>
+					</ul>
+
+					<li>Jogos: JavaScript Vanilla + Canvas</li>
+					<ul class="list">
+						<li> <a href="./games/flappybird/">Flappy Bird</a> </li>
+						<li> <a href="../../jogo-cobrinha/">Jogo da cobrinha</a> </li>
+					</ul>
+
+					<li> React.js </li>
+					<ul class="list">
+						<li> <a href="./fullstack/delivery/">Delivery</a> </li>
+						<li> <a href="./fullstack/Ecoleta/">Ecoleta</a> </li>
+						<li> <a href="./frontend/gamequiz/">Gamequiz</a> </li>
+						<li> <a href="./fullstack/variadoflix/">Variadoflix</a> </li>
+					</ul>
+					<li> Angular.js </li>
+					<ul class="list">
+						<li> <a href="./frontend/tempo/">Previsão do tempo</a> </li>
+					</ul>
+
+					<li>Node.js</li>
+					<ul class="list">
+						<li> <a href="./fullstack/Ecoleta/">Ecoleta</a> </li>
+					</ul>
+
+					<li> Java </li>
+					<ul class="list">
+						<li> <a href="./fullstack/delivery/">Delivery</a> </li>
+					</ul>
+
+					<li>Mobile (React Native)</li>
+					<ul class="list">
+						<li> <a href="./fullstack/delivery/">Delivery</a> </li>
+						<li> <a href="./fullstack/Ecoleta/">Ecoleta</a> </li>
+					</ul>
+
+					<li>Projetos de teste</li>
+					<ul class="projects list">
+						<li>
+							<a href="https://brunoamaia.github.io/frontend-projects/">
+								Projetos que testam algumas funcionalidades
+							</a>
+						</li>
+					</ul>
+				</ul>
+			</article>
+		</section>
+	-->
+	</main>
+
+
+	<footer class="footer-content"></footer>
+
+	<script type="module" src="./script.js"></script>
+	<script type="text/javascript" src="./typewriter.js"></script>
 </body>
-    
-</body>
+
 </html>

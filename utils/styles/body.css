@@ -1,0 +1,542 @@
+/* ################### Cofigurações Básicas ################### */
+body {
+  background-color: var(--bg-main);
+  margin: 0 auto;
+  text-align: justify;
+  color: var(--txt-main-primary);
+}
+
+body main {
+  min-height: calc(100vh - 175px);
+  width: 100%;
+}
+
+/* *#*#*#*# Fonts/text #*#*#*#* */
+body main section p {
+  font-family:'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-indent: 2em;
+  margin: 0 auto;
+  width: 95%;
+  padding-bottom: 10px;
+}
+
+body main section span {
+  font-family:'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-indent: 2em;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body main h1 {
+  font-family:'Arvo', serif;
+  font-size: 2em;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+body main h2 {
+  font-family:'Arvo', serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+body main h3 {
+  font-family:'Arvo', serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+body main section h1,
+body main section h2,
+body main section h3 {
+  position: relative;
+  text-align: center;
+  color: var(--txt-title-section-a);
+}
+
+body main section h1::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 10%;
+
+  height: 1px;
+  width: 80%;
+  background: radial-gradient(circle, var(--txt-main-primary), var(--bg-section-a));
+}
+body main .section-a:first-child h1::after,
+body .section-a .greetings h1::after {
+  display: none;
+}
+
+body main a {
+  color: inherit;
+  font-size: inherit;
+}
+
+body main section {
+  padding: 50px 0; 
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px solid var(--bg-section-intersection);
+}
+body main .section-a:first-child {
+  /* background-color: var(--bg-section-first); */
+  background: radial-gradient(var(--bg-section-first), var(--bg-section-b));
+  padding-top: 90px;
+}
+body main .section-a {
+  background-color: var(--bg-section-a);
+}
+body main .section-b {
+  background-color: var(--bg-section-b);
+}
+
+body main section article figure {
+  max-width: 960px;
+  margin: 1em auto;
+}
+body main section article figure a {
+  display: grid;
+  margin: 0 auto;
+  height: auto;
+  width: 80%;
+}
+body main section article figure a img {
+  border-radius: 20px;
+  border: 2px solid var(--bg-portfolio-border);
+  height: 100%;
+  width: 100%;
+}
+body main section article figure figcaption {
+  text-align: center;
+  text-indent: 0;
+
+  font-family:'Montserrat', sans-serif;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* *#*#*#*# Greetings #*#*#*#* */
+body .section-a .greetings {
+  min-height: calc(100vh - 140px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+body main .section-a:first-child {
+  background: radial-gradient(var(--bg-section-first-a), var(--bg-section-first-b) 130%);
+  padding-top: 90px;
+}
+body main .section-a.init {
+  background: var(--bg-section-first-a);
+}
+body main .section-a.normal {
+  background: var(--bg-section-a);
+}
+body main .section-a.normal:first-child  {
+  min-height: min-content;
+}
+
+body main .section-a.normal .section-container h1{
+  color: var(--txt-main-primary);
+  padding-bottom: 30px;
+}
+
+body main .section-a.normal .section-container h1::after{
+  display: contents;
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+
+  height: 1px;
+  width: 80%;
+  background: radial-gradient(circle, var(--txt-main-primary), var(--bg-section-a));
+}
+
+body main .section-a.normal .section-container p{
+  font-size: 1em;
+  text-indent: 2em;
+  margin: 0 auto;
+  color: var(--txt-main-primary);
+}
+
+body section .greetings {
+  color: var(--txt-first-secondary);
+}
+body section .greetings img {
+  width: 90%;
+  margin-top: -50px;
+}
+body main .section-a:first-child h1,
+body section .greetings h1 {
+  font-weight: 700;
+  color: var(--txt-first-primary);
+  padding: 20px 0 10px;
+}
+body main .section-a.normal p,
+body section .greetings h2 {
+  font-weight: 500;
+  color: var(--txt-first-primary);
+  font-size: 1.5em;
+  text-align: justify;
+  text-indent: 1em;
+  margin-top: 40px;
+}
+body section .greetings p {
+  position: relative;
+  color: var(--txt-first-secondary);
+  text-indent: 0;
+  padding-bottom: 5px 0;
+  font-weight: 700;
+}
+
+body section .greetings figure .imgPerfil {
+  border-radius: 50%;
+}
+
+body main section .greetings .typewriter {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-right: .15em solid var(--txt-first-secondary);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .05em;
+  width: 240px;
+  animation: 
+    typing 3.5s steps(20, end),
+    blink-caret .9s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 240px; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--txt-first-secondary); }
+}
+
+/*body section .greetings .typewriter::after {
+  content: '|';
+  opacity: 1;
+  animation: blink 2s step-end infinite;
+}
+/* The typewriter cursor effect */
+/*@keyframes blink {
+  from, to { opacity: 0 }
+  50% { opacity: 1; }
+}*/
+
+
+/* *#*#*#*# List #*#*#*#* */
+body main .list {
+  font-size: 1.1em;
+  padding-left: 3.5em;
+  text-align: left;
+}
+body main .list li {
+  padding-bottom: 0.2em;
+}
+body main .list li:first-child {
+  margin-top: 1em;
+}
+
+body main .list.topic {
+  color: var(--txt-title-section-a);
+  font-weight: 700;
+}
+
+body main .list .list {
+  padding-left: 2em;
+  font-weight: 400;
+}
+body main .list .list li a {
+  color: var(--txt-main-primary);
+  font-weight: 400;
+}
+
+body main .list .list li:first-child {
+  margin-top: 0.2em;
+}
+body main .list .list li:last-child {
+  margin-bottom: 1em;
+}
+
+body main section .meta-data {
+  display: none;
+}
+
+/* *#*#*#*# Generic Models #*#*#*#* */
+body main .section-container .container-centred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .section-container .control button { 
+  margin: 15px 20px 30px;
+}
+
+body main .section-container .btn {
+  border: 0;
+  border-radius: 10px;
+  height: 60px;
+  padding: 0 auto;
+  
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+  text-align: center;
+  
+  color: var(--txt-botton-primary);
+  background: var(--bg-botton-primary);
+  transition: filter 0.2s;
+}
+body main .section-container .btn.md {
+  width: 80px;
+}
+
+/* ####################### Mobile first #######################  */
+body main section {
+  width: 100%;
+  padding: 50px 15px; 
+}
+
+body main .section-a:first-child {
+  min-height: 100vh;
+}
+
+
+/* *#*#*#*# Portfolio #*#*#*#* */
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 0;
+  border-radius: 8px;
+  background-color: var(--bg-portfolio);
+  margin: 25px auto;
+}
+.portfolio-container:first-of-type {
+  margin-top: 0;
+}
+
+.portfolio-container .portfolio-img figure {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-img figure figcaption {
+  display: none;
+}
+.portfolio-container .portfolio-img figure {
+  border: 1px solid var(--bg-portfolio-border);
+  border-radius: 20px;
+  height: 89vw;
+  width: 80vw;
+  overflow: hidden;
+}
+.portfolio-container .portfolio-img figure img {
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-container .portfolio-text {
+  width: 80vw;
+}
+.portfolio-container .portfolio-text h1 {
+  padding: 15px 0 10px;
+}
+.portfolio-container .portfolio-text h1::after {
+  display: none;
+}
+
+/* *#*#*#*# Contact #*#*#*#* */
+main section .contact-me {
+  display: flex;
+  flex-direction: column;
+}
+
+main section .contact-me .text-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main section .contact-me h2 {
+  padding: 30px 0 10px;
+}
+
+main section .contact-me .text-link p {
+  text-indent: 0;
+  font-weight: 700;
+  width: min-content;
+  margin: 0;
+  padding: 0 0 3px 5px;
+  color: var(--txt-main-secondary);
+}
+
+/* ####################### Tablet #######################  */
+@media (min-width: 560px) {
+  body main section .greetings img {
+    width: 80%;
+    max-width: 650px;
+  }
+
+  body main .section-a:first-child {
+    min-height: auto;
+  }
+
+  /* *#*#*#*# Greetings #*#*#*#* */
+  body main section .greetings .typewriter {
+    letter-spacing: .15em;
+    width: 275px;
+    animation: 
+      typing 3.5s steps(20, end),
+      blink-caret .9s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 275px }
+  }
+
+  /* *#*#*#*# Portfolio #*#*#*#* */
+  .portfolio-container {
+    flex-direction: row;
+    padding: 20px;
+  }
+  .portfolio-container.inverted {
+    flex-direction: row-reverse;
+  }
+
+  .portfolio-container .portfolio-text h1 {
+    padding-top: 0;
+  }
+
+  .portfolio-container .portfolio-img figure {
+    position: relative;
+    height: auto;
+    min-width: 50%;
+    max-width: 180px;
+    transition: 0.5s;
+  }
+
+  /* *#*#*#*# Portfolio - animation *#*#*#*#* */
+  .portfolio-container .portfolio-img figure figcaption {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -150%;
+    padding: 60px 0;
+    margin-left: -20px;
+    height: 240px;
+    width: 215px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .portfolio-container .portfolio-img figure:hover > figcaption {
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  .portfolio-container .portfolio-img figure figcaption p {
+    text-indent: 0;
+    text-align: left;
+    width: 55%;
+    color: transparent;
+    transition: 0.5s;
+  }
+  .portfolio-container .portfolio-img figcaption:hover > p {
+    color: var(--txt-first-primary);
+    animation: text-portfolio 1s ease-in;
+  }
+  @keyframes text-portfolio {
+    0% {color: transparent;}
+    60% {color: transparent;}
+    85% {color: var(--txt-first-primary);}
+    100% {color: var(--txt-first-primary);}
+  }
+
+  .portfolio-container .portfolio-img figure img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+  }
+  .portfolio-container .portfolio-img figure:hover > img {
+    transform: scale(1.2);
+  }
+  
+  .portfolio-container .portfolio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 200px;;
+    padding: 0 0px 0 15px;
+  }
+  .portfolio-container.inverted .portfolio-text {
+    padding: 0 15px 0 0px;
+  }
+}
+
+/* #######################      PC      #######################  */
+@media (min-width: 1000px) {
+  body main .section-a:first-child {
+    padding-top: 50px;
+  }
+
+  body main section p {
+    width: 100%;
+  }
+
+  body main section .section-container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  body main section .greetings img {
+    max-width: 650px;
+  }
+
+  body main section p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+
+  body .section-a .greetings .typewriter {
+    width: 300px;
+    animation: 
+      typing 3.5s steps(20, end),
+      blink-caret .75s step-end infinite;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 300px }
+  }
+
+  /* *#*#*#*# Contact #*#*#*#* */
+  main section .contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*
+@media (min-width: 1700px) {
+  body main section .section-container {
+    max-width: 1500px;
+  }
+}
+*/

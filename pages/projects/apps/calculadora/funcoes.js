@@ -1,7 +1,7 @@
 //  Programação da Calculadora em um único arquivo
 //  Não está funcionando, pois utiliza chamada de funções que não estão habilitadas no HTML
 
-let display = document.querySelector('div#display')
+let display = document.querySelector('div#actual')
 let histor = document.querySelector('div#history')
 let txt = ''                // Text of display 
 let result = 0        //

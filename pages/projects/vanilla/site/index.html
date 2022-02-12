@@ -1,109 +1,219 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desenvolvimento deste Site</title>
-    <link rel = "icon" type = "image/png" href="../../../../src/tillteBar.png"  sizes="16x16"/>
-    <link rel = "apple-touch-icon" type = "image/png" href = "../../../../src/tillteBar.png"/>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../../../global.css">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Primary Meta Tags -->
+	<title>Projetos | Versões deste Site</title>
+	<meta name="title" content="Projetos | Versões deste Site">
+	<meta name="description"
+		content="Histórico das versões da aparencia do site. Como estou aprendendo, vou mudando o visual para treinar alguns conceitos">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://brunoamaia.github.io/">
+	<meta property="og:title" content="Projetos | Versões deste Site">
+	<meta property="og:description"
+		content="Histórico das versões da aparencia do site. Como estou aprendendo, vou mudando o visual para treinar alguns conceitos">
+	<meta property="og:image"
+		content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://brunoamaia.github.io/">
+	<meta property="twitter:title" content="Projetos | Versões deste Site">
+	<meta property="twitter:description"
+		content="Histórico das versões da aparencia do site. Como estou aprendendo, vou mudando o visual para treinar alguns conceitos">
+	<meta property="twitter:image"
+		content="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/src/meta-img/home.png">
+
+	<link rel="icon" type="image/png" href="../../../../src/tillteBar.png" sizes="16x16" />
+	<link rel="apple-touch-icon" type="image/png" href="../../../../src/tillteBar.png" />
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@300;400;700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="../../../../utils/styles/resetStyle.css">
+	<link rel="stylesheet" href="../../../../utils/styles/colors.css">
+	<link rel="stylesheet" href="../../../../utils/styles/navbar.css">
+	<link rel="stylesheet" href="../../../../utils/styles/body.css">
+	<link rel="stylesheet" href="../../../../utils/styles/footer.css">
+	<link rel="stylesheet" href="../../../../utils/styles/timeLine.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <div class="content">
-            <!--                            Utilizar quando tiver Alguma logo -->
-            <div class="logo" style="float: left;">     <!-- Jogar o Home par a esquerda -->
-                <a href="../../../../"><img src="../../../../src/icons/home.svg" alt="Voltar para a página inicial"> </a>      <!-- <i class="fas fa-book-reader"></i> -->
-            </div>
+	<header>
+		<nav class="navbar">
+			<div class="links-pages">
+				<ul class="navbar-nav ">
+					<li class="nav-item"> <a href="../../../../"> Home </a> </li>
+					<li class="nav-item"> <a href="../../../../pages/aboutme">Sobre</a> </li>
+					<li class="nav-item current"> <a href="../../../../pages/projects">Projetos</a> </li>
+				</ul>
 
-            <a href="" class="nav-toggle" style="float: right;" onclick="openmenu()">    <!-- Jogar o menu para a direita -->
-                <img src="../../../../src/icons/menu.svg" alt="">                                        <!-- <i class="fas fa-bars"> </i> -->
-            </a>
+				<div class="social">
+					<ul>
+						<li>
+							<a href="https://www.linkedin.com/in/brunoamaia94/">
+								<img src="../../../../src/icons/linkedin-eee.svg" alt="logo do linkedin">
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/brunoamaia">
+								<img src="../../../../src/icons/github-eee.svg" alt="logo do github">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-            <nav class="nav" id="nav">
-                <p>
-                    <span class="nav-close" style="float: right;" onclick="closenmenu()">
-                        <i class="fas fa-bars"><img src="../../../../src/icons/x.svg" alt=""></i>
-                    </span>
-                </p>
-                <ul>
-                    <li> <a href="../../../../">Home</a> </li>
-                    <li> <a href="../../../aboutme/" >Autor</a> </li>
-                    <li> <a href="../../" class="current">Projetos</a> </li>
-                    <li> <a href="../../../reposit/"> Repositório </a> </li>
-                </ul>
-            </nav>
+			<div class="mobile-control">
+				<div class="home">
+					<a href="../../../../"><img src="../../../../src/icons/home-eee.svg" alt="Voltar para a página inicial"> </a>
+				</div>
+				<div class="checkbox-wrapper" onclick="changeStateMenu()">
+					<input type="checkbox" id="toggleNavbar">
+					<label class="checkbox" for="toggleNavbar">
+						<div class="trace"></div>
+						<div class="trace"></div>
+						<div class="trace"></div>
+					</label>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-            <nav class="social" id="social">
-                <ul>
-                    <li> <a href="https://www.linkedin.com/in/brunoamaia94/"> <img src="../../../../src/icons/linkedin.svg" alt=""> </a></li>
-                    <li> <a href="https://www.facebook.com/brunoamaia94"> <img src="../../../../src/icons/facebook.svg" alt=""> </a></li>
-                    <!-- <li> <a href="./"> <img src="../../../src/icons/instagram.svg" alt=""> </a></li>
-                    <li> <a href="./"> <img src="../../../src/icons/twitter.svg" alt=""> </a></li> -->
-                </ul>
-            </nav>
-        </div>
-    </header>
+	<main>
+		<section class="section-a normal">
+			<article class="section-container">
+				<h1>Versões do site</h1>
+				<p> 
+					Serão apresentadas algumas das etapas de melhoria (que refletem o aprendizado adquirido).
+				</p>
+			</article>
+		</section>
 
-    <section>
-        <div class="section_a">
-            <header>
-                <h1>Versões do site</h1>
-            </header>
-    
-            <p> Serão apresentadas algumas das etapas de melhoria (que refletem o aprendizado adquirido). <p>
-        </div>
+		<section class="section-b">
+			<article class="section-container">
+				<h1>Versão 0</h1>
+				<p>
+					Criação das primeiras páginas estáticas com a utilização de HTML e CSS.
+					A navegação entre as páginas ocorria pelos botões posicionados no final das páginas.
+				</p>
 
-        <div class="section_b">
-            <div class="version0">
-                <p> 
-                    <a href="./versions/v0/">Versão 0 (teste inicial) </a>
-                    Criação das primeiras páginas estáticas com a utilização de HTML e CSS.
-                </p>
-                <figure> 
-                    <img src="./versions/v0/v0.png" alt="Versão inicial do site (também chamada de versão zero)">
-                    <figcaption>Versão 0</figcaption>
-                </figure> 
-            </div>
-        </div>
+				<figure>
+					<a href="./versions/v0/">
+						<img 
+							src="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/pages/projects/vanilla/site/src/v0.png" 
+							alt="Imagem do site na versão 0."
+							moz-reader-center="true"
+						>
+					</a>
+					<figcaption>Imagem do site na versão 0.</figcaption>
+				</figure>
+			</article>
+		</section>
 
-        <div class="section_a">
-            <div class="version1">
-                <p>
-                    <a href="./versions/v1/">Versão 1</a>
-                    Criação do menu de navegação e utilização de jQuery para torná-lo responsivo
-                    (a barra de navegação modifica de acordo com a largura da tela).
-                </p>
-            </ul>
-            <figure>
-                <img src="./versions/v1/v1.gif" alt="Versão atual do site (também chamada de versão 1)">
-                <figcaption>Versão 1</figcaption>
-            </figure>
-            </div>
-        </div>
+		<section class="section-a">
+			<article class="section-container">
+				<h1>Versão 1</h1>
+				<p>
+					Criação do menu de navegação (navbar) e ajuste do conteudo para ser responsivo.
+					Foi criado um menu de navegação para dispositivos mobile e utilizado jQuery 
+					para realizar a transição entre os estados de ativo e inativo.
+				</p>
+				<figure>
+					<a href="./versions/v1/">
+						<img 
+							src="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/pages/projects/vanilla/site/src/v1.gif" 
+							alt="Imagem do site na versão 1."
+							moz-reader-center="true"
+						>
+					</a>
+					<figcaption>Imagem do site na versão 1.</figcaption>
+				</figure>
+			</article>
+		</section>
 
-        <div class="section_b">
-            <div class="version2">
-                <p>
-                    <a href="#" onclick="alerta()">Versão de teste.</a>
-                    Teste de algumas funcionalidades. Muitas coisas são temporárias nessa página.
-                </p> 
-            </ul>
-        </div>
+		<section class="section-b">
+			<article class="section-container">
+				<h1>Versão 2</h1>
+				<p>
+					Alteração no esquema de cores do site. Utilização de arquivos genéricos
+					para o estilo e funcionalidades do site. Remoção do jQuery para utilizar 
+					os recursos do JavaScript ES6. E adição de meta tags para o SEO do site 
+					e adição de recursos de monitoramento da Google.
+				</p>
+				<figure>
+					<a href="./versions/v2/">
+						<img 
+							src="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/pages/projects/vanilla/site/src/v2.png" 
+							alt="Imagem do site na versão 2."
+							moz-reader-center="true"
+						>
+					</a>
+					<figcaption>Imagem do site na versão 2.</figcaption>
+				</figure>
+			</article>
+		</section>
 
-        <div class="section_a"></div>
+		<section class="section-a">
+			<article class="section-container">
+				<h1>Versão 3 (Atual) </h1>
+				<p>
+					Criação de animação no menu do navbar para mobile. Utilização semantico
+					do HTML, para auxiliar ainda mais no SEO. Mudança no esquema de cores para 
+					melhorar a leitura e criação de "módulos" para aceler na implememtação 
+					das páginas.
+				</p>
+				<figure>
+					<a href="./">
+						<img 
+							src="https://raw.githubusercontent.com/brunoamaia/brunoamaia.github.io/master/pages/projects/vanilla/site/src/v3.png" 
+							alt="Imagem do site na versão 3."
+							moz-reader-center="true"
+						>
+					</a>
+					<figcaption>Imagem do site na versão 3.</figcaption>
+				</figure>
+			</article>
+		</section>
+	</main>
+	
+	<footer class="footer-content">
+		<div class="footer-container">
+			<div class="footer-columns">
+				<div class="ft-column">
+					<h3>Navegação</h3>
 
-    </section>
-    
+					<div>
+						<a href="../../../../">Home</a>
+						<a href="../../../../pages/aboutme">Sobre</a>
+						<a href="../../../../pages/projects">Portifólfio</a>
+					</div>
+				</div>
 
-    <footer> Criado em junho de 2020</footer>
+				<div class="ft-column">
+					<h3>Social</h3>
 
-    <script src="../../../../script.js"></script>
-    <script src="script.js"></script> <!-- Chamada do JavaScript -->
+					<div>
+						<a href="https://www.linkedin.com/in/brunoamaia94/">Linkedin</a>
+						<a href="https://github.com/brunoamaia">Github</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-infos">
+				<p>Entre em contato para conhecer melhor e/ou informar problemas.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../../../../utils/scripts/navbar.js"></script>
 </body>
+
 </html>

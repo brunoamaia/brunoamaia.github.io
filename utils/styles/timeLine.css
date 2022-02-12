@@ -1,0 +1,244 @@
+/* ################### Cofigurações Básicas ################### */
+/* *#*#*#*# About me #*#*#*#* */
+
+/* ####################### Mobile first #######################  */
+main section .historic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px dotted var(--bg-year-border);
+}
+
+main section .historic .year {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+main section .historic .year:first-of-type {
+  padding-top: 0;
+  margin-top: -15px;
+}
+
+main section .historic .year .value {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  padding: 15px 20px;
+}
+
+main section .historic .year .value .dot-year {
+  position: absolute;
+  top: 38px;
+  left: -6px;
+
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: var(--bg-year-border);
+}
+main section .historic .year .value .dot-year::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--bg-year-border-transparent);
+}
+
+main section .historic .year .value h2 {
+  text-align: left;
+  padding: 10px 50px;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: var(--bg-year-border);
+  margin: 0;
+  text-align: center;
+  height: 55px;
+  width: 270px;
+  z-index: 1;
+}
+main section .historic .year .value h2::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+
+  height: 65px;
+  width: 280px;
+  border-radius: 50px;
+  background-color: var(--bg-year-border-transparent);
+  z-index: -1;
+}
+
+main section .historic .historic-data {
+  padding: 0 0 0 20px;
+  width: calc(100vw - 30px);
+}
+
+main section .historic .historic-data h3 {
+  padding: 25px 0 10px 10px;
+  text-align: left;
+}
+
+main section .historic .year .historic-data p span {
+  color: var(--txt-main-third);
+  font-weight: 600;
+}
+
+main section .historic .year .historic-data details summary {
+  cursor: pointer;
+}
+
+main section .historic .year .historic-data details span {
+  color: var(--txt-main-third);
+  font-family:'Arvo', serif;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+/* ####################### Tablet #######################  */
+@media (min-width: 560px) {
+  main section .historic {
+    border-left: none;
+  }
+
+  main section .historic .year.inverted .value {
+    align-items: center;
+    justify-content: right;
+  }
+
+  main section .historic .year .value .dot-year {
+    display: none;
+  }
+
+  main section .historic .year .historic-data {
+    position: relative;
+    padding: 10px 100px 0 25px;
+  }
+  main section .historic .year.inverted .historic-data {
+    position: relative;
+    padding: 10px 25px 0 100px;
+  }
+
+  main section .historic .year .historic-data details {
+    position: relative;
+  }
+
+  /* *#*#*#*# lines of time to tablet *#*#*#*#* */
+  main section .historic .year .historic-data::before {
+    content: '';
+    position: absolute;
+    top: -44px;
+    left: 320px;
+
+    height: calc(100% + 70px);
+    width: calc(100% - 380px);
+
+    border-top: 2px dotted var(--bg-year-border);
+    border-right: 2px dotted var(--bg-year-border);
+    border-top-right-radius: 60px;
+  }
+  main section .historic .year.inverted .historic-data::before {
+    left: 60px;
+
+    border-left: 2px dotted var(--bg-year-border);
+    border-right: none;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 0;
+  }
+
+  main section .historic .year:last-of-type > .historic-data::before {
+    height: calc(100% + 35px);
+  }
+
+  main section .historic .historic-data h3 {
+    padding: 15px 0 10px 10px;
+    text-align: left;
+  }
+
+}
+
+/* #######################      PC      #######################  */
+@media (min-width: 1000px) {
+  main section .historic {
+    position: relative;
+  }
+  main section .historic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    border-left: 2px dotted var(--bg-year-border);
+  }
+
+  main section .historic .year {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 960px;
+  }
+  main section .historic .year.inverted {
+    flex-direction: row-reverse;
+  }
+
+  main section .historic .year .value,
+  main section .historic .year .historic-data {
+    width: 48%;
+  }
+
+  main section .historic .year .value {
+    align-items: flex-start;
+    justify-content: right;
+  }
+  main section .historic .year.inverted .value {
+    align-items: flex-start;
+    justify-content: left;
+  }
+  
+  main section .historic .year .value .dot-year {
+    display: block;
+    left: calc(100% + 15px);
+  }
+  main section .historic .year.inverted .value .dot-year {
+    display: block;
+    left: -23px;
+  }
+
+  main section .historic .year .value h2::before {
+    box-shadow: -5px 20px 20px 10px var(--bg-navbar-secondary);
+  }
+  main section .historic .year.inverted .value h2::before {
+    box-shadow: 5px 20px 20px 10px var(--bg-navbar-secondary);
+  }
+
+  main section .historic .year .historic-data {
+    padding: 50px 0 0 15px;
+  }
+  main section .historic .year.inverted .historic-data {
+    padding: 50px 15px 0 0;
+  }
+
+  main section .historic .year .historic-data::before {
+    display: none;
+  }
+  main section .historic .year.inverted .historic-data::before {
+    display: none;
+  }
+
+  main section .historic .year .historic-data h3 {
+    padding-left: 0;
+  }
+}
+
+/*
+@media (min-width: 1700px) {
+  body main section .section-container {
+    max-width: 1500px;
+  }
+}
+*/

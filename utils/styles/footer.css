@@ -1,0 +1,65 @@
+.footer-content {
+  font-family:'Montserrat', sans-serif;
+  font-size: 0.8em;
+  background-color: var(--bg-footer-primary);
+  color: var(--txt-footer-secondary);
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-container .footer-columns h3 {
+  font-family:'Arvo', serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--txt-footer-primary);
+}
+
+.footer-container .footer-columns a {
+  color: var(--txt-footer-secondary);
+}
+
+/* ####################### Mobile first #######################  */
+.footer-content .footer-container {
+  padding: 30px 0 20px;
+  margin: 0 auto;
+}
+
+.footer-container .footer-columns {
+  display: flex;
+  align-items: initial;
+  justify-content: space-around;
+}
+
+.footer-columns .ft-column div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-infos {
+  padding-top: 5px;
+  margin: 15px auto 0;
+  border-top: 1px solid var(--bg-footer-secondary);
+  width: 80%;
+
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ####################### Tablet/PC #######################  */
+@media (min-width: 560px) {
+  .footer-container .footer-columns {
+    justify-content: space-evenly;
+  }
+
+  .footer-infos {
+    padding-top: 10px;
+    width: 60%;
+  }
+}
