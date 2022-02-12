@@ -213,7 +213,7 @@ body main section .greetings .typewriter {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .05em;
-  width: 270px;
+  width: 240px;
   animation: 
     typing 3.5s steps(20, end),
     blink-caret .9s step-end infinite;
@@ -221,7 +221,7 @@ body main section .greetings .typewriter {
 /* The typing effect */
 @keyframes typing {
   from { width: 0; }
-  to { width: 270px; }
+  to { width: 240px; }
 }
 @keyframes blink-caret {
   from, to { border-color: transparent }
@@ -402,14 +402,14 @@ main section .contact-me .text-link p {
   /* *#*#*#*# Greetings #*#*#*#* */
   body main section .greetings .typewriter {
     letter-spacing: .15em;
-    width: 345px;
+    width: 275px;
     animation: 
       typing 3.5s steps(20, end),
       blink-caret .9s step-end infinite;
   }
   @keyframes typing {
     from { width: 0 }
-    to { width: 345px }
+    to { width: 275px }
   }
 
   /* *#*#*#*# Portfolio #*#*#*#* */
@@ -515,14 +515,14 @@ main section .contact-me .text-link p {
   }
 
   body .section-a .greetings .typewriter {
-    width: 345px;
+    width: 300px;
     animation: 
       typing 3.5s steps(20, end),
       blink-caret .75s step-end infinite;
   }
   @keyframes typing {
     from { width: 0 }
-    to { width: 345px }
+    to { width: 300px }
   }
 
   /* *#*#*#*# Contact #*#*#*#* */
