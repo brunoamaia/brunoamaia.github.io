@@ -1,4 +1,4 @@
-/* ################### Cofigurações Básicas ################### */
+/* ################### Configurações Básicas ################### */
 body {
   background-color: var(--bg-main);
   margin: 0 auto;
@@ -152,6 +152,10 @@ body main .section-a.normal .section-container h1{
   padding-bottom: 30px;
 }
 
+body main .section-a.init .section-container p {
+	color: var(--txt-first-secondary);
+}
+
 body main .section-a.normal .section-container h1::after{
   display: contents;
   content: '';
@@ -299,8 +303,8 @@ body main .section-container .btn {
   font-size: 0.9em;
   text-align: center;
   
-  color: var(--txt-botton-primary);
-  background: var(--bg-botton-primary);
+  color: var(--txt-bottom-primary);
+  background: var(--bg-bottom-primary);
   transition: filter 0.2s;
 }
 body main .section-container .btn.md {

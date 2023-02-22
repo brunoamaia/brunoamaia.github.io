@@ -12,7 +12,7 @@
 header {
     text-align: center;
     border: black;
-    font: 400 20px Roboto, sans-srif;
+    font: 400 20px Roboto, sans-serif;
     padding-bottom: 20px;
 }
 header {
@@ -26,7 +26,7 @@ header {
 
 body {
     background-color:  #d1d1c2;  /* #3a3a3a */
-    font: 400 14px Roboto, sans-srif;
+    font: 400 14px Roboto, sans-serif;
 }
 
 p {
@@ -41,7 +41,7 @@ section {
     width: auto; /* 800px, auto */
     max-width: 960px;
     margin: auto;
-    font: 400 20px Roboto, sans-srif;
+    font: 400 20px Roboto, sans-serif;
     box-shadow: black;
     text-align: justify;
 }
@@ -64,7 +64,7 @@ button {
     text-align: center;
     font-size: 18px;
     line-height: 0px;
-    transition: filter 0.2s; /* Mudar a cor (parametro de baixo) de forma gradual */
+    transition: filter 0.2s; /* Mudar a cor (parâmetro de baixo) de forma gradual */
     vertical-align: top;
 }
 
@@ -84,7 +84,7 @@ section ul {
 
 footer {
     color:  white;
-    font: 500 20px Roboto, sans-srif;
+    font: 500 20px Roboto, sans-serif;
     text-align: center;
     font-style: italic;
 }

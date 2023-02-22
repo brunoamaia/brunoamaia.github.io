@@ -59,7 +59,7 @@ header {
 }
 
 
-/* *********************** Cofigurações Básicas ***********************  */
+/* *********************** Configurações Básicas ***********************  */
 .header {
     height: 50px;
     list-style: none;
@@ -135,7 +135,7 @@ a {
     color: inherit;
 }
 
-section div p {   /*  Ajustar região do conteudo */
+section div p {   /*  Ajustar região do conteúdo */
     margin: 0 auto;
     width: 90%;
 }
@@ -257,7 +257,7 @@ body::-webkit-scrollbar-track {
 
 /* *********************** Tablet *********************** */
 @media (min-width: 530px) {
-    /*  Ocultar incones de navegação no Smartphone  */
+    /*  Ocultar ícones de navegação no Smartphone  */
     .logo, 
     .nav-toggle, 
     .nav-close {
@@ -272,7 +272,7 @@ body::-webkit-scrollbar-track {
         width: 95%;
     }
     
-    /* Resetar principais parametros do Menu */
+    /* Reset dos principais parâmetros do Menu */
     .header {
         position: relative;
         height: 44px;
@@ -288,7 +288,7 @@ body::-webkit-scrollbar-track {
         position: relative;
     }
     
-    /* Conveter Menu Lateral em Superior */
+    /* Converter Menu Lateral em Superior */
     .header .nav {
         display: contents;
     }

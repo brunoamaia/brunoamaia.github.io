@@ -22,7 +22,7 @@ export function insertNavBar(currentPage, homeAddress) {
           <ul>
             <li>
               <a href="https://www.linkedin.com/in/brunoamaia94/">
-                <img src="${homeAddress}/src/icons/linkedin-eee.svg" alt="logo do linkedin">
+                <img src="${homeAddress}/src/icons/linkedin-eee.svg" alt="logo do linkedIn">
               </a>
             </li>
             <li>
