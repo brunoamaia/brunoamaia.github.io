@@ -16,7 +16,7 @@ export default function insertFooter(homeAddress) {
           <div>
             <a href="${homeAddress}">Home</a> 
             <a href="${homeAddress}pages/aboutme">Sobre</a> 
-            <a href="${homeAddress}pages/projects">Portifólfio</a>
+            <a href="${homeAddress}pages/projects">Portfólio</a>
           </div>
         </div>
 
@@ -24,7 +24,7 @@ export default function insertFooter(homeAddress) {
           <h3>Social</h3>
 
           <div>
-            <a href="https://www.linkedin.com/in/brunoamaia94/">Linkedin</a>
+            <a href="https://www.linkedin.com/in/brunoamaia94/">LinkedIn</a>
             <a href="https://github.com/brunoamaia">Github</a>
           </div>
         </div>

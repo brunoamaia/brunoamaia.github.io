@@ -43,7 +43,7 @@ const figureArray = [
 
 const textArray = [
   `<p>
-  <b>Gamequiz</b> <br>
+  <b>Game quiz</b> <br>
     Quiz sobre jogos clássicos.
   </p>`,
   `<p>
@@ -87,7 +87,7 @@ let n = figureArray.length;
 let position = 0;
 
 
-function previousproject() {
+function previousProject() {
   if (position >  0) {
     position -= 1
   } else {
@@ -99,7 +99,7 @@ function previousproject() {
   timer();
 }
 
-function nextproject() {
+function nextProject() {
   if (position < n-1) {
     position += 1
   } else {
@@ -114,7 +114,7 @@ function nextproject() {
 
 
 function timer() {
-  count = setTimeout(nextproject, 3000)
+  count = setTimeout(nextProject, 3000)
 }
 
 function stopTimer() {
@@ -123,13 +123,13 @@ function stopTimer() {
 
 function clickPrevious () {
   stopTimer()
-  previousproject()
+  previousProject()
 //  document.querySelector('.circle').style.animation = "count";
 //  document.querySelector('.circle').style.animation = "countdown 3s linear infinite forwards";
 }
 function clickNext() {
   stopTimer()
-  nextproject()
+  nextProject()
 }
 
 window.onload = timer();

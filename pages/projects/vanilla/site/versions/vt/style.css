@@ -56,7 +56,7 @@
     padding-top: 5px;
 }
 
-.content {      /* Inicio do conteudo que aparece */
+.content {      /* Inicio do conteúdo que aparece */
     max-width: 960px; /* Para fixar o máximo que pode aumentar */
     width: 98%;
     margin: 0 auto;
@@ -115,13 +115,13 @@
 
 h1{
     text-align: center;
-    font: 500 1.7em Roboto, sans-srif;
+    font: 500 1.7em Roboto, sans-serif;
     padding-bottom: 20px;
     color: var(--txt-color-3);
     color: #ff652f;
 }
 
-.conteudo p {   /* Rexto de aviso */
+.conteudo p {   /* Texto de aviso */
     padding-bottom: 1em;
 }
 
@@ -129,7 +129,7 @@ body {
     -webkit-background-composite: var(--bg-main-color);
     background-color:  var(--bg-main-color);  /* #d1d1c2;  #3a3a3a */
     background-color: #545454;
-    font: 400 14px Roboto, sans-srif;
+    font: 400 14px Roboto, sans-serif;
 }
 
 section {
@@ -139,7 +139,7 @@ section {
     width: auto; /* 800px, auto */
     max-width: 960px;
     margin: auto;
-    font: 400 20px Roboto, sans-srif;
+    font: 400 20px Roboto, sans-serif;
     text-align: justify;
 }
 
@@ -173,7 +173,7 @@ button {
     text-align: center;
     font-size: 18px;
     line-height: 0px;
-    transition: filter 0.2s; /* Mudar a cor (parametro de baixo) de forma gradual */
+    transition: filter 0.2s; /* Mudar a cor (parâmetro de baixo) de forma gradual */
     vertical-align: top;
     padding-left: 7px;
     padding-right: 7px;
@@ -203,7 +203,7 @@ div section { /*    Formatação das Seções de texto */
 footer {
     color:  var(--txt-color-4); /* fff white*/
     color: yellow;
-    font: 500 20px Roboto, sans-srif;
+    font: 500 20px Roboto, sans-serif;
     text-align: center;
     font-style: italic;
     padding-bottom: 20px;
@@ -290,7 +290,7 @@ footer {
     /*.header .nav ul li a:hover {
         border-bottom: 7px solid #D6312B;
         /*animation-direction: unset;*/
-        /*transition: margin-botton 4s;*/
+        /*transition: margin-bottom 4s;*/
         /*transition: height .2s ease-in-out;*/
     /*}*/
 
